@@ -1,0 +1,19 @@
+$maxWidth: 1440;
+$minWidth: 320;
+
+/* adaptiv-font-size */
+@mixin adaptiv-font-size($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $maxWidth: $maxWidth - $minWidth;
+  font-size: min(calc(#{$mobSize}px + #{$addSize} * ((100vw - 320px) / #{$maxWidth})), #{$pcSize}px);
+}
+
+/* adaptiv-font-line-height */
+@mixin adaptiv-font-lh($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $maxWidth: $maxWidth - $minWidth;
+  line-height: min(calc(#{$mobSize}px + #{$addSize} * ((100vw - 320px) / #{$maxWidth})), #{$pcSize}px);
+}
+
+/* icon-sizes */
+

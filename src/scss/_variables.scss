@@ -1,0 +1,172 @@
+/* Base Colors */
+$bright-green: #02E502;
+$dark-green: #01B601;
+$black-transparent: #00000040;
+$gray: #151515;
+$gradient: linear-gradient(0deg, #181818 0%, rgba(24, 24, 24, 0.63) 100%);
+$dark-gray: #181818;
+$dark-gray-transparent: #181818F5;
+$dark-charcoal: #1B1C1D;
+$charcoal: #1E1D1D;
+$slate: #212121;
+$dark-slate: #2D2D2D;
+$light-gray-transparent: #E5E5E51A;
+$medium-gray: #464646;
+$light-gray: #8D8B8B;
+$lighter-gray: #DEDCDC;
+$white: #FFFFFF;
+$white-transparent: #FFFFFF33;
+
+/* Theme colors */
+$color-primary: $dark-gray;
+$color-secondary: $white;
+$color-secondary--transparent: $white-transparent;
+$color-accent--bright: $bright-green;
+$color-accent--dark: $dark-green;
+
+/* Background colors*/
+$bg-primary: $color-primary;
+$bg-secondary: $gray;
+$bg-success: $color-accent--bright;
+$bg-info: $charcoal;
+$bg-transparent: $dark-gray-transparent;
+$bg-gradient: $gradient;
+
+/* Typography */
+$text-color--main: $color-secondary;
+$text-color--transparent: $white-transparent;
+$text-color--bright: $color-accent--bright;
+$text-color--dark: $color-primary;
+
+$font-family--base: RF Rufo;
+
+$font-size--min: 16;
+$font-size--xs: 18;
+$font-size--sm: 20;
+$font-size--md: 22;
+$font-size--lg: 24;
+$font-size--xl: 28;
+$font-size--2xl: 30;
+$font-size--3xl: 36;
+$font-size--4xl: 48;
+$font-size--5xl: 50;
+$font-size--6xl: 64;
+$font-size--7xl: 72;
+$font-size--8xl: 100;
+$font-size--9xl: 120;
+
+$font-weight--light:   300;
+$font-weight--normal:  400;
+$font-weight--semibold:600;
+$font-weight--bold:    700;
+
+$line-height--min: 17;
+$line-height--xs: 20;
+$line-height--sm: 22;
+$line-height--md: 24;
+$line-height--lg: 29;
+$line-height--xl: 30;
+$line-height--2xl: 33;
+$line-height--3xl: 48;
+$line-height--4xl: 58;
+$line-height--5xl: 60;
+$line-height--6xl: 64;
+$line-height--7xl: 86;
+$line-height--8xl: 100;
+$line-height--9xl: 144;
+
+$h1-font-size: $font-size--7xl;
+$h1-font-size--mobile: $font-size--xl;
+$h2-font-size: $font-size--4xl;
+$h2-font-size--mobile: $font-size--md;
+$h3-font-size: $font-size--7xl;
+$h3-font-size--mobile: $font-size--md;
+$h4-font-size: $font-size--3xl;
+$h4-font-size--mobile: $font-size--sm;
+$h5-font-size: $font-size--md;
+$h5-font-size--mobile: $font-size--xs;
+$h2-podscription-font-size: $font-size--9xl;
+$h2-podscription-font-size--mobile: $font-size--3xl;
+$paragraph-font-size: $font-size--xs;
+$paragraph-font-size--mobile: $font-size--min;
+
+$h1-line-height: $line-height--7xl;
+$h1-line-height--mobile: $line-height--2xl;
+$h2-line-height: $line-height--3xl;
+$h2-line-height--mobile: $line-height--sm;
+$h3-line-height: $line-height--3xl;
+$h3-line-height--mobile: $line-height--sm;
+$h4-line-height: $line-height--2xl;
+$h4-line-height--mobile: $line-height--xs;
+$h5-line-height: $line-height--sm;
+$h5-line-height--mobile: $line-height--xs;
+$h2-podscription-line-height: $line-height--9xl;
+$h2-podscription-line-height--mobile: $line-height--6xl;
+$paragraph-line-height: $line-height--xl;
+$paragraph-line-height--mobile: $line-height--md;
+
+/* Miscellaneous */
+$body-color: $bg-primary;
+
+$link-color: $text-color--main;
+$link-color--hover: $text-color--bright;
+$link-color--pressed: $text-color--dark;
+
+/* Btn */
+$btn-font-size: $font-size--xl;
+$btn-font-size--mobile: $font-size--md;
+$btn-font-weight: $font-weight--normal;
+$btn-border: 1px solid $color-accent--bright;
+$btn-primary-bg: $bg-primary;
+$btn-primary-color: $text-color--bright;
+$btn-hover-bg: $bg-success;
+$btn-hover-color: $text-color--dark;
+$btn-pressed-bg: $color-accent--dark;
+$btn-pressed-color: $text-color--dark;
+
+/* Padding */
+$section-padding: 110px 0 0;
+$section-padding-first: 85px 0 0;
+$section-padding--tablet: 80px 0 0;
+$section-padding--mobile: 60px 0 0;
+$h2-padding-bottom: 60px;
+$h2-padding-bottom--tablet: 38px;
+$h2-padding-bottom--mobile: 19px;
+//$h3-padding-bottom:;
+//$h4-padding-bottom:;
+
+/* Icon Size */
+
+
+/* Grid */
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1400px) !default;
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1450px) !default;
+
+$grid-columns: 12 !default;
+$grid-gutter-width: 1.5rem !default;
+
+$xs: '(max-width: 375px)' !default;
+$sm: '(max-width: #{map-get($grid-breakpoints , sm) - 1px})' !default;
+$md: '(max-width: #{map-get($grid-breakpoints, md) - 1px})' !default;
+$lg: '(max-width: #{map-get($grid-breakpoints, lg) - 1px})' !default;
+$xl: '(max-width: #{map-get($grid-breakpoints, xl) - 1px})' !default;
+$xxl: '(max-width: #{map-get($grid-breakpoints, xxl) - 1px})' !default;
+
+$min-xs: '(min-width: 375px)';
+$min-sm: '(min-width: #{map-get($grid-breakpoints, sm)})' !default;
+$min-md: '(min-width: #{map-get($grid-breakpoints, md)})' !default;
+$min-lg: '(min-width: #{map-get($grid-breakpoints, lg)})' !default;
+$min-xl: '(min-width: #{map-get($grid-breakpoints, xl)})' !default;
+$min-xxl: '(min-width: #{map-get($grid-breakpoints, xxl)})' !default;

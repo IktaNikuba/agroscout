@@ -1,0 +1,38 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family--base;
+  font-weight: $font-weight--normal;
+  text-align: left;
+}
+
+h1 {
+  @include adaptiv-font-size($h1-font-size, $h1-font-size--mobile);
+  @include adaptiv-font-lh($h1-line-height, $h1-line-height--mobile);
+}
+
+h2 {
+  @include adaptiv-font-size($h2-line-height, $h2-font-size--mobile);
+  @include adaptiv-font-lh($h2-line-height, $h2-line-height--mobile);
+}
+
+h3 {
+  @include adaptiv-font-size($h3-font-size, $h3-font-size--mobile);
+  @include adaptiv-font-lh($h3-line-height, $h3-line-height--mobile);
+}
+
+h4 {
+  @include adaptiv-font-size($h4-font-size, $h4-font-size--mobile);
+  @include adaptiv-font-lh($h4-line-height, $h4-line-height--mobile);
+}
+
+h5 {
+  @include adaptiv-font-size($h5-font-size, $h5-font-size--mobile);
+  @include adaptiv-font-lh($h5-line-height, $h5-line-height--mobile);
+}
+
+.h2-podscription {
+  @include adaptiv-font-size($h2-podscription-font-size, $h2-podscription-font-size--mobile);
+  color: $text-color--transparent;
+  font-weight: $font-weight--bold;
+  text-align: left;
+}
+
