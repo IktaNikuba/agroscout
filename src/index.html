@@ -4,50 +4,45 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>AgroScout</title>
-    <link rel="stylesheet" href="scss/styles.scss">
     <script type="module" src="js/main.js"></script>
   </head>
   <body class="page__body">
     <header class="page__header">
       <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="col-12">
             <div class="main-navbar">
-              <a href="#" class="main-navbar__logo">
-                <img src="img/LogoAgroScout.png" alt="Логотип компании АгроСкаут.
-                При нажатии перенесет на главную страницу">
-              </a>
-
-              <div class="main-navbar__phone">
-                <a class="main-navbar__phone-number" href="tel:+78612179118">
-                    <svg class="main-navbar__phone-icon">
-                      <use xlink:href="img/svg/sprite.svg#phone"></use>
-                    </svg>
-                    +7861 21791 18
+              <div class="main-navbar__logo-place">
+                <a href="#" class="main-navbar__logo-link">
+                  <img class="main-navbar__logo" src="img/LogoAgroScout.png" alt="Логотип компании АгроСкаут.
+                  При нажатии перенесет на главную страницу">
                 </a>
               </div>
 
-              <div class="main-navbar__social-networks social-links">
-                <a class="social-links" href="#">
-                  <span class="social-links__icon-circle">
-                    <svg class="social-links__icon--vk">
-                      <use xlink:href="img/svg/sprite.svg#vk"></use>
+              <div class="main-navbar__phone">
+                <a class="main-navbar__phone-link" href="tel:+78612179118">
+                    <svg class="main-navbar__phone-icon">
+                      <use xlink:href="img/svg/sprite.svg#phone"></use>
                     </svg>
-                  </span>
+                    <span class="main-navbar__phone-number">+7861 21791 18</span>
                 </a>
-                <a class="social-links" href="#">
-                  <span class="social-links__icon-circle">
-                    <svg class="social-links__icon--in">
-                      <use xlink:href="img/svg/sprite.svg#in"></use>
-                    </svg>
-                  </span>
+              </div>
+
+              <div class="main-navbar__social-networks">
+                <a class="social-networks__links" href="#">
+                  <svg class="social-networks__icon main-navbar__icon">
+                    <use xlink:href="img/svg/sprite.svg#vk"></use>
+                  </svg>
                 </a>
-                <a class="social-links" href="#">
-                  <span class="social-links__icon-circle">
-                    <svg class="social-links__icon--tt">
-                      <use xlink:href="img/svg/sprite.svg#tt"></use>
-                    </svg>
-                  </span>
+                <a class="social-networks__links" href="#">
+                  <svg class="social-networks__icon main-navbar__icon">
+                    <use xlink:href="img/svg/sprite.svg#in"></use>
+                  </svg>
+                </a>
+                <a class="social-networks__links" href="#">
+                  <svg class="social-networks__icon main-navbar__icon">
+                    <use xlink:href="img/svg/sprite.svg#tt"></use>
+                  </svg>
                 </a>
               </div>
 
@@ -56,141 +51,114 @@
                 <a href="#"><span>RU</span></a>
               </div>
 
-              <div class="main-navbar__user-nav user-nav">
-                <a class="user-nav__basket" href="#">
-                  <span class="user-nav__icon-circle">
-                    <svg class="user-nav__icon--basket">
-                      <use xlink:href="img/svg/sprite.svg#basket"></use>
-                    </svg>
-                  </span>
+              <div class="main-navbar__user-buttons">
+                <a class="main-navbar__button" href="#">
+                  <svg class="main-navbar__icon">
+                    <use xlink:href="img/svg/sprite.svg#basket"></use>
+                  </svg>
                 </a>
-                <a class="user-nav__menu-open" href="#">
-                  <span class="user-nav__icon-circle">
-                    <svg class="user-nav__icon--menu-on">
-                      <use xlink:href="img/svg/sprite.svg#menu-on"></use>
-                    </svg>
-                  </span>
+                <a class="main-navbar__button main-navbar__button--menu" href="#">
+                  <svg class="main-navbar__icon">
+                    <use xlink:href="img/svg/sprite.svg#menu-on"></use>
+                  </svg>
                 </a>
-                <a class="user-nav__menu-close" href="#">
-                  <span class="user-nav__icon-circle">
-                    <svg class="user-nav__icon--menu-off">
-                      <use xlink:href="img/svg/sprite.svg#menu-off"></use>
-                    </svg>
-                  </span>
+                <a class="main-navbar__button main-navbar__button--menu-close cut-down" href="#">
+                  <svg class="main-navbar__icon">
+                    <use xlink:href="img/svg/sprite.svg#menu-off"></use>
+                  </svg>
                 </a>
               </div>
 
-              <div class="main-navbar__dropdown-menu">
-                <nav class="main-navbar__site-nav site-nav">
-                  <ul class="site-nav__links-list">
-                    <li class="site-nav__list-item">
-                      <a class="site-nav__link" href="#">
-                      <span class="site-nav__icon">
-                        <svg class="site-nav__icon--home">
+              <div class="main-navbar__dropdown-menu cut-down">
+                <nav class="main-navbar__nav">
+                  <ul class="main-navbar__links-list">
+                    <li class="main-navbar__list-item">
+                      <a class="main-navbar__link" href="#">
+                        <svg class="main-navbar__link-icon">
                           <use xlink:href="img/svg/sprite.svg#home"></use>
                         </svg>
-                      </span>
                         Главная
                       </a>
                     </li>
-                    <li class="site-nav__list-item">
-                      <a class="site-nav__link" href="#">
-                      <span class="site-nav__icon">
-                        <svg class="site-nav__icon--insects">
+                    <li class="main-navbar__list-item">
+                      <a class="main-navbar__link" href="#">
+                        <svg class="main-navbar__link-icon">
                           <use xlink:href="img/svg/sprite.svg#insects"></use>
                         </svg>
-                      </span>
                         Энтомофаги
                       </a>
                     </li>
-                    <li class="site-nav__list-item">
-                      <a class="site-nav__link" href="#">
-                      <span class="site-nav__icon">
-                        <svg class="site-nav__icon--atomize">
+                    <li class="main-navbar__list-item">
+                      <a class="main-navbar__link" href="#">
+                        <svg class="main-navbar__link-icon">
                           <use xlink:href="img/svg/sprite.svg#atomize"></use>
                         </svg>
-                      </span>
                         Опрыскивание
                       </a>
                     </li>
-                    <li class="site-nav__list-item">
-                      <a class="site-nav__link" href="#">
-                      <span class="site-nav__icon">
-                        <svg class="site-nav__icon--map">
+                    <li class="main-navbar__list-item">
+                      <a class="main-navbar__link" href="#">
+                        <svg class="main-navbar__link-icon">
                           <use xlink:href="img/svg/sprite.svg#map"></use>
                         </svg>
-                      </span>
                         Картография и мониторинг
                       </a>
                     </li>
-                    <li class="site-nav__list-item">
-                      <a class="site-nav__link" href="#">
-                      <span class="site-nav__icon">
-                        <svg class="site-nav-nav__icon--drones">
+                    <li class="main-navbar__list-item">
+                      <a class="main-navbar__link" href="#">
+                        <svg class="main-navbar__link-icon">
                           <use xlink:href="img/svg/sprite.svg#drones"></use>
                         </svg>
-                      </span>
                         Каталог продукции
                       </a>
                     </li>
-                    <li class="site-nav__list-item">
-                      <a class="site-nav__link" href="#">
-                      <span class="site-nav__icon">
-                        <svg class="site-nav__icon--news">
+                    <li class="main-navbar__list-item">
+                      <a class="main-navbar__link" href="#">
+                        <svg class="main-navbar__link-icon">
                           <use xlink:href="img/svg/sprite.svg#news"></use>
                         </svg>
-                      </span>
                         Новости
                       </a>
                     </li>
-                    <li class="site-nav__list-item">
-                      <a class="site-nav__link" href="#">
-                      <span class="site-nav__icon">
-                        <svg class="site-nav__icon--company">
+                    <li class="main-navbar__list-item">
+                      <a class="main-navbar__link" href="#">
+                        <svg class="main-navbar__link-icon">
                           <use xlink:href="img/svg/sprite.svg#company"></use>
                         </svg>
-                      </span>
                         О компании
                       </a>
                     </li>
-                    <li class="site-nav__list-item">
-                      <a class="site-nav__link" href="#">
-                      <span class="site-nav__icon">
-                        <svg class="site-nav__icon--contacts">
+                    <li class="main-navbar__list-item">
+                      <a class="main-navbar__link" href="#">
+                        <svg class="main-navbar__link-icon">
                           <use xlink:href="img/svg/sprite.svg#contacts"></use>
                         </svg>
-                      </span>
                         Контакты
                       </a>
                     </li>
                   </ul>
                 </nav>
-                <ul class="main-navbar__messengers-list messengers">
-                  <li class="messengers__item">
-                    <a class="messengers__link" >
-                      <span class="messengers__icon">
-                        <svg class="messengers__icon--wa">
-                          <use xlink:href="img/svg/sprite.svg#wa"></use>
-                        </svg>
-                      </span>
+                <hr class="main-navbar__line">
+                <ul class="main-navbar__messengers-list">
+                  <li class="main-navbar__messengers-item">
+                    <a class="main-navbar__messengers-link" href="#">
+                      <svg class="main-navbar__messengers-icon">
+                        <use xlink:href="img/svg/sprite.svg#wa"></use>
+                      </svg>
                     </a>
                   </li>
-                  <li class="messengers__item">
-                    <a class="messengers__link" >
-                      <span class="messengers__icon">
-                        <svg class="messengers__icon--tg">
-                          <use xlink:href="img/svg/sprite.svg#tg"></use>
-                        </svg>
-                      </span>
+                  <li class="main-navbar__messengers-item">
+                    <a class="main-navbar__messengers-link" href="#">
+                      <svg class="main-navbar__messengers-icon">
+                        <use xlink:href="img/svg/sprite.svg#tg"></use>
+                      </svg>
                     </a>
                   </li>
-                  <li class="messengers__item">
-                    <a class="messengers__link" >
-                      <span class="messengers__icon">
-                        <svg class="messengers__icon--we">
-                          <use xlink:href="img/svg/sprite.svg#we"></use>
-                        </svg>
-                      </span>
+                  <li class="main-navbar__messengers-item">
+                    <a class="main-navbar__messengers-link" href="#">
+                      <svg class="main-navbar__messengers-icon">
+                        <use xlink:href="img/svg/sprite.svg#we"></use>
+                      </svg>
                     </a>
                   </li>
                 </ul>

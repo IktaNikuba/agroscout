@@ -16,4 +16,19 @@ $minWidth: 320;
 }
 
 /* icon-sizes */
+@mixin icon-size-adaptive($mobSize, $tabSize:$mobSize, $pcSize:$tabSize) {
+
+  width: $mobSize;
+  height: $mobSize;
+
+  @media #{$min-md} {
+    width: $tabSize;
+    height: $tabSize;
+  }
+
+  @media #{$min-xl} {
+    width: $pcSize;
+    height: $pcSize;
+  }
+}
 
