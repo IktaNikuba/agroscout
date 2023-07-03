@@ -1,8 +1,7 @@
 .main-navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  column-gap: 5vw;
+  column-gap: 3vw;
 
   padding: 3px 0;
 
@@ -12,8 +11,6 @@
 }
 
 .main-navbar__logo {
-  flex: 0 0 auto;
-
   width: 33px;
   height: 33px;
 
@@ -37,8 +34,6 @@
 }
 
 .main-navbar__phone {
-  display: flex;
-
   @media #{$sm} {
     display: none;
   }
@@ -67,8 +62,6 @@
 
   &-box{
     display: flex;
-    align-items: center;
-    justify-content: center;
     width: fit-content;
     margin-left: auto;
   }
