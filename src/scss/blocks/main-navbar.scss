@@ -2,37 +2,24 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  column-gap: 5vw;
 
   padding: 3px 0;
 
-  @media#{$min-sm} {
-    justify-content: flex-start;
-  }
   &__icon {
     @include icon-size-adaptive(20px, 30px, 34px);
   }
 }
 
 .main-navbar__logo {
+  flex: 0 0 auto;
 
-  display: inline-block;
-  width: 100%;
-  height: 100%;
+  width: 33px;
+  height: 33px;
 
-  &-place {
-    flex: 0 0 auto;
-    width: 33px;
-    height: 31px;
-
-    @media #{$min-md} {
-      width: 72px;
-      height: 69px;
-    }
-
-    @media #{$min-xl} {
-      width: 72px;
-      height: 69px;
-    }
+  @media #{$min-md} {
+    width: 72px;
+    height: 72px;
   }
 
   &-link {
@@ -40,38 +27,53 @@
     width: 100%;
     height: 100%;
   }
+
+  &-img  {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 }
 
 .main-navbar__phone {
   display: flex;
 
-  &-link{
-    white-space: nowrap;
-    text-decoration: none;
-  }
-  &-number{
-    @media #{$sm} {
-      display: none;
-    }
+  @media #{$sm} {
+    display: none;
   }
 
-  &-icon{
+  &-link {
+    white-space: nowrap;
+  }
+
+  &-icon {
     @include icon-size-adaptive(26px);
+  }
+
+  &_number {
+    vertical-align: middle;
   }
 }
 
-.main-navbar__social-networks,
+.main-navbar__social-networks-box,
 .main-navbar__lang,
 .main-navbar__user-buttons {
   column-gap: min(8px, 3vw);
 }
 
 .main-navbar__social-networks {
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
+  flex: 1 0 auto;
 
-  &__links {
+  &-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin-left: auto;
+  }
+
+  &__link {
     display: inline-block;
     width: fit-content;
     height: fit-content;
@@ -86,6 +88,14 @@
 .main-navbar__user-buttons {
   display: flex;
   column-gap: 8px;
+}
+
+.main-navbar__user-button {
+  &--phone-mini {
+    @media #{$min-sm} {
+      display: none;
+    }
+  }
 }
 
 .main-navbar__dropdown-menu {
@@ -105,7 +115,6 @@
 }
 
 .main-navbar__list-item {
-
   margin-top: calc(3px + 2vh);
   position: relative;
 }

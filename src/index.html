@@ -12,9 +12,9 @@
         <div class="row">
           <div class="col-12">
             <div class="main-navbar">
-              <div class="main-navbar__logo-place">
+              <div class="main-navbar__logo">
                 <a href="#" class="main-navbar__logo-link">
-                  <img class="main-navbar__logo" src="img/LogoAgroScout.png" alt="Логотип компании АгроСкаут.
+                  <img class="main-navbar__logo-img" src="img/LogoAgroScout.png" alt="Логотип компании АгроСкаут.
                   При нажатии перенесет на главную страницу">
                 </a>
               </div>
@@ -29,21 +29,23 @@
               </div>
 
               <div class="main-navbar__social-networks">
-                <a class="social-networks__links" href="#">
-                  <svg class="social-networks__icon main-navbar__icon">
-                    <use xlink:href="img/svg/sprite.svg#vk"></use>
-                  </svg>
-                </a>
-                <a class="social-networks__links" href="#">
-                  <svg class="social-networks__icon main-navbar__icon">
-                    <use xlink:href="img/svg/sprite.svg#in"></use>
-                  </svg>
-                </a>
-                <a class="social-networks__links" href="#">
-                  <svg class="social-networks__icon main-navbar__icon">
-                    <use xlink:href="img/svg/sprite.svg#tt"></use>
-                  </svg>
-                </a>
+                <div class="main-navbar__social-networks-box">
+                  <a class="main-navbar__link" href="#">
+                    <svg class=" main-navbar__icon">
+                      <use xlink:href="img/svg/sprite.svg#vk"></use>
+                    </svg>
+                  </a>
+                  <a class="main-navbar__link" href="#">
+                    <svg class="main-navbar__icon">
+                      <use xlink:href="img/svg/sprite.svg#in"></use>
+                    </svg>
+                  </a>
+                  <a class="main-navbar__link" href="#">
+                    <svg class="main-navbar__icon">
+                      <use xlink:href="img/svg/sprite.svg#tt"></use>
+                    </svg>
+                  </a>
+                </div>
               </div>
 
               <div class="main-navbar__lang">
@@ -52,19 +54,24 @@
               </div>
 
               <div class="main-navbar__user-buttons">
-                <a class="main-navbar__button" href="#">
+                <a class="main-navbar__user-button" href="#">
                   <svg class="main-navbar__icon">
                     <use xlink:href="img/svg/sprite.svg#basket"></use>
                   </svg>
                 </a>
-                <a class="main-navbar__button main-navbar__button--menu" href="#">
+                <a class="main-navbar__user-button main-navbar__user-button--menu" href="#">
                   <svg class="main-navbar__icon">
                     <use xlink:href="img/svg/sprite.svg#menu-on"></use>
                   </svg>
                 </a>
-                <a class="main-navbar__button main-navbar__button--menu-close cut-down" href="#">
+                <a class="main-navbar__user-button main-navbar__user-button--menu-close cut-down" href="#">
                   <svg class="main-navbar__icon">
                     <use xlink:href="img/svg/sprite.svg#menu-off"></use>
+                  </svg>
+                </a>
+                <a class="main-navbar__user-button main-navbar__user-button--phone-mini" href="#">
+                  <svg class="main-navbar__icon">
+                    <use xlink:href="img/svg/sprite.svg#phone-mini"></use>
                   </svg>
                 </a>
               </div>
@@ -174,5 +181,6 @@
 
     <footer class="page__footer">
     </footer>
+
   </body>
 </html>
