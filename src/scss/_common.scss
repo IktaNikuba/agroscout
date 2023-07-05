@@ -72,5 +72,9 @@ a {
 
 /* Вырубает */
 .cut-down {
-  display: none;
+  display: none !important;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }

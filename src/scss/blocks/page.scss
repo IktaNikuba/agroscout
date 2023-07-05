@@ -3,8 +3,10 @@
   @include adaptiv-font-size($paragraph-font-size, $paragraph-font-size--mobile);
   @include adaptiv-font-lh($paragraph-line-height, $paragraph-line-height--mobile);
   font-weight: $font-weight--light;
-  background-color: $bg-primary;
   color: $text-color--main;
+
+  background-color: $bg-primary;
+
   min-width: 320px;
   height: 100%;
   box-sizing: border-box;
@@ -12,4 +14,6 @@
 
 .page__header {
   background-color: $bg-secondary;
+  position: sticky;
+  top: 0;
 }
