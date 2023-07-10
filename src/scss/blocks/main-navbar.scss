@@ -37,6 +37,10 @@
   &-icon {
     @include icon-size-adaptive(26px);
   }
+
+  &-text {
+    vertical-align: middle;
+  }
 }
 
 .main-navbar__social-networks-box,
@@ -115,7 +119,8 @@
 
   @media (max-height: 550px) and (orientation: landscape) {
     width: 80%;
-}
+  }
+
   .main-navbar__link-icon {
     margin-right: 10px;
   }

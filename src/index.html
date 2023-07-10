@@ -49,34 +49,34 @@
               </div>
 
               <div class="main-navbar__lang">
-                <a href="#"><span>EN</span></a>
-                <a href="#"><span>RU</span></a>
+                <a role="button" href="#"><span>EN</span></a>
+                <a role="button" href="#"><span>RU</span></a>
               </div>
 
               <div class="main-navbar__user-buttons">
-                <a class="main-navbar__user-button" href="#">
+                <a class="main-navbar__user-button" id="open-mini-basket" role="button" href="#">
                   <svg class="main-navbar__icon">
                     <use xlink:href="img/svg/sprite.svg#basket"></use>
                   </svg>
                 </a>
-                <a class="main-navbar__user-button main-navbar__user-button--menu" href="#">
+                <a class="main-navbar__user-button main-navbar__user-button--menu" id="open-menu" role="button" href="#">
                   <svg class="main-navbar__icon">
                     <use xlink:href="img/svg/sprite.svg#menu-on"></use>
                   </svg>
                 </a>
-                <a class="main-navbar__user-button main-navbar__user-button--menu-close cut-down" href="#">
+                <a class="main-navbar__user-button main-navbar__user-button--menu-close cut-down" id="close-menu" role="button" href="#">
                   <svg class="main-navbar__icon">
                     <use xlink:href="img/svg/sprite.svg#menu-off"></use>
                   </svg>
                 </a>
-                <a class="main-navbar__user-button main-navbar__user-button--phone-mini" href="#">
+                <a class="main-navbar__user-button main-navbar__user-button--phone-mini" role="button"  href="#">
                   <svg class="main-navbar__icon">
                     <use xlink:href="img/svg/sprite.svg#phone-mini"></use>
                   </svg>
                 </a>
               </div>
 
-              <div class="main-navbar__menu cut-down">
+              <div class="main-navbar__menu cut-down" id="navigation-menu">
                 <div class="main-navbar__menu-box">
                   <nav class="main-navbar__nav">
                     <ul class="main-navbar__links-list">
@@ -183,6 +183,8 @@
 
     <footer class="page__footer">
     </footer>
+
+    <script src="js/script.js"></script>
 
   </body>
 </html>
