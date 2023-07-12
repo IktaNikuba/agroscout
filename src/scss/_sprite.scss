@@ -1,0 +1,20 @@
+:root {
+  --svg-messenger-color: #FFFFFF;
+  --svg-messenger-color--hover: #02E502;
+}
+
+.svg {
+  stroke: var(--svg-messenger-color);
+
+  &--green-circle {
+    stroke: var(--svg-messenger-color--hover);
+  }
+}
+@media #{$mouse-device} {
+  a:hover .svg {
+    --svg-messenger-color: var(--svg-messenger-color--hover);
+    stroke: var(--svg-messenger-color--hover);
+  }
+}
+
+

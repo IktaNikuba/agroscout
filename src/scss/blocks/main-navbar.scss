@@ -38,8 +38,14 @@
     @include icon-size-adaptive(26px);
   }
 
-  &-text {
+  &-number {
     vertical-align: middle;
+
+    a:hover &{
+      @media #{$mouse-device} {
+        color: $link-color--hover;
+      }
+    }
   }
 }
 
@@ -62,6 +68,14 @@
 .main-navbar__lang {
   display: flex;
   column-gap: 8px;
+
+  &-select {
+    &:hover {
+      @media #{$mouse-device} {
+        color: $link-color--hover;
+      }
+    }
+  }
 }
 
 .main-navbar__user-buttons {
@@ -75,6 +89,7 @@
       display: none;
     }
   }
+
   &--menu-close {
     z-index: 2;
   }
@@ -164,6 +179,11 @@
   &-text {
     max-width: 170px;
     width: fit-content;
+    a:hover & {
+      @media #{$mouse-device} {
+        color: $link-color--hover;
+      }
+    }
   }
 
   @media (max-height: 550px) and (orientation: landscape) {
