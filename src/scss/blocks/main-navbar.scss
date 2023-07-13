@@ -5,6 +5,8 @@
 
   padding: 3px 0;
 
+  user-select: none;
+
   @media #{$min-md} {
     position: relative;
   }
@@ -41,10 +43,15 @@
   &-number {
     vertical-align: middle;
 
-    a:hover &{
+    a:hover & {
       @media #{$mouse-device} {
         color: $link-color--hover;
       }
+    }
+
+    a:active & {
+      color: $link-color--pressed;
+      cursor: none;
     }
   }
 }
@@ -74,6 +81,11 @@
       @media #{$mouse-device} {
         color: $link-color--hover;
       }
+    }
+
+    &:active {
+      color: $link-color--pressed;
+      cursor: none;
     }
   }
 }
@@ -183,6 +195,10 @@
       @media #{$mouse-device} {
         color: $link-color--hover;
       }
+    }
+    a:active & {
+      color: $link-color--pressed;
+      cursor: none;
     }
   }
 
