@@ -9,12 +9,12 @@ menuOpenBtn.onclick = function() {
     menuOpenBtn.classList.toggle("cut-down");
     menuCloseBtn.classList.toggle("cut-down");
     menu.classList.toggle("cut-down");
-    body.classList.toggle("overflow-hidden")
+    body.classList.toggle("body-overflow-hidden")
 };
 
 menuCloseBtn.onclick = function() {
     menuOpenBtn.classList.toggle("cut-down");
     menuCloseBtn.classList.toggle("cut-down");
     menu.classList.toggle("cut-down");
-    body.classList.toggle("overflow-hidden")
+    body.classList.toggle("body-overflow-hidden")
 };
