@@ -9,20 +9,23 @@
   }
 }
 
-.slideshow__slides {
-  position: relative;
-  top: -17px;
-
-}
-
 .slideshow__control {
   position: absolute;
-  top: 0px;
+  top: 0;
   width: 100%;
-}
 
-.slideshow__slide {
-  width: 100%;
+  &--pc {
+    display: none;
+  }
+
+  &--mobile {
+    min-height: 270px;
+  }
+
+  &-svg {
+    position: relative;
+    
+  }
 }
 
 .slideshow__btn {
@@ -45,6 +48,13 @@
       fill: $link-color--hover;
     }
   }
+}
+
+.slideshow__slides {
+  object-fit: cover;
+}
+
+.slideshow__slide {
 }
 
 .active-slide {
