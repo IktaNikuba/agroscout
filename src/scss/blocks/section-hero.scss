@@ -1,7 +1,100 @@
 .hero {
+  @media #{$min-sm} {
+    background-image: url("../../img/hero-md (6).jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 60%;
+  }
 
+  @media #{$min-md} {
+    background-position: 50%;
+  }
+
+  @media #{$min-xxl} {
+    background-image: url("../../img/hero-xl (3).jpg");
+  }
 }
 
-.hero__slider {
+.hero__picture--mobile {
+  min-height: 270px;
+  background-image: url("../../img/hero-md (6).jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 80%;
+}
+.hero__main-header {
+  padding-top: 0px;
+  text-shadow: 0px 0px 5px  #1B1C1D;
+  text-align: center;
 
+  @media #{$min-sm} {
+    padding-top: 27px;
+    text-align: left;
+  }
+  @media #{$min-md} {
+    padding-top: 95px;
+  }
+}
+
+.hero--svg {
+  display: block;
+  width: max-content;
+  min-width: 315px;
+  max-width: 946px;
+  max-height: 50px;
+  position: absolute;
+  left: 0;
+
+  @media #{$min-md} {
+    width: 50vw;
+    max-height: 120px;
+  }
+}
+
+.hero__progress {
+  padding-top: 60px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  grid-template-rows: 50%;
+  grid-template-areas:
+        "num1 num2 num3"
+        "txt1 txt2 txt3";
+  column-gap: 5%;
+  @media #{$min-md} {
+    padding-top: 120px;
+    column-gap: 0;
+  }
+}
+
+.hero__num {
+  @include adaptiv-font-size(48, 18);
+  @include adaptiv-font-lh(48, 18);
+  font-weight: 400;
+  white-space: nowrap;
+  &--1 {
+    grid-area: num1;
+  }
+  &--2 {
+    grid-area: num2;
+  }
+  &--3 {
+    grid-area: num3;
+  }
+}
+
+.hero__txt {
+  @include adaptiv-font-size(24, 14);
+  @include adaptiv-font-lh(24, 17);
+  font-weight: 400;
+  white-space: nowrap;
+
+  &--1 {
+    grid-area: txt1;
+  }
+  &--2 {
+    grid-area: txt2;
+  }
+  &--3 {
+    grid-area: txt3;
+  }
 }

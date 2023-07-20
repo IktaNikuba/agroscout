@@ -10,6 +10,9 @@
   min-width: 320px;
   height: 100%;
   box-sizing: border-box;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
 }
 
 .page__header {
@@ -17,4 +20,8 @@
   position: sticky;
   top: 0;
   z-index: 3;
+  width: 104vw;
+  @media #{$min-sm} {
+    width: 100vw;
+  }
 }

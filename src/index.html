@@ -175,16 +175,33 @@
     </header>
 
     <main class="page__main">
+
       <section class="hero">
+        <div class="container-fluid d-sm-none p-0">
+          <div class="row">
+            <div class="col-xs-12 p-0">
+              <div class="hero__picture--mobile"></div>
+            </div>
+          </div>
+        </div>
+
         <div class="container">
           <div class="row">
-            <div class="col-sm-12 d-md-none">
-              <img src="" alt="">
-            </div>
-            <div class="col-sm-12 col-md-6">
-              <h1>AgroScout - беспилотные технологии для сельского хозяйства и промышлености</h1>
-              <svg></svg>
-
+            <div class="col-xs-12 col-sm-7 col-lg-6">
+              <h1 class="hero__main-header">AgroScout - беспилотные <br>
+                технологии для сельского<br>
+                хозяйства и промышлености</h1>
+              <svg class="hero--svg svg--flying-drones">
+                <use xlink:href="img/svg/sprite.svg#drones-flying"></use>
+              </svg>
+              <dl class="hero__progress">
+                <dt class="hero__num hero__num--1">50 000 Га</dt>
+                <dd class="hero__txt hero__txt--1">ежегодной обработки</dd>
+                <dt class="hero__num hero__num--2">30%</dt>
+                <dd class="hero__txt hero__txt--2">экономии средств</dd>
+                <dt class="hero__num hero__num--3">10 команд</dt>
+                <dd class="hero__txt hero__txt--3">специалистов</dd>
+              </dl>
             </div>
           </div>
         </div>
