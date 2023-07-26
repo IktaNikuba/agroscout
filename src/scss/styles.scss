@@ -11,8 +11,12 @@
 @import "_common";
 @import "_sprite";
 
+/* Sections */
+@import "blocks/section-hero";
+@import "blocks/section-advantages";
+
 /* Blocks */
 @import "blocks/page";
 @import "blocks/main-navbar";
-@import "blocks/section-hero";
+
 

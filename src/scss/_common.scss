@@ -13,10 +13,10 @@ h1 {
 }
 
 h2 {
+  color: $text-color--bright;
   font-size: #{$h2-font-size--mobile}px;
   @media #{$min-md} {
     @include adaptiv-font-size($h2-line-height, $h2-font-size--mobile);
-    @include adaptiv-font-lh($h2-line-height, $h2-line-height--mobile);
   }
 }
 
@@ -44,12 +44,24 @@ h5 {
   }
 }
 
+.headline {
+  position: relative;
+}
 .h2-podscription {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
   @include adaptiv-font-size($h2-podscription-font-size, $h2-podscription-font-size--mobile);
   color: $text-color--transparent;
   font-weight: $font-weight--bold;
   text-align: left;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
 }
+
+
 
 ul {
   list-style: none;

@@ -33,3 +33,15 @@ $minWidth: 320;
   }
 }
 
+@mixin section-padding-adaptive($mobSize, $tabSize:$mobSize, $pcSize:$tabSize) {
+  padding:$mobSize;
+
+  @media #{$min-md} {
+    padding: $tabSize;
+  }
+
+  @media #{$min-xl} {
+    padding: $pcSize;
+  }
+}
+
