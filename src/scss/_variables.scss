@@ -31,6 +31,8 @@ $bg-success: $color-accent--bright;
 $bg-info: $charcoal;
 $bg-transparent: $dark-gray-transparent;
 $bg-gradient: $gradient;
+$bg-dots: $medium-gray;
+$bg-dots--active: $white;
 
 /* Typography */
 $text-color--main: $color-secondary;
@@ -78,23 +80,16 @@ $line-height--9xl: 144;
 $h1-font-size: $font-size--7xl;
 $h1-font-size--mobile: $font-size--xl;
 $h2-font-size: $font-size--4xl;
-
 $h2-font-size--mobile: $font-size--md;
 $h3-font-size: $font-size--7xl;
-
 $h3-font-size--mobile: $font-size--md;
 $h4-font-size: $font-size--3xl;
-
 $h4-font-size--mobile: $font-size--sm;
 $h5-font-size: $font-size--md;
-
 $h5-font-size--mobile: $font-size--xs;
-
 $h2-podscription-font-size: $font-size--9xl;
-
 $h2-podscription-font-size--mobile: $font-size--3xl;
 $paragraph-font-size: $font-size--xs;
-
 $paragraph-font-size--mobile: $font-size--min;
 
 $h1-line-height: $line-height--7xl;
@@ -132,10 +127,10 @@ $btn-pressed-bg: $color-accent--dark;
 $btn-pressed-color: $text-color--dark;
 
 /* Padding */
-$section-padding: 110px 0 0;
-$section-padding-first: 85px 0 0;
-$section-padding--tablet: 80px 0 0;
-$section-padding--mobile: 60px 0 0;
+$section-padding: 110px;
+$section-padding-first: 85px;
+$section-padding--tablet: 80px;
+$section-padding--mobile: 60px;
 $h2-padding-bottom: 60px;
 $h2-padding-bottom--tablet: 38px;
 $h2-padding-bottom--mobile: 19px;

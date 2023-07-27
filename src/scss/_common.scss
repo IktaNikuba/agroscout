@@ -109,7 +109,7 @@ a {
 
 .body-overflow-hidden {
   @media #{$sm} {
-  overflow: hidden;
+    overflow: hidden;
   }
 }
 

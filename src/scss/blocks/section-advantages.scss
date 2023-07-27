@@ -1,31 +1,105 @@
 .advantages {
-  @include section-padding-adaptive($section-padding--mobile, $section-padding--tablet, $section-padding);
+  @include padding-top-adaptive($section-padding--mobile, $section-padding--tablet, $section-padding);
 }
 
-.advantages__slides-container{
+.advantages__slider {
+  @include padding-top-adaptive(30px, 40px, 95px);
+}
+
+.advantages__slider-container{
   position: relative;
-  width: 200px;
-  height: 200px;
-  margin: 50px auto 0;
+  height: fit-content;
+  margin: 0 auto 0;
 
   user-select: none;
   touch-action: pan-y;
 }
 
 .advantages__slides {
-  width: 200px;
-  height: 200px;
+  width: 100%;
   overflow: hidden;
 
-  .grab {
-    cursor: grab;
-  }
-
-  .grabbing{
-    cursor: grabbing;
+  @media #{$min-md} {
+    overflow: auto;
   }
 }
 
 .advantages__slides-track {
   display: flex;
+
+  @media #{$min-md} {
+    flex-wrap: wrap;
+    gap: 20px 10px;
+  }
+}
+
+.advantages__slide {
+  width: 100%;
+  height: max-content;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $bg-info;
+
+  @media #{$min-md} {
+    height: 258px;
+    width: calc((100% - 10px)/2);
+  }
+
+  @media #{$min-xl} {
+    width: calc((100% - 20px)/3);
+  }
+}
+
+.advantages__slide-content {
+  padding: 30px;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  @media #{$min-md} {
+    text-align: left;
+    row-gap: 20px;
+  }
+}
+
+.advantages__slide-image {
+  @include icon-size-adaptive(30px, 40px, 40px);
+  display: inline-block;
+}
+
+.advantages__slide-header {
+  display: inline;
+  padding-left: 12px;
+  line-height: 30px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+
+.advantages__pagination {
+  max-width: 160px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+
+  @media #{$min-md} {
+    display: none;
+  }
+}
+
+.advantages__dot {
+  display: inline-block;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: $bg-dots;
+  cursor: pointer;
+
+  &--active {
+    background-color: $bg-dots--active;
+  }
 }
