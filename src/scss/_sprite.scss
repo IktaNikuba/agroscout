@@ -2,6 +2,12 @@
   --svg-messenger-color: #FFFFFF;
   --svg-messenger-color--hover: #02E502;
   --svg-messenger-color--active: #01B601;
+  --svg-messenger-color--dark: #181818;
+}
+
+svg {
+  width: inherit;
+  height: inherit;
 }
 
 .svg {
@@ -22,4 +28,28 @@
 a:active .svg {
   --svg-messenger-color: var(--svg-messenger-color--active);
   stroke: var(--svg-messenger-color--active);
+}
+
+.advantages__slide {
+  .svg {
+    fill: var(--svg-messenger-color--hover);
+  }
+  &:active {
+    --svg-messenger-color--hover: var(--svg-messenger-color--dark);
+    transition: all 1s ease 0s;
+  }
+}
+
+.svg-bg {
+  display: none;
+  width: 265px;
+  height: 265px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  transform: translate(40%, -4%);
+  @media #{$min-xl} {
+    display: block;
+  }
 }
