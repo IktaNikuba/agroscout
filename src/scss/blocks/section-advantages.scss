@@ -7,3 +7,33 @@
   position: relative;
 }
 
+.advantages__slide-content {
+  padding: 30px;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  @media #{$min-md} {
+    text-align: left;
+    row-gap: 20px;
+  }
+}
+
+.advantages__slide-headline {
+  white-space: nowrap;
+}
+
+.advantages__slide-image {
+  @include icon-size-adaptive(30px, 40px, 40px);
+  display: inline-block;
+}
+
+.advantages__slide-header {
+  display: inline;
+  padding-left: 12px;
+  line-height: 30px;
+  vertical-align: middle;
+  white-space: nowrap;
+}

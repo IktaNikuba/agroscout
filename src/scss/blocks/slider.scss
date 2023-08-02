@@ -20,10 +20,12 @@
 
 .slider__slides-track {
   display: flex;
+  column-gap: 20px;
+
 
   @media #{$min-md} {
     flex-wrap: wrap;
-    gap: 20px 10px;
+    gap: 20px 20px;
   }
 }
 
@@ -39,44 +41,16 @@
   &:active {
     background-color: $bg-slide--active;
     color: $color-primary;
-
   }
 
   @media #{$min-md} {
     height: auto;
-    width: calc((100% - 10px)/2);
+    width: calc((100% - 20px) / 2);
   }
 
   @media #{$min-xl} {
-    width: calc((100% - 20px)/3);
+    width: calc((100% - 40px) / 3);
   }
-}
-
-.slider__slide-content {
-  padding: 30px;
-  height: 100%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  row-gap: 20px;
-
-  @media #{$min-md} {
-    text-align: left;
-    row-gap: 20px;
-  }
-}
-
-.slider__slide-image {
-  @include icon-size-adaptive(30px, 40px, 40px);
-  display: inline-block;
-}
-
-.slider__slide-header {
-  display: inline;
-  padding-left: 12px;
-  line-height: 30px;
-  vertical-align: middle;
-  white-space: nowrap;
 }
 
 .slider__pagination {

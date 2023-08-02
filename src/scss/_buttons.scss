@@ -1,0 +1,25 @@
+.button {
+  display: inline-block;
+  width: auto;
+  margin: auto;
+  @include adaptiv-font-size($btn-font-size--mobile, $btn-font-size);
+  font-weight: $btn-font-weight;
+  padding: 19px 59px;
+  border: $btn-border;
+  background-color: $btn-primary-bg;
+  color: $btn-primary-color;
+
+
+
+  &:hover {
+    @media #{$mouse-device} {
+      color: $btn-hover-color;
+      background-color: $btn-hover-bg;
+    }
+  }
+
+  &:active {
+    color: $btn-pressed-color;
+    background-color: $btn-pressed-bg;
+  }
+}

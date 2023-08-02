@@ -2,18 +2,18 @@
 @import "../../node_modules/bootstrap/scss/bootstrap-reboot";
 @import "../../node_modules/bootstrap/scss/bootstrap-grid";
 
-/* Fonts */
+/* +*+*+*+*+ */
 @import "_font";
-
-/* Variables, mixins, common */
 @import "_variables";
 @import "_mixins";
 @import "_common";
 @import "_sprite";
+@import "_buttons";
 
 /* Sections */
 @import "blocks/section-hero";
 @import "blocks/section-advantages";
+@import "blocks/section-our-products";
 
 /* Blocks */
 @import "blocks/page";
