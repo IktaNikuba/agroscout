@@ -39,17 +39,3 @@ a:active .svg {
     transition: all 1s ease 0s;
   }
 }
-
-.svg-bg {
-  display: none;
-  width: 265px;
-  height: 265px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: -1;
-  transform: translate(40%, -4%);
-  @media #{$min-xl} {
-    display: block;
-  }
-}

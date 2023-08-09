@@ -12,31 +12,31 @@
 .slider__slides {
   width: 100%;
   overflow: hidden;
-
-  @media #{$min-md} {
-    overflow: auto;
-  }
 }
 
 .slider__slides-track {
   display: flex;
   column-gap: 20px;
 
-
   @media #{$min-md} {
     flex-wrap: wrap;
     gap: 20px 20px;
+  }
+
+  &--product {
+    flex-wrap: nowrap;
   }
 }
 
 .slider__slide {
   width: 100%;
-  height: max-content;
-  flex-shrink: 0;
+  height: auto;
+  background-color: $bg-info;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $bg-info;
+  flex-shrink: 0;
+
 
   &:active {
     background-color: $bg-slide--active;
@@ -76,4 +76,8 @@
   &--active {
     background-color: $bg-dots--active;
   }
+}
+
+.slider__arrow {
+
 }

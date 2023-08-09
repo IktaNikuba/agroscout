@@ -2,6 +2,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $font-family--base;
   font-weight: $font-weight--normal;
   text-align: left;
+  text-wrap: balance;
 }
 
 h1 {
@@ -47,6 +48,7 @@ h5 {
 .headline {
   position: relative;
 }
+
 .h2-podscription {
   display: inline-block;
   height: 100%;
@@ -74,6 +76,46 @@ a {
   line-height: 1;
 
   text-decoration: none;
+}
+
+/* Выравнивание бэкграунда в секциях */
+
+.svg-bg {
+  display: none;
+  width: 265px;
+  height: 265px;
+  position: absolute;
+  z-index: -1;
+
+  @media #{$min-xl} {
+    display: inline;
+  }
+
+  &--drones {
+    transform: translate(50%, 0%);
+    right: 0;
+    top: 0;
+  }
+
+  &--relief {
+    transform: translate(50%, 0%);
+    right: 0;
+    top: 0;
+    width:819px;
+    height:760px;
+  }
+
+  &--side-text {
+    transform: translate(50%, 0%);
+    left: 0;
+    top: 0;
+  }
+
+  &--side-text--right {
+    transform: translate(50%, 0%);
+    right: 0;
+    top: 0;
+  }
 }
 
 /*Убрать полосу прокрутки для всей страницы*/
@@ -105,9 +147,14 @@ a {
   display: none !important;
 }
 
+/* Стопим прокрутку body*/
 .body-overflow-hidden {
   @media #{$sm} {
     overflow: hidden;
   }
 }
 
+/* Вешаю на контейнер чтобы выравнивать фон */
+.position-relative {
+  position: relative;
+}
