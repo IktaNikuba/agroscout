@@ -25,6 +25,13 @@
 
 #about-us__input:checked~.about-us__paragraph {
   height: auto;
+  .about-us__read-more--icon {
+    transform: rotate(180deg);
+  }
+}
+
+#about-us__input:checked~.about-us__read-more {
+  transform: rotate(180deg);
 }
 
 .about-us__read-more{
@@ -32,4 +39,5 @@
   min-width: 291px;
   max-height: 50px;
   min-height: 30px;
+  cursor: pointer;
 }
