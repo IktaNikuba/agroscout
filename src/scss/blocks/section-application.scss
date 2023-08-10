@@ -37,6 +37,10 @@
   @media #{$min-sm}, ((max-height: 550px) and (orientation: landscape)) {
     background-image: linear-gradient(290deg, rgba(0, 0, 0, 0) 40%, #000000 41%);
   }
+
+  @media #{$min-xl}, ((max-height: 550px) and (orientation: landscape)) {
+    background-image: linear-gradient(290deg, rgba(0, 0, 0, 0) 50%, #000000 51%);
+  }
 }
 
 .application__content {
@@ -56,7 +60,7 @@
     text-align: left;
     align-items: flex-start;
     justify-content: center;
-    max-width: 50%;
+    max-width: 80%;
   }
 }
 
