@@ -34,6 +34,14 @@
     text-align: left;
     row-gap: 20px;
   }
+
+  @media (max-height: 550px) and (orientation: landscape) {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    gap: 0;
+  }
 }
 
 .products__product-price {

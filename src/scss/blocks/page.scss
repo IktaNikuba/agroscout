@@ -4,6 +4,7 @@
   @include adaptiv-font-lh($paragraph-line-height, $paragraph-line-height--mobile);
   font-weight: $font-weight--light;
   color: $text-color--main;
+  hyphens: auto;
 
   background-color: $bg-primary;
 

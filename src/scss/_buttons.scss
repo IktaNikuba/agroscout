@@ -1,6 +1,7 @@
 .button {
   display: inline-block;
   width: auto;
+  height: auto;
   margin: auto;
   @include adaptiv-font-size($btn-font-size--mobile, $btn-font-size);
   font-weight: $btn-font-weight;

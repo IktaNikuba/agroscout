@@ -68,3 +68,16 @@ $minWidth: 320;
     padding-bottom: $pcSize;
   }
 }
+
+/* Использую значения section-padding, для отступа секций с полноэкранным bg */
+@mixin margin-top-adaptive($mobSize, $tabSize:$mobSize, $pcSize:$tabSize) {
+  margin-top:$mobSize;
+
+  @media #{$min-md} {
+    margin-top: $tabSize;
+  }
+
+  @media #{$min-xl} {
+    margin-top: $pcSize;
+  }
+}

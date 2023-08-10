@@ -1,0 +1,67 @@
+.application {
+  @include margin-top-adaptive($section-padding--mobile, $section-padding--tablet, $section-padding);
+  background-image: url("../../img/background-banner--mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -35px;
+  position: relative;
+  height: 440px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  @media #{$min-sm}, ((max-height: 550px) and (orientation: landscape)) {
+    height: 381px;
+    background-image: url("../../img/background-banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    align-items: center;
+  }
+
+  @media #{$min-md} {
+    height: 650px;
+  }
+}
+
+.application__background-overlay {
+  background-color: transparent;
+  background-image: linear-gradient(190deg, rgba(0, 0, 0, 0) 40%, #000000 41%);
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+
+  @media #{$min-sm}, ((max-height: 550px) and (orientation: landscape)) {
+    background-image: linear-gradient(290deg, rgba(0, 0, 0, 0) 40%, #000000 41%);
+  }
+}
+
+.application__content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 20px;
+  text-align: center;
+  padding-bottom: 42px;
+
+
+  @media #{$min-sm}, ((max-height: 550px) and (orientation: landscape)) {
+    padding-bottom: 0;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 50%;
+  }
+}
+
+.application__button {
+  @media #{$min-sm}, ((max-height: 550px) and (orientation: landscape)) {
+    margin: 0 auto 0 0;
+  }
+}
