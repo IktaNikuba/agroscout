@@ -1,0 +1,73 @@
+.presence-regions {
+  @include padding-top-adaptive(10px, 20px, 50px);
+  overflow-x: hidden;
+}
+
+.presence-regions__box {
+  width: 100%;
+  margin: 0 auto;
+
+  @media #{$min-xs} {
+    width: 80%;
+  }
+
+  @media #{$min-md} {
+    width: 100%;
+  }
+}
+
+.presence-regions__list {
+  @include margin-top-adaptive(25px, 45px, 70px);
+  padding-left: 1rem;
+  columns: 100px 2;
+
+  @media (max-height: 550px) and (orientation: landscape) {
+    columns: 100px 3;
+    column-gap: 30px;
+  }
+}
+
+.presence-regions__item {
+  font-weight: 300;
+  cursor: pointer;
+  user-select: none;
+
+  &:hover {
+
+    @media #{$mouse-device} {
+      color: $link-color--hover;
+    }
+  }
+
+  &:active {
+    color: $link-color--pressed;
+  }
+}
+
+.presence-regions__map {
+  width: 100%;
+  display: inline-block;
+  margin-top: -140px;
+
+  @media (max-height: 550px) and (orientation: landscape) {
+    margin-top: -250px;
+  }
+
+  @media #{$min-md} {
+    margin-top: -100px;
+  }
+
+  @media #{$min-lg} {
+    margin-top: -250px;
+    margin-left: -100px;
+  }
+
+  @media #{$min-xl} {
+    margin-top: -350px;
+    margin-left: -150px;
+  }
+
+  img {
+    width: 140%;
+  }
+}

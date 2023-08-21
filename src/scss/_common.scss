@@ -49,6 +49,7 @@ h5 {
 
 h6 {
   font-size: #{$h6-font-size--mobile}px;
+
   @media #{$min-md} {
     @include adaptiv-font-size($h6-font-size, $h6-font-size--mobile);
     @include adaptiv-font-lh($h6-line-height, $h6-line-height--mobile);
@@ -108,8 +109,6 @@ a {
 
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
-
-  overflow: hidden;
 }
 
 /* Вырубает */
@@ -119,7 +118,7 @@ a {
 
 /* Стопим прокрутку body*/
 .body-overflow-hidden {
-  @media #{$sm} {
+  @media #{$md} {
     overflow: hidden;
   }
 }
