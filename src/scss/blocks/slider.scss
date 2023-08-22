@@ -12,6 +12,10 @@
 .slider__slides {
   width: 100%;
   overflow: hidden;
+
+  @media #{$min-md} {
+    overflow: auto;
+  }
 }
 
 .slider__slides-track {

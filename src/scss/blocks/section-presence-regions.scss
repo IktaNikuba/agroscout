@@ -1,5 +1,5 @@
 .presence-regions {
-  @include padding-top-adaptive(10px, 20px, 50px);
+  @include padding-top-adaptive($section-padding--mobile, $section-padding--tablet, $section-padding);
   overflow-x: hidden;
 }
 
@@ -8,7 +8,7 @@
   margin: 0 auto;
 
   @media #{$min-xs} {
-    width: 80%;
+    width: 90%;
   }
 
   @media #{$min-md} {
@@ -21,7 +21,7 @@
   padding-left: 1rem;
   columns: 100px 2;
 
-  @media (max-height: 550px) and (orientation: landscape) {
+  @media (max-height: 320px) and (orientation: landscape) {
     columns: 100px 3;
     column-gap: 30px;
   }
@@ -33,7 +33,6 @@
   user-select: none;
 
   &:hover {
-
     @media #{$mouse-device} {
       color: $link-color--hover;
     }
@@ -47,14 +46,14 @@
 .presence-regions__map {
   width: 100%;
   display: inline-block;
-  margin-top: -140px;
+  margin-top: -150px;
 
   @media (max-height: 550px) and (orientation: landscape) {
     margin-top: -250px;
   }
 
   @media #{$min-md} {
-    margin-top: -100px;
+    margin-top: -120px;
   }
 
   @media #{$min-lg} {
@@ -68,6 +67,6 @@
   }
 
   img {
-    width: 140%;
+    width: 135%;
   }
 }

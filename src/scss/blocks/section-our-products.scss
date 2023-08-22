@@ -30,6 +30,16 @@
   flex-direction: column;
   row-gap: 20px;
 
+  * {
+    white-space: pre-wrap;
+
+    &:hover {
+      @media #{$mouse-device} {
+        color: $link-color--hover;
+      }
+    }
+  }
+
   @media #{$min-md} {
     text-align: left;
     row-gap: 20px;
@@ -40,7 +50,7 @@
     align-items: center;
     width: 100%;
     justify-content: space-around;
-    gap: 0;
+    gap: 10px;
   }
 }
 

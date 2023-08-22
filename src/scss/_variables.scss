@@ -40,6 +40,7 @@ $text-color--main: $color-secondary;
 $text-color--transparent: $white-transparent;
 $text-color--bright: $color-accent--bright;
 $text-color--dark: $color-accent--dark;
+$text-color--dark-gray: $dark-gray;
 
 $font-family--base: RF Rufo;
 
@@ -127,9 +128,9 @@ $btn-border: 1px solid $color-accent--bright;
 $btn-primary-bg: $bg-primary;
 $btn-primary-color: $text-color--bright;
 $btn-hover-bg: $bg-success;
-$btn-hover-color: $text-color--dark;
+$btn-hover-color: $text-color--dark-gray;
 $btn-pressed-bg: $color-accent--dark;
-$btn-pressed-color: $text-color--dark;
+$btn-pressed-color: $text-color--dark-gray;
 
 /* Padding */
 $section-padding: 110px;
