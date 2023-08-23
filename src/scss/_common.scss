@@ -94,23 +94,6 @@ a {
   width: 0;
 }
 
-/* Прячет но оставляет доступным содержимое */
-.visually-hidden {
-  position: absolute;
-
-  width: 1px !important;
-  height: 1px;
-
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-}
-
 /* Вырубает */
 .cut-down {
   display: none !important;
@@ -123,7 +106,55 @@ a {
   }
 }
 
-/* Вешаю на контейнер чтобы выравнивать фон */
+
+/* Вешаю на контейнер чтобы выравнивать фоновых элементов */
 .position-relative {
   position: relative;
+}
+
+
+/* Рамки к картинкам */
+.picture-wrapper-outer {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  border: 2px solid $bright-green;
+  transition: all .3s ease;
+}
+.picture-wrapper-outer:before,
+.picture-wrapper-outer:after {
+  content: "";
+  z-index: 1;
+  display: block;
+  position: absolute;
+  background: $bg-primary;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: 50% 50%;
+}
+
+.picture-wrapper-outer:before {
+  width: calc(100% + 6px);
+  height: 80%;
+  transition: height 0.6s;
+}
+.picture-wrapper-outer:after {
+  height: calc(100% + 6px);
+  width: 90%;
+  transition: width 0.6s;
+}
+.picture-wrapper-outer:hover:before,
+.picture-wrapper-outer:focus:before {
+  height: 50%;
+}
+.picture-wrapper-outer:hover:after,
+.picture-wrapper-outer:focus:after {
+  width: 75%;
+}
+.picture-wrapper-inner {
+  padding: 20px;
+  z-index: 2;
+  position: relative;
+  text-align: center;
 }

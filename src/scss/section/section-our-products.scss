@@ -45,7 +45,7 @@
     row-gap: 20px;
   }
 
-  @media (max-height: 550px) and (orientation: landscape) {
+  @media #{$landscape-h550} {
     flex-direction: row;
     align-items: center;
     width: 100%;

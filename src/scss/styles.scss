@@ -11,13 +11,14 @@
 @import "_buttons";
 
 /* Section */
-@import "blocks/section-hero";
-@import "blocks/section-advantages";
-@import "blocks/section-our-products";
-@import "blocks/section-application";
-@import "blocks/section-about-us";
-@import "blocks/section-presence-regions";
-@import "blocks/section-partners";
+@import "section/section-hero";
+@import "section/section-advantages";
+@import "section/section-our-products";
+@import "section/section-application";
+@import "section/section-about-us";
+@import "section/section-presence-regions";
+@import "section/section-partners";
+@import "section/section-news";
 
 /* Blocks */
 @import "blocks/page";
