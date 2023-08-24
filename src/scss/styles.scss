@@ -10,6 +10,13 @@
 @import "_sprite";
 @import "_buttons";
 
+/* Blocks */
+@import "blocks/page";
+@import "blocks/header";
+@import "blocks/breadcrumbs";
+@import "blocks/slider";
+@import "blocks/footer";
+
 /* Section */
 @import "section/section-hero";
 @import "section/section-advantages";
@@ -20,9 +27,5 @@
 @import "section/section-partners";
 @import "section/section-news";
 
-/* Blocks */
-@import "blocks/page";
-@import "blocks/main-navbar";
-@import "blocks/breadcrumbs";
-@import "blocks/slider";
+
 

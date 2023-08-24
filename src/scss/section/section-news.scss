@@ -29,7 +29,11 @@
 
 .news__slide-picture {
   width: 100%;
-  object-fit: contain ;
+  object-fit: contain;
+}
+
+.news__slide-paragraph {
+  height: 180px;
 }
 
 .news__slide-link {
@@ -39,5 +43,4 @@
   cursor: pointer;
   width: fit-content;
   padding-bottom: 5px;
-
 }
