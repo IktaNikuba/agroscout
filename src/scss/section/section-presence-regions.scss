@@ -19,10 +19,21 @@
 .presence-regions__list {
   @include margin-top-adaptive(25px, 45px, 70px);
   padding-left: 1rem;
-  columns: 100px 2;
+  columns: 125px 2;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 
-  @media (max-height: 320px) and (orientation: landscape) {
-    columns: 100px 3;
+  @media #{$min-sm} {
+    column-gap: 60px;
+  }
+
+  @media #{$min-md} {
+    margin-left: unset;
+  }
+
+  @media (max-height: 450px) and (orientation: landscape) {
+    columns: 125px 3;
     column-gap: 30px;
   }
 }

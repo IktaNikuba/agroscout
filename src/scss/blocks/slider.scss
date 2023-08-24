@@ -41,11 +41,6 @@
     background-color: transparent;
   }
 
-  &:active {
-    background-color: $bg-slide--active;
-    color: $color-primary;
-  }
-
   @media #{$min-md} {
     height: auto;
     width: calc((100% - 20px) / 2);
@@ -53,6 +48,13 @@
 
   @media #{$min-xl} {
     width: calc((100% - 40px) / 3);
+  }
+
+  &--greenlight {
+    &:active {
+      background-color: $bg-slide--active;
+      color: $color-primary;
+    }
   }
 }
 

@@ -1,4 +1,4 @@
-.main-navbar {
+.navbar {
   display: flex;
   align-items: center;
   column-gap: 3vw;
@@ -16,7 +16,7 @@
   }
 }
 
-.main-navbar__logo {
+.navbar__logo {
   @include icon-size-adaptive(33px, 72px, 72px);
 
   &-img {
@@ -27,7 +27,7 @@
   }
 }
 
-.main-navbar__phone {
+.navbar__phone {
   @media #{$sm} {
     display: none;
   }
@@ -56,13 +56,13 @@
   }
 }
 
-.main-navbar__social-networks-box,
-.main-navbar__lang,
-.main-navbar__user-buttons {
+.navbar__social-networks-box,
+.navbar__lang,
+.navbar__user-buttons {
   column-gap: min(8px, 3vw);
 }
 
-.main-navbar__social-networks {
+.navbar__social-networks {
   flex: 1 0 auto;
 
   &-box{
@@ -72,7 +72,7 @@
   }
 }
 
-.main-navbar__lang {
+.navbar__lang {
   display: flex;
   column-gap: 8px;
 
@@ -90,12 +90,12 @@
   }
 }
 
-.main-navbar__user-buttons {
+.navbar__user-buttons {
   display: flex;
   column-gap: 8px;
 }
 
-.main-navbar__user-button {
+.navbar__user-button {
   &--phone-mini {
     @media #{$min-sm} {
       display: none;
@@ -107,7 +107,7 @@
   }
 }
 
-.main-navbar__menu {
+.navbar__menu {
   display: flex;
   width: 100%;
   height: 100%;
@@ -139,7 +139,7 @@
   }
 }
 
-.main-navbar__nav {
+.navbar__nav {
   width: max-content;
   padding: 10px;
   margin: auto;
@@ -148,12 +148,12 @@
     width: 80%;
   }
 
-  .main-navbar__link-icon {
+  .navbar__link-icon {
     margin-right: 10px;
   }
 }
 
-.main-navbar__links-list {
+.navbar__links-list {
   padding: 0;
   margin: 0;
 
@@ -164,7 +164,7 @@
   }
 }
 
-.main-navbar__list-item {
+.navbar__list-item {
   margin-top: min(1vh, 10px);
 
   @media #{$min-md} {
@@ -181,7 +181,7 @@
   }
 }
 
-.main-navbar__link {
+.navbar__link {
   display: inline-flex;
   align-items: center;
   &-icon {
@@ -208,12 +208,12 @@
   }
 }
 
-.main-navbar__line {
+.navbar__line {
   background-color: $bg-secondary;
   margin: 0 10px 0;
 }
 
-.main-navbar__messengers-list {
+.navbar__messengers-list {
   width: 100%;
   padding: 30px;
   margin: 0;
@@ -222,11 +222,11 @@
   justify-content: space-evenly;
 }
 
-.main-navbar__messengers-item {
+.navbar__messengers-item {
   @include icon-size-adaptive(20px, 30px, 40px);
 }
 
-.main-navbar__messengers-icon {
+.navbar__messengers-icon {
   width: 100%;
   max-height: 100%;
 }
