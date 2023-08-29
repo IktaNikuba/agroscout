@@ -1,8 +1,28 @@
 .mini-cart {
+  width: 90vw;
+  height: 90vh;
+  padding: 25px;
+  background-color: $charcoal;
+  border: none;
 
   &::backdrop {
     background-color: #000000;
     opacity: 0.5;
     overflow: hidden;
   }
+}
+
+.minicart__headline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $text-color--main;
+}
+
+.mini-cart__button {
+  width: min-content;
+}
+
+.mini-cart__icon {
+  @include icon-size-adaptive(20px, 30px, 34px);
 }
