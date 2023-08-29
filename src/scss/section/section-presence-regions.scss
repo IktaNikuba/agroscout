@@ -47,6 +47,7 @@
   font-weight: 300;
   cursor: pointer;
   user-select: none;
+  padding-top: min(1vw, 10px);
 
   &:hover {
     @media #{$mouse-device} {

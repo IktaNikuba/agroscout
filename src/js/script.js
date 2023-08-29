@@ -1,3 +1,4 @@
+/* Манипуляции с меню */
 const menuOpenBtn = document.getElementById("open-menu");
 const menuCloseBtn = document.getElementById("close-menu");
 const menu = document.getElementById("navigation-menu");
@@ -17,3 +18,13 @@ menuCloseBtn.onclick = () => {
 	body.classList.toggle("body-overflow-hidden");
 };
 
+/* Миникорзина */
+const modalCart = document.querySelector('.minicart');
+
+document.getElementById("open-mini-cart").onclick = function() {
+	modalCart.showModal();
+};
+
+document.getElementById("close-mini-cart").onclick = function() {
+	modalCart.close();
+};

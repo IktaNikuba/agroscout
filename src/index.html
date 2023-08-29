@@ -51,7 +51,7 @@
                 <a class="navbar__lang-select" role="button" href="#"><span>RU</span></a>
               </div>
               <div class="navbar__user-buttons">
-                <a class="navbar__user-button" id="open-mini-basket" role="button" href="#">
+                <a class="navbar__user-button" id="open-mini-cart" role="button" href="#">
                   <svg class="navbar__icon">
                     <use class="svg" xlink:href="img/svg/sprite.svg#basket"></use>
                   </svg>
@@ -510,7 +510,7 @@
       </section>
 
       <section class="presence-regions">
-        <div class="container">
+        <div class="container position-relative">
           <div class="row">
             <div class="col-12">
               <div class="headline">
@@ -556,6 +556,9 @@
               </ol>
               </div>
             </div>
+          </div>
+          <div class="aside-element aside-element--left">
+            <span class="aside-element__text">карта россии</span>
           </div>
         </div>
       </section>
@@ -741,6 +744,20 @@
         </div>
       </div>
     </footer>
+
+    <dialog class="minicart">
+      <form method="dialog">
+        <div class="minicart__headline">
+          <h5>Корзина</h5>
+          <a href="#" class="closeDialog" id="close-mini-cart">
+            <svg class="navbar__icon">
+              <use class="svg" xlink:href="img/svg/sprite.svg#menu-off"></use>
+            </svg>
+          </a>
+        </div>
+
+      </form>
+    </dialog>
 
     <script src="js/script.js"></script>
 
