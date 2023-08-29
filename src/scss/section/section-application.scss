@@ -62,8 +62,9 @@
 
 .application__paragraph {
   width: 100%;
+
   @media #{$min-sm}, #{$landscape-h550} {
-    width: 100%;
+    width: 80%;
   }
 }
 

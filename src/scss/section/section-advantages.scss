@@ -1,5 +1,6 @@
 .advantages {
   @include padding-top-adaptive($section-padding--mobile, $section-padding--tablet, $section-padding);
+  overflow: hidden;
 }
 
 .advantages__slider {

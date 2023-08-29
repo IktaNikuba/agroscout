@@ -21,10 +21,10 @@
               </div>
               <div class="navbar__phone">
                 <a class="navbar__phone-link" href="tel:+78612179118">
-                    <svg class="navbar__phone-icon">
-                      <use class="svg svg--phone" xlink:href="img/svg/sprite.svg#phone"></use>
-                    </svg>
-                    <span class="navbar__phone-number">+7861 21791 18</span>
+                  <svg class="navbar__phone-icon">
+                    <use class="svg svg--phone" xlink:href="img/svg/sprite.svg#phone"></use>
+                  </svg>
+                  <span class="navbar__phone-number">+7861 21791 18</span>
                 </a>
               </div>
               <div class="navbar__social-networks">
@@ -177,15 +177,11 @@
     <main class="page__main">
 
       <section class="hero">
-        <div class="container d-sm-none">
-          <div class="row">
-            <div class="col-xs-12 p-0">
-              <div class="hero__picture--mobile"></div>
-            </div>
-          </div>
-        </div>
         <div class="container">
           <div class="row">
+            <div class="col-xs-12 d-sm-none p-0">
+              <div class="hero__picture--mobile"></div>
+            </div>
             <div class="col-xs-12 col-sm-7 col-lg-6 p-xxl-0">
               <h1 class="hero__main-header">AgroScout - беспилотные<br>
                 технологии для сельского<br>
@@ -217,7 +213,7 @@
       </div>
 
       <section class="advantages">
-        <div class="container">
+        <div class="container position-relative">
           <div class="row">
             <div class="col-12">
               <div class="headline">
@@ -319,7 +315,6 @@
                           </p>
                         </div>
                       </div>
-
                     </div>
                     <div class="slider__pagination">
                       <span class="slider__dot slider__dot--active"></span>
@@ -335,11 +330,16 @@
 
             </div>
           </div>
+          <div class="background-element background-element--drones">
+            <svg class="background-element__svg">
+              <use xlink:href="img/svg/sprite.svg#bg-drones"></use>
+            </svg>
+          </div>
         </div>
       </section>
 
       <section class="products">
-        <div class="container">
+        <div class="container position-relative">
           <div class="row">
             <div class="col-12">
               <div class="headline">
@@ -446,7 +446,16 @@
               </div>
             </div>
           </div>
+          <div class="background-element background-element--relief">
+            <svg class="background-element__svg">
+              <use xlink:href="img/svg/sprite.svg#bg-relief"></use>
+            </svg>
+          </div>
+          <div class="aside-element aside-element--left">
+            <span class="aside-element__text">топ продаж</span>
+          </div>
         </div>
+
       </section>
 
       <section class="application">

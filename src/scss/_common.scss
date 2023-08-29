@@ -1,3 +1,4 @@
+/* Типография заголовков */
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-family--base;
   font-weight: $font-weight--normal;
@@ -5,6 +6,7 @@ h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
   padding: 0;
   margin: auto 0;
+  user-select: none;
 }
 
 h1 {
@@ -72,7 +74,10 @@ h6 {
   left: 0;
   top: 50%;
   transform: translate(0, -50%);
+  user-select: none;
 }
+
+/* Теговые стили */
 
 ul {
   list-style: none;
@@ -94,24 +99,17 @@ a {
   width: 0;
 }
 
-/* Вырубает */
+/* Вырубает блок */
 .cut-down {
   display: none !important;
 }
 
-/* Стопим прокрутку body*/
+/* Стопим прокрутку body */
 .body-overflow-hidden {
   @media #{$md} {
     overflow: hidden;
   }
 }
-
-
-/* Вешаю на контейнер чтобы выравнивать фоновых элементов */
-.position-relative {
-  position: relative;
-}
-
 
 /* Рамки к картинкам */
 .picture-wrapper-outer {
@@ -121,6 +119,7 @@ a {
   border: 2px solid $bright-green;
   transition: all .3s ease;
 }
+
 .picture-wrapper-outer:before,
 .picture-wrapper-outer:after {
   content: "";
@@ -157,4 +156,79 @@ a {
   z-index: 2;
   position: relative;
   text-align: center;
+}
+
+/* Вешаю на контейнер чтобы выравнивать фоновые элементы */
+.position-relative {
+  position: relative;
+}
+
+/* Фоновые элементы */
+.background-element {
+  position: absolute;
+  z-index: -1;
+  display: none;
+
+  &--drones {
+    left: 80%;
+    top: -44px;
+
+    @media #{$min-md} {
+      display: block;
+    }
+
+     @media #{$min-xl} {
+       left: 88%;
+       top: 14px;
+    }
+
+    .background-element__svg {
+      width: 265px;
+      height: 265px;
+    }
+  }
+
+  &--relief {
+    right: -35%;
+    bottom: -18%;
+
+    @media #{$min-md} {
+      display: block;
+    }
+
+    @media #{$min-xl} {
+      right: -25%;
+    }
+
+    .background-element__svg {
+      width: 656px;
+      height: 539px;
+    }
+  }
+}
+
+/* Боковые элементы */
+
+.aside-element {
+  display: none;
+  width: 436px;
+  height: 103px;
+  transform: rotate(-90deg);
+  color: rgba(70, 70, 70, 0.15);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100px; /* 100% */
+  text-transform: uppercase;
+  position: absolute;
+
+  &--left {
+    left: -300px;
+    top: 50%;
+  }
+
+  @media #{$min-lg} {
+    display: block;
+  }
 }

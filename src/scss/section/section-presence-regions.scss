@@ -30,6 +30,11 @@
 
   @media #{$min-md} {
     margin-left: unset;
+    column-gap: 70px;
+  }
+
+  @media #{$min-xl} {
+    column-gap: 150px;
   }
 
   @media (max-height: 450px) and (orientation: landscape) {
