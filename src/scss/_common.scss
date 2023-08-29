@@ -6,7 +6,6 @@ h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
   padding: 0;
   margin: auto 0;
-  user-select: none;
 }
 
 h1 {
@@ -74,10 +73,12 @@ h6 {
   left: 0;
   top: 50%;
   transform: translate(0, -50%);
-  user-select: none;
 }
 
 /* Теговые стили */
+* {
+  user-select: none;
+}
 
 ul {
   list-style: none;
@@ -106,8 +107,12 @@ a {
 
 /* Стопим прокрутку body */
 .body-overflow-hidden {
-  @media #{$md} {
-    overflow: hidden;
+  overflow: hidden;
+
+  &--md {
+    @media #{$md} {
+      overflow: hidden;
+    }
   }
 }
 

@@ -42,7 +42,7 @@
 
   &-number {
     vertical-align: middle;
-
+    user-select: text;
     a:hover & {
       @media #{$mouse-device} {
         color: $link-color--hover;
