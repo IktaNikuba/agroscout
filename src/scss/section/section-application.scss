@@ -19,6 +19,10 @@
     align-items: center;
   }
 
+  @media #{$landscape-h550} {
+    height: 100dvh;
+  }
+
   @media #{$min-md} {
     height: 650px;
   }
@@ -63,7 +67,7 @@
 .application__paragraph {
   width: 100%;
 
-  @media #{$min-sm}, #{$landscape-h550} {
+  @media #{$landscape-h550} {
     width: 80%;
   }
 }

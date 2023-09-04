@@ -29,11 +29,16 @@
 
 .news__slide-picture {
   width: 100%;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
 }
 
 .news__slide-paragraph {
   height: 180px;
+
+  @media #{$landscape-h550} {
+    height: 100px;
+  }
 }
 
 .news__slide-link {

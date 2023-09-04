@@ -91,6 +91,7 @@ a {
 
   color: $link-color;
   line-height: 1;
+  text-wrap: nowrap;
 
   text-decoration: none;
 }
@@ -123,6 +124,10 @@ a {
   position: relative;
   border: 2px solid $bright-green;
   transition: all .3s ease;
+
+  @media #{$landscape-h550} {
+    height: 100dvh;
+  }
 }
 
 .picture-wrapper-outer:before,
@@ -158,6 +163,7 @@ a {
 }
 .picture-wrapper-inner {
   padding: 20px;
+  height: 100%;
   z-index: 2;
   position: relative;
   text-align: center;

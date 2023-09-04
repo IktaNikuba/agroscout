@@ -5,8 +5,6 @@
 
   padding: 3px 0;
 
-  user-select: none;
-
   @media #{$min-md} {
     position: relative;
   }
@@ -165,7 +163,7 @@
 }
 
 .navbar__list-item {
-  margin-top: min(1vh, 10px);
+  margin-top: min(1dvh, 10px);
 
   @media #{$min-md} {
     transform: translate(-15%, 0);
