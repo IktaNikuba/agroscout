@@ -1,8 +1,4 @@
-.slider {
-
-}
-
-.slider__container{
+.slider__container {
   height: fit-content;
   margin: 0 auto 0;
 
@@ -40,7 +36,6 @@
     background-color: transparent;
   }
 
-
   @media #{$min-md} {
     height: auto;
     width: calc((100% - 20px) / 2);
@@ -65,9 +60,20 @@
   justify-content: space-between;
   padding-top: 30px;
 
-  @media #{$min-md} {
-    display: none;
+  &--tile {
+    @media #{$min-md} {
+      display: none;
+    }
   }
+
+  &--carusel {
+    @media #{$min-xl} {
+      display: none;
+    }
+  }
+
+
+
 }
 
 .slider__dot {

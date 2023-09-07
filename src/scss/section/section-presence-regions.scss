@@ -47,7 +47,7 @@
   font-weight: 300;
   cursor: pointer;
   user-select: none;
-  padding-top: 0.5dvh;
+  padding-top: calc(5px + 0.5vh);
 
   &:hover {
     @media #{$mouse-device} {
@@ -66,24 +66,24 @@
   margin-top: -120px;
 
   @media #{$landscape-h550} {
-    margin-top: -250px;
+    margin-top: -170px;
   }
 
   @media #{$min-md} {
-    margin-top: -120px;
+    margin-top: -65px;
   }
 
   @media #{$min-lg} {
-    margin-top: -250px;
-    margin-left: -100px;
+    margin-top: -155px;
+    margin-left: -60px;
   }
 
   @media #{$min-xl} {
     margin-top: -300px;
-    margin-left: -150px;
+    margin-left: -130px;
   }
 
   img {
-    width: 135%;
+    width: 120%;
   }
 }

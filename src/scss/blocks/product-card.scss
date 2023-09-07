@@ -1,4 +1,4 @@
-.product-cart__content {
+.product-card__content {
   display: grid;
   grid-template-columns: 1vw 1fr 1fr 1vw;
   grid-template-rows: 1fr 50px 0fr 0fr 80px auto;
@@ -10,49 +10,41 @@
         ". price price ."
         "button button button button";
   align-items: center;
-  padding: 20px 20px 65px 20px;
+  padding: 20px 20px 60px 20px;
 
   @media #{$min-lg} {
-    grid-template-columns: 30px 1fr 1fr 30px;
+    grid-template-columns: 65px 1fr 1fr 65px;
   }
 
-  @media #{$landscape-h550} {
-    grid-template-columns: 44vw 1fr 1fr 0;
-    grid-template-rows: 1fr 50px 0fr 0fr 80px auto;
-    grid-template-areas:
-        "photo . . ."
-        "photo name name name"
-        "photo brand brand ."
-        "photo model model ."
-        "photo price price ."
-        "photo button button button";
+  &--minicart {
+    padding: 0;
   }
 }
 
-.product-cart__photo {
+.product-card__photo {
   grid-area: photo;
   img {
     width: 100%;
   }
 }
 
-.product-cart__name {
+.product-card__name {
   grid-area: name;
 }
 
-.product-cart__brand {
+.product-card__brand {
   grid-area: brand;
 }
 
-.product-cart__model{
+.product-card__model{
   grid-area: model;
 }
 
-.product-cart__price {
+.product-card__price {
   grid-area: price;
   @include adaptiv-font-size($font-size--lg, $font-size--xl);
 }
 
-.product-cart__button {
+.product-card__button {
   grid-area: button;
 }

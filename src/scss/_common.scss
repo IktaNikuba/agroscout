@@ -57,6 +57,14 @@ h6 {
   }
 }
 
+h7 {
+  font-size: #{$h7-font-size--mobile}px;
+
+  @media #{$min-md} {
+    @include adaptiv-font-size($h7-font-size, $h7-font-size--mobile);
+  }
+}
+
 .headline {
   position: relative;
 }
@@ -92,9 +100,22 @@ a {
   color: $link-color;
   line-height: 1;
   text-wrap: nowrap;
+  text-align: center;
 
   text-decoration: none;
+
+  &:hover {
+    @media #{$mouse-device} {
+      color: $link-color--hover;
+    }
+  }
+
+  &:active {
+    color: $link-color--pressed;
+    cursor: none;
+  }
 }
+
 
 /*Убрать полосу прокрутки для всей страницы*/
 ::-webkit-scrollbar {

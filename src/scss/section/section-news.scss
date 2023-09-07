@@ -34,7 +34,10 @@
 }
 
 .news__slide-paragraph {
-  height: 180px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 
   @media #{$landscape-h550} {
     height: 100px;
