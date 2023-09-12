@@ -17,7 +17,28 @@
   }
 
   &--minicart {
-    padding: 0;
+    padding: 0 0 20px 0;
+    grid-template-columns: 1fr 1fr 5vw;
+    grid-template-rows: 20px 1fr 50px 0fr 0fr 50px;
+    grid-template-areas:
+        ". . delete"
+        "photo photo photo"
+        "name name name"
+        "brand brand ."
+        "model model ."
+        "price quantity .";
+
+    @media #{$landscape-h550} {
+      justify-items: center;
+    }
+
+    @media #{$min-md} {
+      grid-template-columns: 1fr 1fr 1fr auto;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        "photo name . delete"
+        "photo model quantity price"
+    }
   }
 }
 
@@ -34,6 +55,9 @@
 
 .product-card__brand {
   grid-area: brand;
+  @media #{$min-md} {
+    display: none;
+  }
 }
 
 .product-card__model{
@@ -47,4 +71,56 @@
 
 .product-card__button {
   grid-area: button;
+}
+
+.product-card__delete {
+  grid-area: delete;
+  width: min-content;
+  height: min-content;
+
+  &-icon {
+    width: 13px;
+    height: 17px;
+  }
+
+  @media #{$min-md} {
+    justify-self: end;
+    align-self: start;
+  }
+}
+
+.product-card__quantity {
+  grid-area: quantity;
+  width: 70px;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid $medium-gray;
+  text-align: center;
+  justify-self: center;
+
+  &-minus {
+    width: 15px;
+  }
+
+  &-num {
+    width: 15px;
+  }
+
+  &-plus {
+    width: 15px;
+  }
+
+  &-minus,
+  &-plus {
+    cursor: pointer;
+    &:hover {
+      @media #{$mouse-device} {
+        color: $link-color--hover;
+      }
+    }
+
+    &:active {
+      color: $link-color--pressed;
+    }
+  }
 }

@@ -10,7 +10,6 @@
   background-color: $btn-primary-bg;
   color: $btn-primary-color;
 
-
   &:hover {
     @media #{$mouse-device} {
       color: $btn-hover-color;

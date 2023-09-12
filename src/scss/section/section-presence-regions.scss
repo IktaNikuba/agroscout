@@ -1,6 +1,6 @@
 .presence-regions {
   @include padding-top-adaptive($section-padding--mobile, $section-padding--tablet, $section-padding);
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .presence-regions__box {
@@ -75,7 +75,7 @@
 
   @media #{$min-lg} {
     margin-top: -155px;
-    margin-left: -60px;
+    margin-left: -20px;
   }
 
   @media #{$min-xl} {

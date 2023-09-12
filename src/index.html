@@ -762,7 +762,7 @@
       <form method="dialog" class="minicart__dialog">
         <div class="minicart__headline">
           <h7>Корзина</h7>
-          <a href="#" class="mini-cart__button" id="close-mini-cart">
+          <a href="#" class="mini-cart__button--close" id="close-mini-cart">
             <svg class="mini-cart__icon">
               <use xlink:href="img/svg/sprite.svg#menu-off"></use>
             </svg>
@@ -774,8 +774,8 @@
           </svg>
           <span class="minicart__empty">Корзина пуста</span>
           <hr class="minicart__hr-line">
-          <div class="minicart__button">
-            <a href="#" class="minicart__continue-shopping">Продолжить покупки</a>
+          <div class="minicart__continue-shopping">
+            <a href="#" class="minicart__link">Продолжить покупки</a>
           </div>
         </div>
         <div class="minicart__ordering-goods minicart__ordering-goods--fill">
@@ -791,15 +791,28 @@
                   <span class="product-card__model">Модель: 101-0101</span>
                   <span class="product-card__price">$15001.27</span>
                   <span class="product-card__delete">
-                    <svg>
-                      <use></use>
+                    <svg class="product-card__delete-icon">
+                      <use xlink:href="img/svg/sprite.svg#cart-delete"></use>
                     </svg>
                   </span>
-                  <span class="product-card__quantity"></span>
+                  <div class="product-card__quantity">
+                    <span class="product-card__quantity-minus">-</span>
+                    <span class="product-card__quantity-num">1</span>
+                    <span class="product-card__quantity-plus">+</span>
+                  </div>
                 </div>
               </div>
             </li>
           </ul>
+          <div class="minicart__ui">
+            <div class="minicart__continue-shopping minicart__continue-shopping--empty">
+              <a href="#" class="minicart__link">Продолжить покупки</a>
+            </div>
+            <div class="minicart__total">
+              Всего: <span class="minicart__total-price">$15001.27</span>
+            </div>
+            <a role="button" class="button minicart__button--arrange">Оформить заказ</a>
+          </div>
         </div>
       </form>
     </dialog>
