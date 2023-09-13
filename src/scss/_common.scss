@@ -104,16 +104,7 @@ a {
 
   text-decoration: none;
 
-  &:hover {
-    @media #{$mouse-device} {
-      color: $link-color--hover;
-    }
-  }
-
-  &:active {
-    color: $link-color--pressed;
-    cursor: none;
-  }
+  @include mobile-devices-hover;
 }
 
 

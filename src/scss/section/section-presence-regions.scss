@@ -49,17 +49,8 @@
   user-select: none;
   padding-top: calc(5px + 0.5vh);
 
-  &:hover {
-    @media #{$mouse-device} {
-      color: $link-color--hover;
-    }
-  }
-
-  &:active {
-    color: $link-color--pressed;
-  }
+  @include mobile-devices-hover;
 }
-
 .presence-regions__map {
   width: 100%;
   display: inline-block;
@@ -79,8 +70,13 @@
   }
 
   @media #{$min-xl} {
-    margin-top: -300px;
-    margin-left: -130px;
+    margin-top: -225px;
+    margin-left: -100px;
+  }
+
+  @media #{$min-xxl} {
+    margin-top: -225px;
+    margin-left: -100px;
   }
 
   img {

@@ -77,6 +77,10 @@
   grid-area: delete;
   width: min-content;
   height: min-content;
+  fill: white;
+  cursor: pointer;
+
+  @include mobile-devices-hover;
 
   &-icon {
     width: 13px;
@@ -113,14 +117,6 @@
   &-minus,
   &-plus {
     cursor: pointer;
-    &:hover {
-      @media #{$mouse-device} {
-        color: $link-color--hover;
-      }
-    }
-
-    &:active {
-      color: $link-color--pressed;
-    }
+    @include mobile-devices-hover;
   }
 }

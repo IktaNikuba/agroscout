@@ -81,3 +81,16 @@ $minWidth: 320;
     margin-top: $pcSize;
   }
 }
+
+/* hover */
+@mixin mobile-devices-hover {
+  &:hover {
+    @media #{$mouse-device} {
+      color: $link-color--hover;
+    }
+  }
+
+  &:active {
+    color: $link-color--pressed;
+  }
+}

@@ -14,9 +14,21 @@
     background-image: url("../../img/hero-xl (3).jpg");
     min-height: 650px;
   }
+
+  &--ethnomophoages {
+    background-image: none;
+
+    @media #{$min-sm} {
+      background-image: url("../../img/hero-md (1).jpg");
+    }
+
+    @media #{$min-xxl} {
+      background-image: url("../../img/hero-xl (1).jpg");
+    }
+  }
 }
 
-.hero__picture--mobile {
+.hero__mobile-picture {
   min-height: 270px;
   background-image: url("../../img/hero-md (6).jpg");
   background-size: cover;
@@ -26,10 +38,15 @@
   @media #{$min-xs} {
     background-position: 100%;
   }
+
+  &--ethnomophoages {
+    background-image: url("../../img/hero-md (1).jpg");
+  }
 }
+
 .hero__main-header {
   padding-top: 20px;
-  text-shadow: 0px 0px 5px #1B1C1D;
+  text-shadow: 0 0 5px #1B1C1D;
   text-align: center;
 
   @media #{$min-sm} {
@@ -57,7 +74,7 @@
   }
 }
 
-.hero__progress {
+.hero__statistic {
   padding-top: 60px;
   display: grid;
   grid-template-columns: 2fr 2fr 1fr;
@@ -106,5 +123,94 @@
   }
   &--3 {
     grid-area: txt3;
+  }
+}
+
+/* page ethnomophoages*/
+.hero__statistic--ethnomophoages {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 33% 33% 33%;
+  grid-template-areas:
+        "soy sunflower"
+        "beet corn"
+        "rape fruits";
+  column-gap: 7%;
+  row-gap: 7px;
+  @include adaptiv-font-size(18, 24);
+  padding: 35px 0 20px 0;
+
+  @media #{$landscape-h550} {
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+        "soy sunflower beet"
+        "corn rape fruits";
+  }
+
+  @media #{$min-sm} {
+    column-gap: 0;
+    row-gap: 5px;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  @media #{$min-lg} {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+        "soy sunflower beet"
+        "corn rape fruits";
+  }
+
+}
+
+.hero__plants {
+  display: flex;
+  column-gap: 5px;
+
+  &-soy {
+    grid-area: soy;
+  }
+
+  &-beet {
+    grid-area: beet;
+  }
+
+  &-rape {
+    grid-area: rape;
+  }
+
+  &-sunflower {
+    grid-area: sunflower;
+  }
+
+  &-corn {
+    grid-area: corn;
+  }
+
+  &-fruits {
+    grid-area: fruits;
+  }
+
+  &-icon {
+    @include icon-size-adaptive(30px, 30px, 40px);
+    display: inline-block;
+    flex: 0 0 auto;
+  }
+
+  &-text {
+    display: inline-block;
+  }
+}
+
+.hero__paragraph {
+  padding-top: 20px;
+  font-size: 16px;
+  line-height: 27px;
+  margin: 0;
+
+  @media #{$landscape-h550} {
+    text-align: center;
   }
 }

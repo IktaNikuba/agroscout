@@ -9,5 +9,11 @@
 
   a {
     display: inline;
+
+    &:last-child {
+      color: $text-color--bright;
+    }
   }
+
+
 }
