@@ -7,385 +7,504 @@
   <script type="module" src="../js/main.js"></script>
 </head>
 
-<body class="page__body">
+  <body class="page__body">
 
-<header class="page__header">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="navbar">
-          <div class="navbar__logo">
-            <a href="../index.html" class="navbar__logo-link">
-              <img class="navbar__logo-img" src="../img/LogoAgroScout.png" alt="Логотип компании АгроСкаут.">
-            </a>
-          </div>
-          <div class="navbar__phone">
-            <a class="navbar__phone-link" href="tel:+78612179118">
-              <svg class="navbar__phone-icon">
-                <use class="svg svg--phone" xlink:href="../img/svg/sprite.svg#phone"></use>
-              </svg>
-              <span class="navbar__phone-number">+7861 21791 18</span>
-            </a>
-          </div>
-          <div class="navbar__social-networks">
-            <div class="navbar__social-networks-box">
-              <a class="navbar__link" href="#">
+  <header class="page__header">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="navbar">
+            <div class="navbar__logo">
+              <a href="../index.html" class="navbar__logo-link">
+                <img class="navbar__logo-img" src="../img/LogoAgroScout.png" alt="Логотип компании АгроСкаут.">
+              </a>
+            </div>
+            <div class="navbar__phone">
+              <a class="navbar__phone-link" href="tel:+78612179118">
+                <svg class="navbar__phone-icon">
+                  <use class="svg svg--phone" xlink:href="../img/svg/sprite.svg#phone"></use>
+                </svg>
+                <span class="navbar__phone-number">+7861 21791 18</span>
+              </a>
+            </div>
+            <div class="navbar__social-networks">
+              <div class="navbar__social-networks-box">
+                <a class="navbar__link" href="#">
+                  <svg class="navbar__icon">
+                    <use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#vk"></use>
+                  </svg>
+                </a>
+                <a class="navbar__link" href="#">
+                  <svg class="navbar__icon">
+                    <use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#in"></use>
+                  </svg>
+                </a>
+                <a class="navbar__link" href="#">
+                  <svg class="navbar__icon">
+                    <use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#tt"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="navbar__lang">
+              <a class="navbar__lang-select" role="button" href="#"><span>EN</span></a>
+              <a class="navbar__lang-select" role="button" href="#"><span>RU</span></a>
+            </div>
+            <div class="navbar__user-buttons">
+              <a class="navbar__user-button" id="open-mini-cart" role="button" href="#">
                 <svg class="navbar__icon">
-                  <use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#vk"></use>
+                  <use class="svg" xlink:href="../img/svg/sprite.svg#basket"></use>
                 </svg>
               </a>
-              <a class="navbar__link" href="#">
+              <a class="navbar__user-button navbar__user-button--menu" id="open-menu" role="button" href="#">
                 <svg class="navbar__icon">
-                  <use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#in"></use>
+                  <use class="svg" xlink:href="../img/svg/sprite.svg#menu-on"></use>
                 </svg>
               </a>
-              <a class="navbar__link" href="#">
+              <a class="navbar__user-button navbar__user-button--menu-close cut-down" id="close-menu" role="button" href="#">
                 <svg class="navbar__icon">
-                  <use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#tt"></use>
+                  <use class="svg" xlink:href="../img/svg/sprite.svg#menu-off"></use>
+                </svg>
+              </a>
+              <a class="navbar__user-button navbar__user-button--phone-mini" role="button"  href="#">
+                <svg class="navbar__icon">
+                  <use class="svg" xlink:href="../img/svg/sprite.svg#phone-mini"></use>
                 </svg>
               </a>
             </div>
-          </div>
-          <div class="navbar__lang">
-            <a class="navbar__lang-select" role="button" href="#"><span>EN</span></a>
-            <a class="navbar__lang-select" role="button" href="#"><span>RU</span></a>
-          </div>
-          <div class="navbar__user-buttons">
-            <a class="navbar__user-button" id="open-mini-cart" role="button" href="#">
-              <svg class="navbar__icon">
-                <use class="svg" xlink:href="../img/svg/sprite.svg#basket"></use>
-              </svg>
-            </a>
-            <a class="navbar__user-button navbar__user-button--menu" id="open-menu" role="button" href="#">
-              <svg class="navbar__icon">
-                <use class="svg" xlink:href="../img/svg/sprite.svg#menu-on"></use>
-              </svg>
-            </a>
-            <a class="navbar__user-button navbar__user-button--menu-close cut-down" id="close-menu" role="button" href="#">
-              <svg class="navbar__icon">
-                <use class="svg" xlink:href="../img/svg/sprite.svg#menu-off"></use>
-              </svg>
-            </a>
-            <a class="navbar__user-button navbar__user-button--phone-mini" role="button"  href="#">
-              <svg class="navbar__icon">
-                <use class="svg" xlink:href="../img/svg/sprite.svg#phone-mini"></use>
-              </svg>
-            </a>
-          </div>
-          <div class="navbar__menu cut-down" id="navigation-menu">
-            <div class="navbar__menu-box">
-              <nav class="navbar__nav">
-                <ul class="navbar__links-list">
-                  <li class="navbar__list-item">
-                    <a class="navbar__link" href="../index.html">
-                      <svg class="navbar__link-icon">
-                        <use class="svg" xlink:href="../img/svg/sprite.svg#home"></use>
+            <div class="navbar__menu cut-down" id="navigation-menu">
+              <div class="navbar__menu-box">
+                <nav class="navbar__nav">
+                  <ul class="navbar__links-list">
+                    <li class="navbar__list-item">
+                      <a class="navbar__link" href="../index.html">
+                        <svg class="navbar__link-icon">
+                          <use class="svg" xlink:href="../img/svg/sprite.svg#home-circle"></use>
+                        </svg>
+                        <span class="navbar__link-text">Главная</span>
+                      </a>
+                    </li>
+                    <li class="navbar__list-item">
+                      <a class="navbar__link" href="#">
+                        <svg class="navbar__link-icon">
+                          <use class="svg" xlink:href="../img/svg/sprite.svg#insects-circle"></use>
+                        </svg>
+                        <span class="navbar__link-text">Энтомофаги</span>
+                      </a>
+                    </li>
+                    <li class="navbar__list-item">
+                      <a class="navbar__link" href="#">
+                        <svg class="navbar__link-icon">
+                          <use class="svg" xlink:href="../img/svg/sprite.svg#atomize-circle"></use>
+                        </svg>
+                        <span class="navbar__link-text">Опрыскивание</span>
+                      </a>
+                    </li>
+                    <li class="navbar__list-item">
+                      <a class="navbar__link" href="#">
+                        <svg class="navbar__link-icon">
+                          <use class="svg" xlink:href="../img/svg/sprite.svg#map-circle"></use>
+                        </svg>
+                        <span class="navbar__link-text">Картография и мониторинг</span>
+                      </a>
+                    </li>
+                    <li class="navbar__list-item">
+                      <a class="navbar__link" href="#">
+                        <svg class="navbar__link-icon">
+                          <use class="svg" xlink:href="../img/svg/sprite.svg#drones-circle"></use>
+                        </svg>
+                        <span class="navbar__link-text">Каталог продукции</span>
+                      </a>
+                    </li>
+                    <li class="navbar__list-item">
+                      <a class="navbar__link" href="#">
+                        <svg class="navbar__link-icon">
+                          <use class="svg" xlink:href="../img/svg/sprite.svg#news-circle"></use>
+                        </svg>
+                        <span class="navbar__link-text">Новости</span>
+                      </a>
+                    </li>
+                    <li class="navbar__list-item">
+                      <a class="navbar__link" href="#">
+                        <svg class="navbar__link-icon">
+                          <use class="svg" xlink:href="../img/svg/sprite.svg#company-circle"></use>
+                        </svg>
+                        <span class="navbar__link-text">О компании</span>
+                      </a>
+                    </li>
+                    <li class="navbar__list-item">
+                      <a class="navbar__link" href="#">
+                        <svg class="navbar__link-icon">
+                          <use class="svg" xlink:href="../img/svg/sprite.svg#contacts-circle"></use>
+                        </svg>
+                        <span class="navbar__link-text">Контакты</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <hr class="navbar__line">
+                <ul class="navbar__messengers-list">
+                  <li class="navbar__messengers-item">
+                    <a class="navbar__messengers-link" href="#">
+                      <svg class="navbar__messengers-icon">
+                        <use class="svg" xlink:href="../img/svg/sprite.svg#wa"></use>
                       </svg>
-                      <span class="navbar__link-text">Главная</span>
                     </a>
                   </li>
-                  <li class="navbar__list-item">
-                    <a class="navbar__link" href="#">
-                      <svg class="navbar__link-icon">
-                        <use class="svg" xlink:href="../img/svg/sprite.svg#insects"></use>
+                  <li class="navbar__messengers-item">
+                    <a class="navbar__messengers-link" href="#">
+                      <svg class="navbar__messengers-icon">
+                        <use class="svg" xlink:href="../img/svg/sprite.svg#tg"></use>
                       </svg>
-                      <span class="navbar__link-text">Энтомофаги</span>
                     </a>
                   </li>
-                  <li class="navbar__list-item">
-                    <a class="navbar__link" href="#">
-                      <svg class="navbar__link-icon">
-                        <use class="svg" xlink:href="../img/svg/sprite.svg#atomize"></use>
+                  <li class="navbar__messengers-item">
+                    <a class="navbar__messengers-link" href="#">
+                      <svg class="navbar__messengers-icon" style="width:106%;" >
+                        <use class="svg" xlink:href="../img/svg/sprite.svg#we"></use>
                       </svg>
-                      <span class="navbar__link-text">Опрыскивание</span>
-                    </a>
-                  </li>
-                  <li class="navbar__list-item">
-                    <a class="navbar__link" href="#">
-                      <svg class="navbar__link-icon">
-                        <use class="svg" xlink:href="../img/svg/sprite.svg#map"></use>
-                      </svg>
-                      <span class="navbar__link-text">Картография и мониторинг</span>
-                    </a>
-                  </li>
-                  <li class="navbar__list-item">
-                    <a class="navbar__link" href="#">
-                      <svg class="navbar__link-icon">
-                        <use class="svg" xlink:href="../img/svg/sprite.svg#drones"></use>
-                      </svg>
-                      <span class="navbar__link-text">Каталог продукции</span>
-                    </a>
-                  </li>
-                  <li class="navbar__list-item">
-                    <a class="navbar__link" href="#">
-                      <svg class="navbar__link-icon">
-                        <use class="svg" xlink:href="../img/svg/sprite.svg#news"></use>
-                      </svg>
-                      <span class="navbar__link-text">Новости</span>
-                    </a>
-                  </li>
-                  <li class="navbar__list-item">
-                    <a class="navbar__link" href="#">
-                      <svg class="navbar__link-icon">
-                        <use class="svg" xlink:href="../img/svg/sprite.svg#company"></use>
-                      </svg>
-                      <span class="navbar__link-text">О компании</span>
-                    </a>
-                  </li>
-                  <li class="navbar__list-item">
-                    <a class="navbar__link" href="#">
-                      <svg class="navbar__link-icon">
-                        <use class="svg" xlink:href="../img/svg/sprite.svg#contacts"></use>
-                      </svg>
-                      <span class="navbar__link-text">Контакты</span>
                     </a>
                   </li>
                 </ul>
-              </nav>
-              <hr class="navbar__line">
-              <ul class="navbar__messengers-list">
-                <li class="navbar__messengers-item">
-                  <a class="navbar__messengers-link" href="#">
-                    <svg class="navbar__messengers-icon">
-                      <use class="svg" xlink:href="../img/svg/sprite.svg#wa"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="navbar__messengers-item">
-                  <a class="navbar__messengers-link" href="#">
-                    <svg class="navbar__messengers-icon">
-                      <use class="svg" xlink:href="../img/svg/sprite.svg#tg"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="navbar__messengers-item">
-                  <a class="navbar__messengers-link" href="#">
-                    <svg class="navbar__messengers-icon" style="width:106%;" >
-                      <use class="svg" xlink:href="../img/svg/sprite.svg#we"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</header>
+  </header>
 
-<main class="page__main">
+    <main class="page__main">
 
-  <section class="hero hero--ethnomophoages">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 d-sm-none p-0">
-          <div class="hero__mobile-picture hero__mobile-picture--ethnomophoages"></div>
+      <section class="hero hero--ethnomophoages">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 d-sm-none p-0">
+              <div class="hero__mobile-picture hero__mobile-picture--ethnomophoages"></div>
+            </div>
+            <div class="col-xs-12 col-sm-7 col-lg-6 p-xxl-0">
+              <div class="hero__text-content">
+                <h1 class="hero__main-header">Высокоэффективные<br>
+                  Энтомофаги
+                </h1>
+                <p class="hero__paragraph">
+                  Внесение энтофагов при помощи БПЛА увеличивает эффективность защиты растений до 90%
+                </p>
+                <div class="hero__statistic hero__statistic--ethnomophoages">
+                  <div class="hero__plants hero__plants-soy">
+                    <svg class="hero__plants-icon" >
+                      <use xlink:href="../img/svg/sprite.svg#soy"></use>
+                    </svg>
+                    <span class="hero__plants hero__plants-text">до 90% сои</span>
+                  </div>
+                  <div class="hero__plants hero__plants-beet">
+                    <svg class="hero__plants-icon">
+                      <use xlink:href="../img/svg/sprite.svg#beet"></use>
+                    </svg>
+                    <span class="hero__plants-text">до 85% сахарной свеклы</span>
+                  </div>
+                  <div class="hero__plants hero__plants-rape">
+                    <svg class="hero__plants-icon">
+                      <use xlink:href="../img/svg/sprite.svg#rape"></use>
+                    </svg>
+                    <span class="hero__plants-text">до 70 % рапса</span>
+                  </div>
+                  <div class="hero__plants hero__plants-sunflower">
+                    <svg class="hero__plants-icon">
+                      <use xlink:href="../img/svg/sprite.svg#sunflower"></use>
+                    </svg>
+                    <span class="hero__plants-text">до 85 % подсолнуха</span>
+                  </div>
+                  <div class="hero__plants hero__plants-corn">
+                    <svg class="hero__plants-icon">
+                      <use xlink:href="../img/svg/sprite.svg#corn"></use>
+                    </svg>
+                    <span class="hero__plants-text">до 80 % кукурузы</span>
+                  </div>
+                  <div class="hero__plants hero__plants-fruits">
+                    <svg class="hero__plants-icon">
+                      <use xlink:href="../img/svg/sprite.svg#fruits"></use>
+                    </svg>
+                    <span class="hero__plants-text">до 90 % овощных<br>
+                      и плодовых культур</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-xs-12 col-sm-7 col-lg-7 p-xxl-0">
-          <h1 class="hero__main-header">Высокоэффективные<br>
-            Энтомофаги
-          </h1>
-          <p class="hero__paragraph">
-            Внесение энтофагов при помощи БПЛА увеличивает эффективность защиты растений до 90%
-          </p>
-          <div class="hero__statistic hero__statistic--ethnomophoages">
-            <div class="hero__plants hero__plants-soy">
-              <svg class="hero__plants-icon" >
-                <use class="svg" xlink:href="../img/svg/sprite.svg#soy"></use>
-              </svg>
-              <span class="hero__plants hero__plants-text">до 90% сои</span>
-            </div>
-            <div class="hero__plants hero__plants-beet">
-              <svg class="hero__plants-icon">
-                <use class="svg" xlink:href="../img/svg/sprite.svg#beet"></use>
-              </svg>
-              <span class="hero__plants-text">до 85% сахарной свеклы</span>
-            </div>
-            <div class="hero__plants hero__plants-rape">
-              <svg class="hero__plants-icon">
-                <use class="svg" xlink:href="../img/svg/sprite.svg#rape"></use>
-              </svg>
-              <span class="hero__plants-text">до 70 % рапса</span>
-            </div>
-            <div class="hero__plants hero__plants-sunflower">
-              <svg class="hero__plants-icon">
-                <use class="svg" xlink:href="../img/svg/sprite.svg#sunflower"></use>
-              </svg>
-              <span class="hero__plants-text">до 85 % подсолнуха</span>
-            </div>
-            <div class="hero__plants hero__plants-corn">
-              <svg class="hero__plants-icon">
-                <use class="svg" xlink:href="../img/svg/sprite.svg#corn"></use>
-              </svg>
-              <span class="hero__plants-text">до 80 % кукурузы</span>
-            </div>
-            <div class="hero__plants hero__plants-fruits">
-              <svg class="hero__plants-icon">
-                <use class="svg" xlink:href="../img/svg/sprite.svg#fruits"></use>
-              </svg>
-              <span class="hero__plants-text">до 90 % овощных<br>
-                и плодовых культур</span>
+      </section>
+
+      <div class="section-breadcrumbs">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="breadcrumbs"><a href="#">Главная</a>&nbsp;/&nbsp;<a href="#">Энтомофаги</a></div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <div class="section-breadcrumbs">
+      <section class="read-more">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="headline">
+                <h2>Энтомофаги</h2>
+                <span class="h2-podscription">Об Услуге</span>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="read-more__content">
+                <label for="read-more__input">
+                  <input type="checkbox" id="read-more__input">
+                  <span class="read-more__paragraph">
+                        Компания STS.center применяет высокотехнологичные агродроны и БПЛА, которые модернизированы и собраны нашими инженерами для сельского и лесного хозяйства, а также для промышленности. В СТС Центр работают опытные агрономы, энтомологи, пилоты, менеджеры и инженеры. Сегодня мы имеем один из самых современных парков дронов в России, что позволяет нам выполнять работы широкого спектра от простой аэрофотосъемки до лидарного сканирования местности и тепловизионного контроля. Внедрение беспилотных технологий в вашем бизнесе поможет сэкономить время и деньги, а также позволит получить большое преимущество перед вашими конкурентами.
+                        <br><br>
+                        Компания STS.center применяет высокотехнологичные агродроны и БПЛА, которые модернизированы и собраны нашими инженерами для сельского и лесного хозяйства, а также для промышленности. В СТС Центр работают опытные агрономы, энтомологи, пилоты, менеджеры и инженеры. Сегодня мы имеем один из самых современных парков дронов в России, что позволяет нам выполнять работы широкого спектра от простой аэрофотосъемки до лидарного сканирования местности и тепловизионного контроля. Внедрение беспилотных технологий в вашем бизнесе поможет сэкономить время и деньги, а также позволит получить большое преимущество перед вашими конкурентами.
+                        <br><br>
+                        Компания STS.center применяет высокотехнологичные агродроны и БПЛА, которые модернизированы и собраны нашими инженерами для сельского и лесного хозяйства, а также для промышленности. В СТС Центр работают опытные агрономы, энтомологи, пилоты, менеджеры и инженеры. Сегодня мы имеем один из самых современных парков дронов в России, что позволяет нам выполнять работы широкого спектра от простой аэрофотосъемки до лидарного сканирования местности и тепловизионного контроля. Внедрение беспилотных технологий в вашем бизнесе поможет сэкономить время и деньги, а также позволит получить большое преимущество перед вашими конкурентами.
+                        <br><br>
+                        Компания STS.center применяет высокотехнологичные агродроны и БПЛА, которые модернизированы и собраны нашими инженерами для сельского и лесного хозяйства, а также для промышленности. В СТС Центр работают опытные агрономы, энтомологи, пилоты, менеджеры и инженеры. Сегодня мы имеем один из самых современных парков дронов в России, что позволяет нам выполнять работы широкого спектра от простой аэрофотосъемки до лидарного сканирования местности и тепловизионного контроля. Внедрение беспилотных технологий в вашем бизнесе поможет сэкономить время и деньги, а также позволит получить большое преимущество перед вашими конкурентами.
+                      </span>
+                  <a class="read-more__link">
+                    <svg class="read-more__icon">
+                      <use xlink:href="../img/svg/sprite.svg#read-more"></use>
+                    </svg>
+                  </a>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="advantages">
+        <div class="container position-relative">
+          <div class="row">
+            <div class="col-12">
+              <div class="headline">
+                <h2>Приемущества внесения энтомофаги</h2>
+                <span class="h2-podscription">Плюсы использования</span>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="advantages__slider slider">
+                <div class="slider__container">
+                  <div class="slider__slides">
+                    <div class="slider__slides-track">
+                      <div class="slider__slide slider__slide--greenlight">
+                        <div class="advantages__slide-content">
+                          <div class="advantages__slide-headline">
+                            <svg class="advantages__slide-image">
+                              <use xlink:href="../img/svg/sprite.svg#rub"></use>
+                            </svg>
+                            <h5 class="advantages__slide-header">Доступная цена</h5>
+                          </div>
+                          <p class="advantages__slide-paragraph">
+                            Низкая стоимость по сравнению с расходами на химическую обработку растений.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="slider__slide slider__slide--greenlight">
+                        <div class="advantages__slide-content">
+                          <div class="advantages__slide-headline">
+                            <svg class="advantages__slide-image">
+                              <use xlink:href="../img/svg/sprite.svg#wallet"></use>
+                            </svg>
+                            <h5 class="advantages__slide-header">Экономия</h5>
+                          </div>
+                          <p class="advantages__slide-paragraph">
+                            Низкие затраты на внесение трихограмм, златоглазки и габробракону по сравнению с трационными методами обработки
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="slider__slide slider__slide--greenlight">
+                        <div class="advantages__slide-content">
+                          <div class="advantages__slide-headline">
+                            <svg class="advantages__slide-image">
+                              <use xlink:href="../img/svg/sprite.svg#drones-2"></use>
+                            </svg>
+                            <h5 class="advantages__slide-header">Эффективность</h5>
+                          </div>
+                          <p class="advantages__slide-paragraph">
+                            Высокая эффективность, снижение потерь урожайности в результате обработки с/х культур более чем на 90%.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="slider__slide slider__slide--greenlight">
+                        <div class="advantages__slide-content">
+                          <div class="advantages__slide-headline">
+                            <svg class="advantages__slide-image">
+                              <use xlink:href="../img/svg/sprite.svg#drone-splashes"></use>
+                            </svg>
+                            <h5 class="advantages__slide-header">Оперативность</h5>
+                          </div>
+                          <p class="advantages__slide-paragraph">
+                            За 60 минут полета дрон со специальным дозатором обрабатывает до 100 гектаров.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="slider__slide slider__slide--greenlight">
+                        <div class="advantages__slide-content">
+                          <div class="advantages__slide-headline">
+                            <svg class="advantages__slide-image">
+                              <use xlink:href="../img/svg/sprite.svg#insects"></use>
+                            </svg>
+                            <h5 class="advantages__slide-header">Широкий спектр действия  </h5>
+                          </div>
+                          <p class="advantages__slide-paragraph">
+                            Двукратное внесение позволяет уничтожать несколько поколений вредителей.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="slider__slide slider__slide--greenlight">
+                        <div class="advantages__slide-content">
+                          <div class="advantages__slide-headline">
+                            <svg class="advantages__slide-image">
+                              <use xlink:href="../img/svg/sprite.svg#drone-distributes"></use>
+                            </svg>
+                            <h5 class="advantages__slide-header">Равномерное распределение</h5>
+                          </div>
+                          <p class="advantages__slide-paragraph">
+                            Внесение с БПЛА гарантирует внедрение особей трихограммы, златогласки, габробракрну равномерно на всех участках поля
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slider__pagination slider__pagination--tile">
+                      <span class="slider__dot slider__dot--active"></span>
+                      <span class="slider__dot"></span>
+                      <span class="slider__dot"></span>
+                      <span class="slider__dot"></span>
+                      <span class="slider__dot"></span>
+                      <span class="slider__dot"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="aside-element aside-element--left">
+            <span class="aside-element__text">преимущества</span>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="page__footer">
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="breadcrumbs"><a href="#">Главная</a>&nbsp;/&nbsp;<a href="#">Энтомофаги</a></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <section class="read-more">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="headline">
-            <h2>Энтомофаги</h2>
-            <span class="h2-podscription">Об Услуге</span>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <div class="read-more__content">
-            <label for="read-more__input">
-              <input type="checkbox" id="read-more__input">
-              <span class="read-more__paragraph">
-                    Компания STS.center применяет высокотехнологичные агродроны и БПЛА, которые модернизированы и собраны нашими инженерами для сельского и лесного хозяйства, а также для промышленности. В СТС Центр работают опытные агрономы, энтомологи, пилоты, менеджеры и инженеры. Сегодня мы имеем один из самых современных парков дронов в России, что позволяет нам выполнять работы широкого спектра от простой аэрофотосъемки до лидарного сканирования местности и тепловизионного контроля. Внедрение беспилотных технологий в вашем бизнесе поможет сэкономить время и деньги, а также позволит получить большое преимущество перед вашими конкурентами.
-                    <br><br>
-                    Компания STS.center применяет высокотехнологичные агродроны и БПЛА, которые модернизированы и собраны нашими инженерами для сельского и лесного хозяйства, а также для промышленности. В СТС Центр работают опытные агрономы, энтомологи, пилоты, менеджеры и инженеры. Сегодня мы имеем один из самых современных парков дронов в России, что позволяет нам выполнять работы широкого спектра от простой аэрофотосъемки до лидарного сканирования местности и тепловизионного контроля. Внедрение беспилотных технологий в вашем бизнесе поможет сэкономить время и деньги, а также позволит получить большое преимущество перед вашими конкурентами.
-                    <br><br>
-                    Компания STS.center применяет высокотехнологичные агродроны и БПЛА, которые модернизированы и собраны нашими инженерами для сельского и лесного хозяйства, а также для промышленности. В СТС Центр работают опытные агрономы, энтомологи, пилоты, менеджеры и инженеры. Сегодня мы имеем один из самых современных парков дронов в России, что позволяет нам выполнять работы широкого спектра от простой аэрофотосъемки до лидарного сканирования местности и тепловизионного контроля. Внедрение беспилотных технологий в вашем бизнесе поможет сэкономить время и деньги, а также позволит получить большое преимущество перед вашими конкурентами.
-                    <br><br>
-                    Компания STS.center применяет высокотехнологичные агродроны и БПЛА, которые модернизированы и собраны нашими инженерами для сельского и лесного хозяйства, а также для промышленности. В СТС Центр работают опытные агрономы, энтомологи, пилоты, менеджеры и инженеры. Сегодня мы имеем один из самых современных парков дронов в России, что позволяет нам выполнять работы широкого спектра от простой аэрофотосъемки до лидарного сканирования местности и тепловизионного контроля. Внедрение беспилотных технологий в вашем бизнесе поможет сэкономить время и деньги, а также позволит получить большое преимущество перед вашими конкурентами.
-                  </span>
-              <a class="read-more__link">
-                <svg class="read-more__icon">
-                  <use xlink:href="../img/svg/sprite.svg#read-more"></use>
-                </svg>
+          <div class="footer">
+            <div class="footer__logo">
+              <a href="#" class="navbar__logo-link">
+                <img class="navbar__logo-img" src="../img/LogoAgroScout.png" alt="Логотип компании АгроСкаут.">
               </a>
-            </label>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-</main>
-
-<footer class="page__footer">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="footer">
-          <div class="footer__logo">
-            <a href="#" class="navbar__logo-link">
-              <img class="navbar__logo-img" src="../img/LogoAgroScout.png" alt="Логотип компании АгроСкаут.">
-            </a>
-          </div>
-          <div class="footer__phone">
-            <a class="navbar__phone-link" href="tel:+78612179118">
-              <svg class="navbar__phone-icon">
-                <use class="svg svg--phone" xlink:href="../img/svg/sprite.svg#phone"></use>
-              </svg>
-              <span class="navbar__phone-number">+7861 21791 18</span>
-            </a>
-          </div>
-          <div class="footer__social-networks">
-            <div class="footer__social-networks-box">
-              <span class="footer__social-networks-label">Подписывайтесь на наши соц. сети</span>
-              <a class="footer__link" href="#">
-                <svg class="footer__icon">
-                  <use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#vk"></use>
+            </div>
+            <div class="footer__phone">
+              <a class="navbar__phone-link" href="tel:+78612179118">
+                <svg class="navbar__phone-icon">
+                  <use class="svg svg--phone" xlink:href="../img/svg/sprite.svg#phone"></use>
                 </svg>
+                <span class="navbar__phone-number">+7861 21791 18</span>
               </a>
-              <a class="footer__link" href="#">
-                <svg class="footer__icon">
-                  <use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#in"></use>
-                </svg>
-              </a>
-              <a class="footer__link" href="#">
-                <svg class="footer__icon">
-                  <use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#tt"></use>
-                </svg>
-              </a>
+            </div>
+            <div class="footer__social-networks">
+              <div class="footer__social-networks-box">
+                <span class="footer__social-networks-label">Подписывайтесь на наши соц. сети</span>
+                <a class="footer__link" href="#">
+                  <svg class="footer__icon">
+                    <use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#vk"></use>
+                  </svg>
+                </a>
+                <a class="footer__link" href="#">
+                  <svg class="footer__icon">
+                    <use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#in"></use>
+                  </svg>
+                </a>
+                <a class="footer__link" href="#">
+                  <svg class="footer__icon">
+                    <use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#tt"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<dialog class="mini-cart">
-  <form method="dialog" class="minicart__dialog">
-    <div class="minicart__headline">
-      <h7>Корзина</h7>
-      <a href="#" class="mini-cart__button--close" id="close-mini-cart">
-        <svg class="mini-cart__icon">
-          <use xlink:href="../img/svg/sprite.svg#menu-off"></use>
+    <dialog class="mini-cart">
+    <form method="dialog" class="minicart__dialog">
+      <div class="minicart__headline">
+        <h7>Корзина</h7>
+        <a href="#" class="mini-cart__button--close" id="close-mini-cart">
+          <svg class="mini-cart__icon">
+            <use xlink:href="../img/svg/sprite.svg#menu-off"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="minicart__ordering-goods minicart__ordering-goods--empty" style="display: none">
+        <svg class="minicart__svg">
+          <use xlink:href="../img/svg/sprite.svg#minicart-drone"></use>
         </svg>
-      </a>
-    </div>
-    <div class="minicart__ordering-goods minicart__ordering-goods--empty" style="display: none">
-      <svg class="minicart__svg">
-        <use xlink:href="../img/svg/sprite.svg#minicart-drone"></use>
-      </svg>
-      <span class="minicart__empty">Корзина пуста</span>
-      <hr class="minicart__hr-line">
-      <div class="minicart__continue-shopping">
-        <a href="#" class="minicart__link">Продолжить покупки</a>
-      </div>
-    </div>
-    <div class="minicart__ordering-goods minicart__ordering-goods--fill">
-      <ul class="minicart__list">
-        <li class="minicart__list-item">
-          <div class="product-card">
-            <div class="product-card__content product-card__content--minicart">
-              <div class="product-card__photo">
-                <img alt="" src="../img/drone-photo(3).png">
-              </div>
-              <h4 class="product-card__name">Агродрон AGR A22</h4>
-              <span class="product-card__brand">Бренд: AGR</span>
-              <span class="product-card__model">Модель: 101-0101</span>
-              <span class="product-card__price">$15001.27</span>
-              <span class="product-card__delete">
-                    <svg class="product-card__delete-icon">
-                      <use xlink:href="../img/svg/sprite.svg#cart-delete"></use>
-                    </svg>
-                  </span>
-              <div class="product-card__quantity">
-                <span class="product-card__quantity-minus">-</span>
-                <span class="product-card__quantity-num">1</span>
-                <span class="product-card__quantity-plus">+</span>
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
-      <div class="minicart__ui">
-        <div class="minicart__continue-shopping minicart__continue-shopping--empty">
+        <span class="minicart__empty">Корзина пуста</span>
+        <hr class="minicart__hr-line">
+        <div class="minicart__continue-shopping">
           <a href="#" class="minicart__link">Продолжить покупки</a>
         </div>
-        <div class="minicart__total">
-          Всего: <span class="minicart__total-price">$15001.27</span>
-        </div>
-        <a class="button minicart__button--arrange" role="button">Оформить заказ</a>
       </div>
-    </div>
-  </form>
-</dialog>
+      <div class="minicart__ordering-goods minicart__ordering-goods--fill">
+        <ul class="minicart__list">
+          <li class="minicart__list-item">
+            <div class="product-card">
+              <div class="product-card__content product-card__content--minicart">
+                <div class="product-card__photo">
+                  <img alt="" src="../img/drone-photo(3).png">
+                </div>
+                <h4 class="product-card__name">Агродрон AGR A22</h4>
+                <span class="product-card__brand">Бренд: AGR</span>
+                <span class="product-card__model">Модель: 101-0101</span>
+                <span class="product-card__price">$15001.27</span>
+                <span class="product-card__delete">
+                      <svg class="product-card__delete-icon">
+                        <use xlink:href="../img/svg/sprite.svg#cart-delete"></use>
+                      </svg>
+                    </span>
+                <div class="product-card__quantity">
+                  <span class="product-card__quantity-minus">-</span>
+                  <span class="product-card__quantity-num">1</span>
+                  <span class="product-card__quantity-plus">+</span>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="minicart__ui">
+          <div class="minicart__continue-shopping minicart__continue-shopping--empty">
+            <a href="#" class="minicart__link">Продолжить покупки</a>
+          </div>
+          <div class="minicart__total">
+            Всего: <span class="minicart__total-price">$15001.27</span>
+          </div>
+          <a class="button minicart__button--arrange" role="button">Оформить заказ</a>
+        </div>
+      </div>
+    </form>
+  </dialog>
 
-<script src="../js/script.js"></script>
+    <script src="../js/script.js"></script>
 
-</body>
+  </body>
 </html>

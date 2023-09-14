@@ -4,6 +4,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 60%;
+    text-shadow: 0 0 5px #1B1C1D;
   }
 
   @media #{$min-md} {
@@ -12,7 +13,7 @@
 
   @media #{$min-xxl} {
     background-image: url("../../img/hero-xl (3).jpg");
-    min-height: 650px;
+    min-height: 500px;
   }
 
   &--ethnomophoages {
@@ -44,18 +45,19 @@
   }
 }
 
+.hero__text-content {
+
+  padding: 5vh 0 0 0;
+
+  @media #{$min-lg} {
+    padding: 13vh 0 10vh 0;
+  }
+}
 .hero__main-header {
-  padding-top: 20px;
-  text-shadow: 0 0 5px #1B1C1D;
   text-align: center;
 
   @media #{$min-sm} {
-    padding-top: 27px;
     text-align: left;
-  }
-
-  @media #{$min-md} {
-    padding-top: 95px;
   }
 }
 
@@ -75,7 +77,6 @@
 }
 
 .hero__statistic {
-  padding-top: 60px;
   display: grid;
   grid-template-columns: 2fr 2fr 1fr;
   grid-template-rows: 50%;
@@ -86,6 +87,7 @@
   row-gap: 3px;
   max-width: max-content;
   margin: auto;
+  padding-top: 60px;
 
   @media #{$min-md} {
     padding-top: 120px;
@@ -134,13 +136,12 @@
         "soy sunflower"
         "beet corn"
         "rape fruits";
-  column-gap: 7%;
-  row-gap: 7px;
-  @include adaptiv-font-size(18, 24);
-  padding: 35px 0 20px 0;
+  column-gap: 1vw;
+  row-gap: 1vh;
+  @include adaptiv-font-size(24, 18);
+  padding: max(5vh, 20px) 0 30px 0;
 
   @media #{$landscape-h550} {
-    text-align: center;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 50% 50%;
     grid-template-areas:
@@ -149,8 +150,6 @@
   }
 
   @media #{$min-sm} {
-    column-gap: 0;
-    row-gap: 5px;
     margin: 0;
     max-width: 100%;
   }
@@ -162,7 +161,6 @@
         "soy sunflower beet"
         "corn rape fruits";
   }
-
 }
 
 .hero__plants {
@@ -205,12 +203,16 @@
 }
 
 .hero__paragraph {
-  padding-top: 20px;
-  font-size: 16px;
+  @include adaptiv-font-size(24, 18);
   line-height: 27px;
   margin: 0;
+  padding-top: max(5vh, 20px);
 
-  @media #{$landscape-h550} {
+  @media (min-width: 400px), #{$landscape-h550} {
     text-align: center;
+  }
+
+  @media #{$min-sm} {
+    text-align: left;
   }
 }
