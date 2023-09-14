@@ -1,0 +1,50 @@
+.solved-problems {
+  @include padding-top-adaptive($section-padding--mobile, $section-padding--tablet, $section-padding);
+  overflow: hidden;
+}
+
+.solved-problems__list {
+  list-style-type: none;
+  counter-reset: num;
+  margin: 0 0 0 45px;
+  padding: 15px 0 0 0;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media #{$min-md} {
+    padding: 50px 0 0 0;
+  }
+}
+
+.solved-problems__list-item {
+  position: relative;
+  margin: 0 0 0 0;
+  padding: 20px 0 10px 0;
+  width: 100%;
+
+  @media #{$min-md} {
+    width: calc(90% / 2);
+  }
+
+  @media #{$min-xl} {
+    width: calc(90% / 3);
+  }
+
+  &:before {
+    content: counter(num);
+    counter-increment: num;
+    display: inline-block;
+    position: absolute;
+    left: -38px;
+    width: 28px;
+    height: 28px;
+    color: $color-secondary;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 50%;
+    border: 1px solid $color-accent--bright;
+  }
+}
