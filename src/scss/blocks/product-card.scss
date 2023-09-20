@@ -80,7 +80,7 @@
   fill: white;
   cursor: pointer;
 
-  @include mobile-devices-hover;
+  @include mouse-devices-hover;
 
   &-icon {
     width: 13px;
@@ -117,6 +117,6 @@
   &-minus,
   &-plus {
     cursor: pointer;
-    @include mobile-devices-hover;
+    @include mouse-devices-hover;
   }
 }

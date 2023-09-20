@@ -83,14 +83,16 @@ $minWidth: 320;
 }
 
 /* hover */
-@mixin mobile-devices-hover {
+@mixin mouse-devices-hover {
   &:hover {
     @media #{$mouse-device} {
       color: $link-color--hover;
+      fill: $link-color--hover;
     }
   }
 
   &:active {
     color: $link-color--pressed;
+    fill: $link-color--pressed;
   }
 }

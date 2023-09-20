@@ -75,7 +75,7 @@
   column-gap: 8px;
 
   &-select {
-    @include mobile-devices-hover;
+    @include mouse-devices-hover;
   }
 }
 
