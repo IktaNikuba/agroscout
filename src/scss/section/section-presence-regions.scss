@@ -49,7 +49,7 @@
   user-select: none;
   padding-top: 0.5vh;
 
-  @include mobile-devices-hover;
+  @include mouse-devices-hover;
 }
 .presence-regions__map {
   width: 100%;
