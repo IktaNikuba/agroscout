@@ -87,10 +87,12 @@ $minWidth: 320;
   &:hover {
     @media #{$mouse-device} {
       color: $link-color--hover;
+      fill: $link-color--hover;
     }
   }
 
   &:active {
     color: $link-color--pressed;
+    fill: $link-color--hover;
   }
 }

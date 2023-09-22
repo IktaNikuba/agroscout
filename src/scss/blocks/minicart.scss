@@ -89,11 +89,16 @@
 
 .minicart__list {
   padding: 0;
+  height: 100%;
+
+  @media #{$min-md} {
+    border-bottom: 1px solid #464646;
+  }
 }
 
 .minicart__list-item {
   padding-top: 15px;
-  border-bottom: 1px solid #464646;
+  border-bottom: 1px dashed #464646;
 }
 
 .minicart__ui {

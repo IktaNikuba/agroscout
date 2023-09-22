@@ -83,8 +83,8 @@
   grid-template-areas:
         "num1 num2 num3"
         "txt1 txt2 txt3";
-  column-gap: 5%;
-  row-gap: 3px;
+  column-gap: 1vw;
+  row-gap: 2vh;
   max-width: max-content;
   margin: auto;
   padding-top: 60px;
@@ -136,12 +136,10 @@
         "soy sunflower"
         "beet corn"
         "rape fruits";
-  column-gap: 1vw;
-  row-gap: 1vh;
   @include adaptiv-font-size(24, 18);
   padding: max(5vh, 20px) 0 30px 0;
 
-  @media #{$landscape-h550} {
+  @media #{$landscape-h550}, #{$min-lg}  {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 50% 50%;
     grid-template-areas:
@@ -152,14 +150,6 @@
   @media #{$min-sm} {
     margin: 0;
     max-width: 100%;
-  }
-
-  @media #{$min-lg} {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50% 50%;
-    grid-template-areas:
-        "soy sunflower beet"
-        "corn rape fruits";
   }
 }
 

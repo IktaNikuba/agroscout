@@ -37,7 +37,7 @@
     column-gap: 150px;
   }
 
-  @media (max-height: 450px) and (orientation: landscape) {
+  @media #{$landscape-h550} {
     columns: 125px 3;
     column-gap: 30px;
   }
@@ -47,39 +47,39 @@
   font-weight: 300;
   cursor: pointer;
   user-select: none;
-  padding-top: calc(5px + 0.5vh);
+  padding-top: 0.5vh;
 
   @include mobile-devices-hover;
 }
 .presence-regions__map {
   width: 100%;
   display: inline-block;
-  margin-top: -120px;
+  margin-top: -150px;
 
   @media #{$landscape-h550} {
     margin-top: -170px;
   }
 
   @media #{$min-md} {
-    margin-top: -65px;
+    margin-top: -100px;
   }
 
   @media #{$min-lg} {
-    margin-top: -155px;
-    margin-left: -20px;
+    margin-top: -200px;
+    margin-left: -70px;
   }
 
   @media #{$min-xl} {
-    margin-top: -225px;
+    margin-top: -270px;
     margin-left: -100px;
   }
 
   @media #{$min-xxl} {
-    margin-top: -225px;
-    margin-left: -100px;
+    margin-top: -350px;
+    margin-left: -120px;
   }
 
   img {
-    width: 120%;
+    width: 135%;
   }
 }
