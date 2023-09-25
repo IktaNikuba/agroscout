@@ -130,55 +130,52 @@ a {
 }
 
 /* Рамки к картинкам */
-.picture-wrapper-outer {
-  display: inline-block;
-  width: 100%;
+.picture-wrapper {
   position: relative;
-  border: 2px solid $bright-green;
-  transition: all .3s ease;
-
-  @media #{$landscape-h550} {
-    height: 100dvh;
-  }
-}
-
-.picture-wrapper-outer:before,
-.picture-wrapper-outer:after {
-  content: "";
-  z-index: 1;
-  display: block;
-  position: absolute;
-  background: $bg-primary;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transform-origin: 50% 50%;
-}
-
-.picture-wrapper-outer:before {
-  width: calc(100% + 6px);
-  height: 80%;
-  transition: height 0.6s;
-}
-.picture-wrapper-outer:after {
-  height: calc(100% + 6px);
-  width: 90%;
-  transition: width 0.6s;
-}
-.picture-wrapper-outer:hover:before,
-.picture-wrapper-outer:focus:before {
-  height: 50%;
-}
-.picture-wrapper-outer:hover:after,
-.picture-wrapper-outer:focus:after {
-  width: 75%;
-}
-.picture-wrapper-inner {
   padding: 20px;
-  height: 100%;
-  z-index: 2;
-  position: relative;
-  text-align: center;
+  width: fit-content;
+  height: fit-content;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* какую-нибудь границу чтобы border-image работал */
+    border: 1px solid;
+    /* устанавливаем цвет с помощью фейкового градиента */
+    border-image-source: linear-gradient($color-accent--bright, $color-accent--bright);
+    border-image-width: 3px 50px;
+  }
+
+  &:after {
+    border-image-width: 50px 3px;
+  }
+
+  &:hover:after,
+  &:focus:after {
+    animation-name: side-jump;
+    border-image-width: 30%  3px;
+  }
+
+  &:hover:before,
+  &:focus:before {
+    animation-name: jump;
+    border-image-width: 3px 30%;
+  }
+
+  &:hover:after,
+  &:focus:after,
+  &:hover:before,
+  &:focus:before {
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-direction: normal;
+  }
 }
 
 /* Вешаю на контейнер чтобы выравнивать фоновые элементы */

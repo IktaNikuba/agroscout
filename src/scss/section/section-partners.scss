@@ -19,26 +19,6 @@
   animation-duration: 10s;
   animation-delay: 3s;
   animation-direction: normal;
-
-  @keyframes marquee-to-left {
-    0% {
-      transform: translate(0%, 0);
-    }
-    100% {
-      transform: translate(-1700px, 0);
-    }
-  }
-
-  @media #{$min-md} {
-    @keyframes marquee-to-left {
-      0% {
-        transform: translate(50%, 0);
-      }
-      100% {
-        transform: translate(-100%, 0);
-      }
-    }
-  }
 }
 
 .partners__list-item {

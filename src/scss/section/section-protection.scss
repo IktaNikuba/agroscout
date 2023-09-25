@@ -1,0 +1,8 @@
+.protection {
+  @include padding-top-adaptive($section-padding--mobile, $section-padding--tablet, $section-padding);
+}
+
+.protection__description {
+  padding-top: max(7vh, 30px);
+}
+
