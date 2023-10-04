@@ -18,7 +18,6 @@ $minWidth: 320;
 
 /* icon-sizes */
 @mixin icon-size-adaptive($mobSize, $tabSize:$mobSize, $pcSize:$tabSize) {
-
   width: $mobSize;
   height: $mobSize;
 

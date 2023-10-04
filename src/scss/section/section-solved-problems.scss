@@ -31,20 +31,4 @@
   @media #{$min-xl} {
     width: calc(90% / 3);
   }
-
-  &:before {
-    content: counter(num);
-    counter-increment: num;
-    display: inline-block;
-    position: absolute;
-    left: -38px;
-    width: 28px;
-    height: 28px;
-    color: $color-secondary;
-    text-align: center;
-    font-size: 18px;
-    line-height: 24px;
-    border-radius: 50%;
-    border: 1px solid $color-accent--bright;
-  }
 }

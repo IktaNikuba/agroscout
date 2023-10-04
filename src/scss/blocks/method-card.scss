@@ -84,7 +84,6 @@
   }
 
   &--right {
-
     @media #{$min-md} {
       padding: 0 60px 60px 60px;
     }
@@ -102,6 +101,10 @@
 
 .method-card__paragraph {
   margin: 0;
+
+  @media #{$min-lg} {
+    min-height: 220px;
+  }
 }
 
 .method-card__statistic {

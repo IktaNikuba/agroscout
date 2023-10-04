@@ -1,7 +1,5 @@
 .presence-regions {
-
   @include padding-top-adaptive($section-padding--mobile, $section-padding--tablet, $section-padding);
-
   overflow: hidden;
 }
 
@@ -25,9 +23,7 @@
 }
 
 .presence-regions__list {
-
   @include margin-top-adaptive(0, 45px, 70px);
-
   padding-left: 1rem;
   columns: 125px 2;
   width: fit-content;
@@ -58,7 +54,6 @@
   cursor: pointer;
   user-select: none;
   padding-top: 0.5vh;
-
   @include mouse-devices-hover;
 }
 

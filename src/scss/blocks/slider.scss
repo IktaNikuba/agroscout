@@ -1,7 +1,6 @@
 .slider__container {
   height: fit-content;
   margin: 0 auto 0;
-
   user-select: none;
   touch-action: pan-y;
 }
@@ -28,8 +27,6 @@
 .slider__slide {
   width: 100%;
   height: auto;
-  background-color: $bg-info;
-
   flex-shrink: 0;
 
   &--news {

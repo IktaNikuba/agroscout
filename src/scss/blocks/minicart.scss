@@ -79,7 +79,7 @@
   color: $bg-success;
 }
 
-/* Есть товары */
+/* Корзина с товарами */
 .minicart__ordering-goods--fill {
   height: 100%;
   display: flex;
@@ -89,16 +89,12 @@
 
 .minicart__list {
   padding: 0;
-  height: 100%;
-
-  @media #{$min-md} {
-    border-bottom: 3px solid #464646;
-  }
+  height: auto;
 }
 
 .minicart__list-item {
   padding-top: 15px;
-  border-bottom: 1px dashed #464646;
+  border-bottom: 1px solid #464646;
 }
 
 .minicart__ui {
@@ -117,6 +113,7 @@
 
 .minicart__continue-shopping {
   width: fit-content;
+
   &--empty {
     border-bottom: 1px solid $color-accent--bright;
     display: inline-block;

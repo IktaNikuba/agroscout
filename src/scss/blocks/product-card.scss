@@ -11,6 +11,7 @@
         "button button button button";
   align-items: center;
   padding: 20px 20px 60px 20px;
+  background-color: $bg-info;
 
   @media #{$min-lg} {
     grid-template-columns: 65px 1fr 1fr 65px;
@@ -32,11 +33,11 @@
       justify-items: center;
     }
 
-    @media #{$min-md} {
+    @media #{$min-md}, #{$landscape-h550} {
       grid-template-columns: 1fr 1fr 1fr auto;
       grid-template-rows: 1fr 1fr;
       grid-template-areas:
-        "photo name . delete"
+        "photo name brand delete"
         "photo model quantity price"
     }
   }

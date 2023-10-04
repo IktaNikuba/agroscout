@@ -96,21 +96,14 @@ a {
   display: inline-block;
   width: 100%;
   height: 100%;
-
   color: $link-color;
   line-height: 1;
   text-wrap: nowrap;
   text-align: center;
-
   text-decoration: none;
-
   @include mouse-devices-hover;
 }
 
-/*Убрать полосу прокрутки для всей страницы*/
-::-webkit-scrollbar {
-  width: 0;
-}
 
 /* Вырубает блок */
 .cut-down {
@@ -171,7 +164,7 @@ a {
   &:hover:before,
   &:focus:before {
     animation-timing-function: linear;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-delay: 0s;
     animation-direction: normal;
   }
@@ -231,8 +224,7 @@ a {
   }
 }
 
-
-/* Боковые элементы */
+/* Боковые фоновые элементы */
 .aside-element {
   display: none;
 
@@ -256,4 +248,21 @@ a {
   @media #{$min-lg} {
     display: block;
   }
+}
+
+/* цифры в кружочках */
+.numeric:before {
+  content: counter(num);
+  counter-increment: num;
+  display: inline-block;
+  position: absolute;
+  left: -38px;
+  width: 28px;
+  height: 28px;
+  color: $color-secondary;
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+  border-radius: 50%;
+  border: 1px solid $color-accent--bright;
 }
