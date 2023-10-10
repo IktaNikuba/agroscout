@@ -1,0 +1,151 @@
+.work-stages {
+  @include padding-top-adaptive($section-padding--mobile, $section-padding--tablet, $section-padding);
+}
+
+.work-stages__slider {
+  padding-top: max(7vh, 30px);
+}
+
+.work-stages__slides-track {
+  row-gap: 40px;
+
+  @media #{$min-md} {
+    justify-content: center;
+  }
+}
+
+.work-stages__slide {
+  width: 100%;
+
+  @media #{$min-md} {
+    height: auto;
+    width: fit-content;
+  }
+
+  @media #{$min-xl} {
+    width: calc((100% - 60px) / 4);
+  }
+}
+
+.work-stages__slide-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  column-gap: clamp(30px, 5vw, 50px);
+  row-gap: clamp(30px, 5vh, 50px);
+  position: relative;
+
+  @media #{$min-md} {
+    flex-direction: row;
+  }
+
+  @media #{$min-xl} {
+    flex-direction: column;
+  }
+
+  &--even-numbered {
+    .work-stages__slide-text {
+      order: 1;
+    }
+
+    .work-stages__slide-podscript {
+      order: 2;
+    }
+
+    @media #{$min-md} {
+      .work-stages__slide-text {
+        order: 2;
+      }
+
+      .work-stages__slide-podscript {
+        order: 1;
+      }
+    }
+  }
+}
+
+.work-stages__slide-text {
+  padding: 30px 30px 30px 80px;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 38px;
+  background-color: #1E1D1D;
+  position: relative;
+
+  @media #{$min-md} {
+    padding: 30px 30px 30px 60px;
+    height: 202px;
+    width: 50%;
+  }
+
+  @media #{$min-xl} {
+    width: 100%;
+  }
+}
+
+.work-stages__numeric-count {
+  counter-set: num;
+}
+
+.work-stages__numeric:before {
+  left: 20px;
+}
+
+.work-stages__slide-podscript {
+  color: rgba(70, 70, 70, 0.15);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  @media #{$min-md} {
+    width: 50%;
+  }
+
+  @media #{$min-xl} {
+    width: 100%;
+  }
+}
+
+.work-stages__slide-podscript,
+.work-stages__slide-text {
+  max-width: 311px;
+  min-width: 290px;
+  height: 202px;
+}
+
+.work-stages__slide-arrow {
+  display: none;
+
+  @media #{$min-md} {
+    display: block;
+    width: fit-content;
+    position: absolute;
+    top: 75%;
+    left: 85%;
+    z-index: 2;
+  }
+
+  &-icon {
+    width: 144px;
+    height: 133px;
+  }
+
+  &--rotate {
+    transform: rotate(90deg);
+    left: -32%;
+
+    @media #{$min-xl} {
+      transform: rotate(-90deg);
+      left: 75%;
+      top: -45%;
+    }
+  }
+}
