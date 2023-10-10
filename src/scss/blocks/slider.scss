@@ -8,10 +8,6 @@
 .slider__slides {
   width: 100%;
   overflow-x: hidden;
-
-  @media #{$min-md} {
-    overflow-x: unset;
-  }
 }
 
 .slider__slides-track {

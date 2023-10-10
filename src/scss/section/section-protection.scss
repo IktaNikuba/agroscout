@@ -1,5 +1,6 @@
 .protection {
   @include padding-top-adaptive($section-padding--mobile, $section-padding--tablet, $section-padding);
+  overflow: hidden;
 }
 
 .protection__description {
@@ -8,8 +9,4 @@
   &-paragraph {
     margin: 0;
   }
-}
-
-.protection__method-card {
-
 }

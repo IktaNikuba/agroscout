@@ -3,6 +3,11 @@
   overflow: hidden;
 }
 
+.solved-problems__background-element {
+  right: -10%;
+  bottom: -30%;
+}
+
 .solved-problems__list {
   list-style-type: none;
   counter-reset: num;
@@ -32,3 +37,5 @@
     width: calc(90% / 3);
   }
 }
+
+
