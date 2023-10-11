@@ -225,8 +225,7 @@
                     <svg class="hero__plants-icon">
                       <use xlink:href="../img/svg/sprite.svg#fruits"></use>
                     </svg>
-                    <span class="hero__plants-text">до 90 % овощных<br>
-                      и плодовых культур</span>
+                    <span class="hero__plants-text">до 90 % овощных<br>и плодовых культур</span>
                   </div>
                 </div>
               </div>
@@ -452,10 +451,10 @@
                 </div>
                 <div class="method-card__info">
                   <p class="method-card__paragraph">
-                    Расселение трихограммы на полях России  рекомендуется проводить как в стандартные сроки внесения,
+                    Расселение трихограммы на полях России рекомендуется проводить как в стандартные сроки внесения,
                     в которые наблюдается максимальная активность всех видов вредителей, так и при видимом появлении вредителей. В этом случае можно добиться максимальной эффективности с минимальным вредом для культур.
 
-                    Для расселения трихограммы используется специальная автоматизированная система,  которая устанавливается на дроны мультироторного типа.
+                    Для расселения трихограммы используется специальная автоматизированная система, которая устанавливается на дроны мультироторного типа.
 
                     За 60 минут полета дрон со специальным дозатором обрабатывает до 100 гектаров. Эффективность комплексной защиты растений с помощью
                     энтомофагов достигает 90%.
@@ -512,7 +511,7 @@
                     При своевременном внесении и соблюдении всех технологических процессов при производстве и транспортировке, златоглазка эффективно защищает растение от вредителей и повышает урожайность.
 
                     Златоглазка уничтожает 76 видов вредителей и 11 видов клещей. Наиболее эффективна
-                    в борьбе с очагами заражения тлей, к лещами, стеблевым мотыльком.
+                    в борьбе с очагами заражения тлей, клещами, стеблевым мотыльком.
 
                     Вносится златоглазка с помощью дрона, дозировка составляет 1000 яиц на один гектар.
                     За 60 минут полета дрон со специальным дозатором обрабатывает до 100 гектаров. Эффективность комплексной защиты растений с помощью энтомофагов достигает 90%.
@@ -664,7 +663,6 @@
                       </div>
                     </div>
                   </div>
-
                   <div class="slider__pagination slider__pagination--tile">
                     <span class="slider__dot slider__dot--active"></span>
                     <span class="slider__dot"></span>
@@ -691,25 +689,41 @@
       </section>
 
       <section class="feedback">
-        <div class="container position-relative">
+        <div class="container">
           <div class="row">
             <div class="col-12">
-              <div class="headline">
-                <h2>Нужна помошь?</h2>
-                <span class="h2-podscription">Напишите нам</span>
-              </div>
+              <form class="feedback__form position-relative" id="feedback-form" method="get">
+
+                <div class="headline">
+                  <h2>Нужна помошь?</h2>
+                  <span class="h2-podscription">Напишите нам</span>
+                </div>
+
+                <div class="feedback__paragraph">Заполните форму и мы за 5 минут подскажем вам лучшие способы защиты вашего урожая</div>
+
+                <fieldset class="feedback__form-fieldsets">
+                  <label class="feedback__fieldset-label" for="your-name"></label>
+                  <input class="feedback__fieldset-input" type="text" id="your-name" name="your-name" placeholder="Ваше имя">
+
+                  <label class="feedback__fieldset-label" for="phone"></label>
+                  <input class="feedback__fieldset-input" type="tel" id="phone" name="phone" placeholder="Ваш телефон">
+
+                  <label class="feedback__fieldset-label" for="email"></label>
+                  <input class="feedback__fieldset-input" type="email" id="email" name="email" placeholder="Ваш email">
+
+                  <button class="button feedback__button" type="submit" form="feedback-form" value="Submit">Отправить</button>
+
+                  <a class="feedback__form-link" href="#">Политика конфиденциальности</a>
+                </fieldset>
+
+                <div class="feedback__background-element">
+                  <svg class="feedback__background-svg">
+                    <use xlink:href="../img/svg/sprite.svg#bg-relief"></use>
+                  </svg>
+                  <img class="feedback__background-picture" src="../img/drone-form.png" alt="">
+                </div>
+              </form>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <div class="feedback__paragraph">Заполните форму и мы за 5 минут подскажем вам лучшие способы защиты вашего урожая</div>
-              
-            </div>
-          </div>
-          <div class="background-element background-element--relief work-stages__background-element">
-            <svg class="background-element__svg">
-              <use xlink:href="../img/svg/sprite.svg#bg-relief"></use>
-            </svg>
           </div>
         </div>
       </section>

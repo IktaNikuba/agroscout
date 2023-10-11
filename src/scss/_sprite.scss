@@ -1,8 +1,8 @@
 :root {
-  --svg-messenger-color: #FFFFFF;
-  --svg-messenger-color--hover: #02E502;
-  --svg-messenger-color--active: #01B601;
-  --svg-messenger-color--dark: #181818;
+  --svg-color: #FFFFFF;
+  --svg-color--hover: #02E502;
+  --svg-color--active: #01B601;
+  --svg-color--dark: #181818;
 }
 
 svg {
@@ -11,31 +11,31 @@ svg {
 }
 
 .svg {
-  stroke: var(--svg-messenger-color);
+  stroke: var(--svg-color);
 
   &--green-circle {
-    stroke: var(--svg-messenger-color--hover);
+    stroke: var(--svg-color--hover);
   }
 }
 
 @media #{$mouse-device} {
   a:hover .svg {
-    --svg-messenger-color: var(--svg-messenger-color--hover);
-    stroke: var(--svg-messenger-color--hover);
+    --svg-color: var(--svg-color--hover);
+    stroke: var(--svg-color--hover);
   }
 }
 
 a:active .svg {
-  --svg-messenger-color: var(--svg-messenger-color--active);
-  stroke: var(--svg-messenger-color--active);
+  --svg-color: var(--svg-color--active);
+  stroke: var(--svg-color--active);
 }
 
 .slider__slide {
   .svg {
-    fill: var(--svg-messenger-color--hover);
+    fill: var(--svg-color--hover);
   }
   &:active {
-    --svg-messenger-color--hover: var(--svg-messenger-color--dark);
+    --svg-color--hover: var(--svg-color--dark);
     transition: all 1s ease 0s;
   }
 }

@@ -1,6 +1,6 @@
 .breadcrumbs {
   @include padding-top-adaptive(60px, 80px, 80px);
-  color: #FFF;
+  color: $white;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;

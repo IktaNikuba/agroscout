@@ -1,0 +1,136 @@
+.feedback {
+  overflow: hidden;
+  @include padding-top-adaptive($section-padding--mobile, $section-padding--tablet, $section-padding);
+}
+
+.feedback__form {
+  background-color: $charcoal;
+  @include margin-top-adaptive(56px, 107px, 111px);
+  @include padding-adaptive(27px, 32px, 75px);
+  @include padding-bot-adaptive(60px, 50px, 116px);
+  max-width: 1240px;
+
+  @media #{$min-xl} {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+.feedback__paragraph {
+  @include margin-top-adaptive(20px, 41px, 50px);
+  max-width: 70%;
+}
+
+.feedback__form-fieldsets {
+  @include margin-top-adaptive(20px, 41px, 50px);
+  display: flex;
+  flex-direction: column;
+  row-gap: clamp(15px, 1vh, 20px);
+  column-gap: clamp(15px, 2vw, 42px);
+
+  @media #{$min-md} {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.feedback__fieldset-label {
+  display: none;
+}
+
+.feedback__fieldset-input {
+  background-color: transparent;
+  color: $color-secondary;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  border: none;
+  border-bottom: 2px solid $medium-gray;
+  height: 45px;
+
+  &--green:focus,
+  &--green:focus-visible {
+    border-bottom: 2px solid $color-accent--bright;
+  }
+
+  &:focus,
+  &:focus-visible {
+    border-bottom: 2px solid $color-secondary;
+  }
+
+  @media #{$min-md} {
+    width: 20%;
+  }
+}
+
+.feedback__button {
+  margin-top: 15px;
+  height: 45px;
+  width: 100%;
+  order: 1;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+
+  @media #{$min-md} {
+    width: 110px;
+    order: 0;
+    margin: 0;
+  }
+}
+
+.feedback__form-link {
+  text-align: left;
+}
+
+.feedback__background{
+  &-element {
+    display: block;
+    position: absolute;
+    top: -60px;
+    right: -45px;
+    z-index: 1;
+
+    @media #{$min-md} {
+      right: -75px;
+    }
+
+    @media #{$min-xl} {
+      right:-115px;
+    }
+  }
+
+  &-svg {
+    width: 300px;
+    height: auto;
+    aspect-ratio: 196 / 161;
+
+    @media #{$min-md} {
+      width: 500px;
+    }
+
+    @media #{$min-xl} {
+      width: 755px;
+    }
+  }
+
+  &-picture {
+    width: 158px;
+    aspect-ratio: 158 / 105;
+    position: absolute;
+    top: 6px;
+    right: 36px;
+
+    @media #{$min-md} {
+      width: 325px;
+      top: -20px;
+      right: 45px;
+    }
+
+    @media #{$min-xl} {
+      width: 525px;
+      top: -90px;
+      right: 66px;
+    }
+  }
+}

@@ -189,9 +189,9 @@ a {
       display: block;
     }
 
-     @media #{$min-xl} {
-       left: 88%;
-       top: 14px;
+    @media #{$min-xl} {
+      left: 88%;
+      top: 14px;
     }
 
     .background-element__svg {
@@ -215,6 +215,8 @@ a {
     .background-element__svg {
       width: 656px;
       height: 539px;
+      --svg-color: #464646;
+      opacity: 0.5;
     }
   }
 }

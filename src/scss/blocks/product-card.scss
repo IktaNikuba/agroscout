@@ -78,7 +78,7 @@
   grid-area: delete;
   width: min-content;
   height: min-content;
-  fill: white;
+  fill: $white;
   cursor: pointer;
 
   @include mouse-devices-hover;
