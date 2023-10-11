@@ -91,6 +91,7 @@
     right: -45px;
     z-index: 1;
 
+
     @media #{$min-md} {
       right: -75px;
     }
@@ -104,6 +105,8 @@
     width: 300px;
     height: auto;
     aspect-ratio: 196 / 161;
+    --svg-color: white;
+
 
     @media #{$min-md} {
       width: 500px;
