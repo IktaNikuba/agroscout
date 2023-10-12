@@ -34,7 +34,6 @@
   }
 }
 
-
 .work-stages__slider {
   padding-top: max(7vh, 30px);
 }
@@ -49,6 +48,7 @@
 
 .work-stages__slide {
   width: 100%;
+  background-color: transparent;
 
   @media #{$min-md} {
     height: auto;
@@ -126,7 +126,7 @@
 }
 
 .work-stages__slide-podscript {
-  color: rgba(70, 70, 70, 0.15);
+  color: rgba(70, 70, 70, 0.30);
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 45px;
   font-style: normal;

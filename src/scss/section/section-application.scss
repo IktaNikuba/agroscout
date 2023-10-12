@@ -26,6 +26,10 @@
   @media #{$min-md} {
     height: 650px;
   }
+
+  @media #{$min-xxl} {
+    background-position: center 65%;
+  }
 }
 
 .application__background-overlay {

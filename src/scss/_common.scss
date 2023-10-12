@@ -215,8 +215,8 @@ a {
     .background-element__svg {
       width: 656px;
       height: 539px;
-      --svg-color: #464646;
-      opacity: 0.5;
+      --svg-color: white;
+      opacity: 0.1;
     }
   }
 }
@@ -225,7 +225,7 @@ a {
 .aside-element {
   display: none;
   height: 100px;
-  color: rgba(70, 70, 70, 0.15);
+  color: rgba(70, 70, 70, 0.30);
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 90px;
   font-style: normal;

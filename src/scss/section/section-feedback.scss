@@ -27,6 +27,8 @@
   flex-direction: column;
   row-gap: clamp(15px, 1vh, 20px);
   column-gap: clamp(15px, 2vw, 42px);
+  position: relative;
+  z-index: 1;
 
   @media #{$min-md} {
     flex-direction: row;
@@ -69,8 +71,6 @@
   width: 100%;
   order: 1;
   padding: 0;
-  position: relative;
-  z-index: 2;
 
   @media #{$min-md} {
     width: 110px;
@@ -89,7 +89,7 @@
     position: absolute;
     top: -60px;
     right: -45px;
-    z-index: 1;
+    opacity: 0.3;
 
 
     @media #{$min-md} {
