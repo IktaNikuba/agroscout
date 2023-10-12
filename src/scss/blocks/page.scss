@@ -1,10 +1,4 @@
 .page__body {
-  font-family: $font-family--base;
-  @include adaptiv-font-size($paragraph-font-size, $paragraph-font-size--mobile);
-  @include adaptiv-font-lh($paragraph-line-height, $paragraph-line-height--mobile);
-  font-weight: $font-weight--light;
-  color: $text-color--main;
-  hyphens: auto;
   background-color: $bg-primary;
   min-width: 320px;
   height: 100%;

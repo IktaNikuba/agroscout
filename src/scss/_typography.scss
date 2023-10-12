@@ -1,0 +1,94 @@
+.page__body {
+  font-family: $font-family--base;
+  @include adaptiv-font-size($paragraph-font-size, $paragraph-font-size--mobile);
+  @include adaptiv-font-lh($paragraph-line-height, $paragraph-line-height--mobile);
+  font-weight: $font-weight--light;
+  color: $text-color--main;
+  hyphens: auto;
+  background-color: $bg-primary;
+}
+
+/* Типография заголовков */
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family--base;
+  font-weight: $font-weight--normal;
+  text-align: left;
+  text-wrap: balance;
+  padding: 0;
+  margin: auto 0;
+}
+
+h1 {
+  font-size: #{$h1-font-size--mobile}px;
+  @media #{$min-md} {
+    @include adaptiv-font-size($h1-font-size, $h1-font-size--mobile);
+    @include adaptiv-font-lh($h1-line-height, $h1-line-height--mobile);
+  }
+}
+
+h2 {
+  color: $text-color--bright;
+  font-size: #{$h2-font-size--mobile}px;
+  @media #{$min-md} {
+    @include adaptiv-font-size($h2-font-size, $h2-font-size--mobile);
+  }
+}
+
+h3 {
+  font-size: #{$h3-font-size--mobile}px;
+  @media #{$min-md} {
+    @include adaptiv-font-size($h3-font-size, $h3-font-size--mobile);
+    @include adaptiv-font-lh($h3-line-height, $h3-line-height--mobile);
+  }
+}
+
+h4 {
+  font-size: #{$h4-font-size--mobile}px;
+  @media #{$min-md} {
+    @include adaptiv-font-size($h4-font-size, $h4-font-size--mobile);
+    @include adaptiv-font-lh($h4-line-height, $h4-line-height--mobile);
+  }
+}
+
+h5 {
+  font-size: #{$h5-font-size--mobile}px;
+  @media #{$min-md} {
+    @include adaptiv-font-size($h5-font-size, $h5-font-size--mobile);
+    @include adaptiv-font-lh($h5-line-height, $h5-line-height--mobile);
+  }
+}
+
+h6 {
+  font-size: #{$h6-font-size--mobile}px;
+
+  @media #{$min-md} {
+    @include adaptiv-font-size($h6-font-size, $h6-font-size--mobile);
+    @include adaptiv-font-lh($h6-line-height, $h6-line-height--mobile);
+  }
+}
+
+h7 {
+  font-size: #{$h7-font-size--mobile}px;
+
+  @media #{$min-md} {
+    @include adaptiv-font-size($h7-font-size, $h7-font-size--mobile);
+  }
+}
+
+.headline {
+  position: relative;
+}
+
+.h2-podscription {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  @include adaptiv-font-size($h2-podscription-font-size, $h2-podscription-font-size--mobile);
+  color: $text-color--transparent;
+  font-weight: $font-weight--bold;
+  text-align: left;
+  position: absolute;
+  left: 0;
+  top: 45%;
+  transform: translate(0, -50%);
+}
