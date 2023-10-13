@@ -13,6 +13,14 @@
   padding: 20px 20px 60px 20px;
   background-color: $bg-info;
 
+  @media #{$min-xs} {
+    justify-items: center;
+  }
+
+  @media #{$min-md} {
+    justify-items: left;
+  }
+
   @media #{$min-lg} {
     grid-template-columns: 65px 1fr 1fr 65px;
   }

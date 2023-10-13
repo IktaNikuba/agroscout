@@ -6,11 +6,15 @@
   font-weight: 400;
   line-height: 24px;
 
-  a {
+  &-link {
     display: inline;
 
     &:last-child {
       color: $text-color--bright;
     }
+  }
+
+  &--first-block {
+    @include padding-top-adaptive(30px, 40px, 40px);
   }
 }

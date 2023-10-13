@@ -23,6 +23,10 @@ section {
   content-visibility: auto;
 }
 
+img {
+  width: 100%;
+}
+
 /* Вырубает блок */
 .cut-down {
   display: none !important;
@@ -50,6 +54,10 @@ section {
   padding: 20px;
   width: fit-content;
   height: fit-content;
+
+  img {
+    aspect-ratio: 4.2/3;
+  }
 
   &:before,
   &:after {
