@@ -5,7 +5,7 @@
   font-weight: $font-weight--light;
   color: $text-color--main;
   hyphens: auto;
-  background-color: $bg-primary;
+  text-wrap: balance;
 }
 
 /* Типография заголовков */
@@ -13,7 +13,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $font-family--base;
   font-weight: $font-weight--normal;
   text-align: left;
-  text-wrap: balance;
   padding: 0;
   margin: auto 0;
 }
@@ -60,7 +59,6 @@ h5 {
 
 h6 {
   font-size: #{$h6-font-size--mobile}px;
-
   @media #{$min-md} {
     @include adaptiv-font-size($h6-font-size, $h6-font-size--mobile);
     @include adaptiv-font-lh($h6-line-height, $h6-line-height--mobile);
@@ -69,7 +67,6 @@ h6 {
 
 h7 {
   font-size: #{$h7-font-size--mobile}px;
-
   @media #{$min-md} {
     @include adaptiv-font-size($h7-font-size, $h7-font-size--mobile);
   }

@@ -136,7 +136,15 @@
   line-height: 18px;
   position: relative;
 
-  @media #{$min-md}, #{$landscape-h550}  {
+  @media #{$min-xs}, #{$landscape-h550}  {
+    width: calc(98% / 3);
+  }
+
+  @media #{$min-lg} {
+    width: calc(98% / 2);
+  }
+
+  @media #{$min-xl} {
     width: calc(98% / 3);
   }
 
