@@ -1,4 +1,5 @@
 .hero {
+  background-image: none;
   @media #{$min-sm} {
     background-image: url("../../img/hero-md (6).jpg");
     background-size: cover;
@@ -13,18 +14,27 @@
 
   @media #{$min-xxl} {
     background-image: url("../../img/hero-xl (6).jpg");
-    min-height: 500px;
+    height: 650px;
+
   }
 
   &--ethnomophoages {
-    background-image: none;
-
     @media #{$min-sm} {
       background-image: url("../../img/hero-md (1).jpg");
     }
 
     @media #{$min-xxl} {
       background-image: url("../../img/hero-xl (1).jpg");
+    }
+  }
+
+  &--atomize {
+    @media #{$min-sm} {
+      background-image: url("../../img/hero-md (5).jpg");
+    }
+
+    @media #{$min-xxl} {
+      background-image: url("../../img/hero-xl (5).jpg");
     }
   }
 }
@@ -43,14 +53,14 @@
   &--ethnomophoages {
     background-image: url("../../img/hero-md (1).jpg");
   }
+
+  &--atomize {
+    background-image: url("../../img/hero-md (5).jpg");
+  }
 }
 
 .hero__text-content {
-  padding: 5vh 0 3vh 0;
-
-  @media #{$min-lg} {
-    padding: 13vh 0 10vh 0;
-  }
+  padding: 5vh 0 5vh 0;
 }
 
 .hero__main-header {
@@ -137,8 +147,8 @@
         "beet corn"
         "rape fruits";
   @include adaptiv-font-size(24, 18);
-  row-gap: 2vh;
-  padding: max(5vh, 20px) 0 30px 0;
+  row-gap: clamp(10px, 1vh, 40px);
+  padding-top: min(5vh, 60px);
 
   @media #{$landscape-h550}, #{$min-lg}  {
     grid-template-columns: 1fr 1fr 1fr;
@@ -197,7 +207,7 @@
   @include adaptiv-font-size(24, 18);
   line-height: 27px;
   margin: 0;
-  padding-top: max(5vh, 20px);
+  padding-top: min(5vh, 60px);
 
   @media (min-width: 400px), #{$landscape-h550} {
     text-align: center;
