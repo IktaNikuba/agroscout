@@ -9,6 +9,10 @@
 .slider__slides {
   width: 100%;
   overflow-x: hidden;
+
+  &--qualities {
+    overflow-x: visible;
+  }
 }
 
 .slider__slides-track {
@@ -44,6 +48,20 @@
     width: calc((100% - 40px) / 3);
   }
 
+  &--qualities {
+    width: 300px;
+
+    @media #{$min-sm} {
+      height: auto;
+      width: 422px;
+    }
+
+    @media #{$min-xl} {
+      height: auto;
+      width: calc((100% - 40px) / 3);
+    }
+  }
+
   &--greenlight {
     &:active {
       background-color: $bg-slide--active;
@@ -53,10 +71,10 @@
 }
 
 .slider__pagination {
-  max-width: 160px;
   margin: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  column-gap: 10px;
   padding-top: 30px;
 
   &--tile {
@@ -67,6 +85,12 @@
 
   &--carusel {
     @media #{$min-xl} {
+      display: none;
+    }
+  }
+
+  &--qualities {
+    @media #{$min-lg} {
       display: none;
     }
   }

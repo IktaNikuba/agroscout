@@ -1,14 +1,14 @@
-.advantages {
+.qualities {
   @include padding-top-adaptive($section-padding--mobile, $section-padding--tablet, $section-padding);
   overflow: hidden;
 }
 
-.advantages__slider {
+.qualities__slider {
   @include padding-top-adaptive(30px, 40px, 95px);
   position: relative;
 }
 
-.advantages__slide-content {
+.qualities__slide-content {
   padding: 30px;
   height: 100%;
   text-align: center;
@@ -20,21 +20,41 @@
     text-align: left;
     row-gap: 20px;
   }
+
+  &--left {
+    text-align: left;
+  }
 }
 
-.advantages__slide-headline {
+.qualities__slide-headline {
   white-space: nowrap;
 }
 
-.advantages__slide-image {
+.qualities__slide-image {
   @include icon-size-adaptive(30px, 40px, 40px);
   display: inline-block;
 }
 
-.advantages__slide-header {
+.qualities__slide-header {
   display: inline;
   padding-left: 12px;
   line-height: 30px;
   vertical-align: middle;
   white-space: nowrap;
+}
+
+.qualities__dividing-line {
+  color: $color-accent--bright;
+  height: 1px;
+}
+
+.qualities__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.qualities__list-item {
+  position: relative;
+  line-height: 170%v;
 }
