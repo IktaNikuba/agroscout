@@ -66,6 +66,10 @@
     justify-content: center;
     max-width: 80%;
   }
+
+  @media #{$min-md} {
+    margin: auto;
+  }
 }
 
 .application__paragraph {

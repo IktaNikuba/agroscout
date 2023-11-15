@@ -94,13 +94,14 @@
         "num1 num2 num3"
         "txt1 txt2 txt3";
   column-gap: 1vw;
-  row-gap: 1vh;
   max-width: max-content;
   margin: auto;
   padding-top: 60px;
 
   @media #{$min-md} {
     padding-top: 120px;
+    column-gap: 1vw;
+    row-gap: 1vh;
   }
 }
 
