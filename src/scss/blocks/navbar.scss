@@ -134,6 +134,8 @@
 
   .navbar__link-icon {
     margin-right: 10px;
+    flex: 0 0 auto;
+
   }
 }
 
@@ -176,6 +178,7 @@
   &-text {
     max-width: 170px;
     width: fit-content;
+    white-space: normal;
 
     a:hover & {
       @media #{$mouse-device} {

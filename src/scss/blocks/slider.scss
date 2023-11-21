@@ -10,22 +10,42 @@
   width: 100%;
   overflow-x: hidden;
 
-  &--qualities {
+  &--visible{
     overflow-x: visible;
+  }
+  &:has(.slider__slides-track--two-columns){
+    @media #{$min-lg} {
+      width: 90%;
+      margin: auto;
+    }
   }
 }
 
 .slider__slides-track {
   display: flex;
-  column-gap: 20px;
+  justify-content: left;
+  gap: 20px;
 
   @media #{$min-md} {
     flex-wrap: wrap;
-    gap: 20px 20px;
+  }
+
+  @media #{$min-xl} {
+    justify-content: center;
   }
 
   &--nowrap {
     flex-wrap: nowrap;
+    justify-content: left;
+  }
+
+  &--two-columns {
+    --columns: two;
+
+    @media #{$min-xl} {
+      justify-content: space-between;
+      row-gap: clamp(20px, 5vh, 80px);
+    }
   }
 }
 
@@ -41,11 +61,16 @@
 
   @media #{$min-md} {
     height: auto;
-    width: calc((100% - 20px) / 2);
+    min-height: 260px;
+    width: calc((100% - 3vw) / 2);
   }
 
   @media #{$min-xl} {
-    width: calc((100% - 40px) / 3);
+    width: calc((100% - 4vw) / 3);
+
+    @container style(--columns: two) {
+      width: calc((100% - 3vw) / 2);
+    }
   }
 
   &--qualities {
@@ -59,6 +84,17 @@
     @media #{$min-xl} {
       height: auto;
       width: calc((100% - 40px) / 3);
+    }
+  }
+
+  &--spraing {
+    max-width: 500px;
+    max-height: 688px;
+  }
+
+  &:has(.product-card, .news-card) {
+    @media #{$min-xxl} {
+      min-width: 415px;
     }
   }
 
