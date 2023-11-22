@@ -5,6 +5,7 @@ const menu = document.getElementById("navigation-menu");
 const body = document.querySelector(".page__body");
 
 menuOpenBtn.onclick = () => {
+	"use strict";
 	menuOpenBtn.classList.toggle("cut-down");
 	menuCloseBtn.classList.toggle("cut-down");
 	menu.classList.toggle("cut-down");
@@ -12,6 +13,7 @@ menuOpenBtn.onclick = () => {
 };
 
 menuCloseBtn.onclick = () => {
+	"use strict";
 	menuOpenBtn.classList.toggle("cut-down");
 	menuCloseBtn.classList.toggle("cut-down");
 	menu.classList.toggle("cut-down");
@@ -21,12 +23,17 @@ menuCloseBtn.onclick = () => {
 /* Миникорзина */
 const modalCart = document.querySelector('.mini-cart');
 
-document.getElementById("open-mini-cart").onclick = function() {
+document.getElementById("open-mini-cart").onclick = () => {
+	"use strict";
 	modalCart.showModal();
 	body.classList.toggle("stop-scroll");
 };
 
-document.getElementById("close-mini-cart").onclick = function() {
+document.getElementById("close-mini-cart").onclick = () => {
+
 	modalCart.close();
 	body.classList.toggle("stop-scroll");
 };
+
+/* Табы */
+
