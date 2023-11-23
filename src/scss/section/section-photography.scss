@@ -1,0 +1,83 @@
+.photography {
+  @include padding-top-adaptive($section-padding--mobile, $section-padding--tablet, $section-padding);
+  overflow: hidden;
+}
+
+.photography__lead {
+  padding-top: 60px;
+}
+
+.photography__col--left {
+  @include padding-top-adaptive(30px, 40px, 60px);
+}
+
+.photography__col--rigth{
+  @include padding-top-adaptive(25px, 40px, 90px);
+}
+
+.photography__paragraph {
+  margin: 0;
+}
+
+.photography__visual-content {
+  text-align: center;
+  @media #{$min-md} {
+    text-align: center;
+  }
+}
+
+.photography__image {
+  max-width: 616px;
+  max-height: 371px;
+  width: 100%;
+}
+
+.photography__content-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @container style(--full-width:true) {
+    align-items: stretch;
+}
+
+  @media #{$min-md} {
+    display: block;
+  }
+}
+
+.photography__works-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: clamp(20px, 2vh, 30px);
+  margin: 0;
+  width: 100%;
+
+  &:has(.photography__works-icon) {
+    padding: 0;
+  }
+
+}
+
+.photography__works-item {
+  position: relative;
+
+
+}
+
+.photography__works-icon {
+  @include icon-size-adaptive(30px, 40px, 50px);
+  display: inline-block;
+  margin-right: 12px;
+}
+
+
+
+
+.photography__button {
+  @include margin-top-adaptive(40px, 50px, 50px);
+}
+
+#desk-works-block {
+  display: none;
+}

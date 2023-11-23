@@ -5,7 +5,7 @@
 
 .feedback__form {
   background-color: $charcoal;
-  @include margin-top-adaptive(56px, 107px, 111px);
+  @include margin-top-adaptive(40px, 55px, 110px);
   @include padding-adaptive(27px, 32px, 75px);
   @include padding-bot-adaptive(60px, 50px, 116px);
   max-width: 1240px;
@@ -92,7 +92,6 @@
     height: auto;
     aspect-ratio: 196 / 161;
     --svg-color: white;
-
 
     @media #{$min-md} {
       width: 500px;

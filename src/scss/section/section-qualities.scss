@@ -9,7 +9,7 @@
 }
 
 .qualities__slide-content {
-  @include padding-adaptive(30px 40px, 40px 50px, 40px 65px);
+  @include padding-adaptive(30px 40px, 40px 50px);
   height: 100%;
   text-align: center;
   display: flex;
@@ -30,6 +30,7 @@
 .qualities__slide-headline {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 
   @media #{$min-md} {
     justify-content: left;
@@ -53,6 +54,7 @@
 .qualities__dividing-line {
   color: $color-accent--bright;
   height: 1px;
+  width: 100%;
 }
 
 .qualities__list {

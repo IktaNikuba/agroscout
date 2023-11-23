@@ -30,10 +30,9 @@ document.getElementById("open-mini-cart").onclick = () => {
 };
 
 document.getElementById("close-mini-cart").onclick = () => {
-
+	"use strict";
 	modalCart.close();
 	body.classList.toggle("stop-scroll");
 };
 
 /* Табы */
-
