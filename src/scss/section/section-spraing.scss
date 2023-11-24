@@ -37,20 +37,20 @@
 
   @media #{$min-md} {
     left: -21%;
-    bottom: -3%;
+    bottom: -50%;
   }
 
   @media #{$min-lg} {
     left: -15%;
-    bottom: 17%;
+    bottom: -30%;
   }
 
   @media #{$min-xl} {
-    bottom: 45%;
+    bottom: 0;
   }
 
   .background-element__svg {
-    width: 900px;
-    height: 900px;
+    width: 1200px;
+    height: 1200px;
   }
 }
