@@ -1,0 +1,87 @@
+.photography-of-application {
+  @include padding-top-adaptive($section-padding--mobile, $section-padding--tablet, $section-padding);
+}
+
+.photography-of-application__areas {
+  @include padding-top-adaptive(40px, 50px, 60px);
+}
+
+.photography-of-application__areas-list {
+  padding: 0;
+  position: relative;
+
+  @media #{$min-sm} {
+    columns: 2;
+    margin-bottom: 500px;
+  }
+
+  @media #{$min-lg} {
+    columns: 1;
+    margin-bottom: 0;
+  }
+}
+.photography-of-application__areas-item {
+  padding-top: 40px;
+
+  &:nth-child(1) {
+    .photography-of-application__button {
+      border-color: #01B601;
+    }
+    .photography-of-application__drop-down {
+      display: flex;
+    }
+  }
+}
+
+.photography-of-application__item-headline {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.photography-of-application-icon {
+  @include icon-size-adaptive(40px);
+  flex: 0 0 auto;
+}
+
+.photography-of-application__button {
+  padding: 0 50px 13px 3px ;
+  border: solid $medium-gray;
+  border-width: 0 0 2px 0;
+  width: 100%;
+
+  @media #{$min-md} {
+    width: 200px;
+  }
+}
+
+.photography-of-application__drop-down {
+  display: none;
+  flex-direction: column;
+
+  @media #{$min-sm} {
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  @media #{$min-lg} {
+    left: unset;
+    right: 0;
+    top: 0;
+    width: 70%;
+    height: 100%;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+  }
+}
+
+.photography-of-application__drop-down-paragraph {
+  padding-top: 40px;
+  text-wrap: wrap;
+}
+
+.photography-of-application__drop-down-image {
+  padding-top: 40px;
+}

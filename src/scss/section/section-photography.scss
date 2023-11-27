@@ -1,6 +1,5 @@
 .photography {
   @include padding-top-adaptive($section-padding--mobile, $section-padding--tablet, $section-padding);
-  overflow: hidden;
 }
 
 .photography__lead {
@@ -21,6 +20,7 @@
 
 .photography__visual-content {
   text-align: center;
+
   @media #{$min-md} {
     text-align: center;
   }
@@ -56,13 +56,10 @@
   &:has(.photography__works-icon) {
     padding: 0;
   }
-
 }
 
 .photography__works-item {
   position: relative;
-
-
 }
 
 .photography__works-icon {
@@ -70,9 +67,6 @@
   display: inline-block;
   margin-right: 12px;
 }
-
-
-
 
 .photography__button {
   @include margin-top-adaptive(40px, 50px, 50px);

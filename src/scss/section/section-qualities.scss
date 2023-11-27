@@ -30,7 +30,7 @@
 .qualities__slide-headline {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 
   @media #{$min-md} {
     justify-content: left;
