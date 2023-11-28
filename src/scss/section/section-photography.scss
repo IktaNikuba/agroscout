@@ -75,3 +75,14 @@
 #desk-works-block {
   display: none;
 }
+
+.photography__background-element {
+  rotate: 270deg;
+  right: 45%;
+  top: 0;
+
+  .background-element__svg {
+    width: 1300px;
+    height: 1300px;
+  }
+}

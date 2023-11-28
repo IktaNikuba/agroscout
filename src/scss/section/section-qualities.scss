@@ -1,6 +1,5 @@
 .qualities {
   @include padding-top-adaptive($section-padding--mobile, $section-padding--tablet, $section-padding);
-  overflow: hidden;
 }
 
 .qualities__slider {
@@ -34,6 +33,10 @@
 
   @media #{$min-md} {
     justify-content: left;
+  }
+
+  &:has(.qualities__dividing-line) {
+    flex-wrap: wrap;
   }
 }
 

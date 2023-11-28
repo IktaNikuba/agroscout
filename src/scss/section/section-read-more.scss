@@ -1,5 +1,10 @@
 .read-more {
   @include padding-top-adaptive($section-padding--mobile, $section-padding--tablet, $section-padding);
+
+  &--about-us {
+    padding-top: 0;
+    text-align: center;
+  }
 }
 
 #read-more__input{

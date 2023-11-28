@@ -1,6 +1,5 @@
 .solved-problems {
   @include padding-top-adaptive($section-padding--mobile, $section-padding--tablet, $section-padding);
-  overflow: hidden;
 }
 
 .solved-problems__background-element {

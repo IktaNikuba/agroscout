@@ -14,6 +14,10 @@
   z-index: 3;
 }
 
+.page__main {
+  overflow: hidden;
+}
+
 .page__footer {
   @include margin-top-adaptive($section-padding--mobile, $section-padding--tablet, $section-padding);
   background-color: $bg-secondary;

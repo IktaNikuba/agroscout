@@ -66,6 +66,10 @@
     margin: 0;
   }
 
+  &-podscript {
+    @include adaptiv-font-size(24, 20);
+  }
+
   &-paragraph {
     display: -webkit-box;
     -webkit-line-clamp: 4;

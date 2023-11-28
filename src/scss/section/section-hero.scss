@@ -47,6 +47,16 @@
       background-image: url("../../img/hero-xl (2).jpg");
     }
   }
+
+  &--about-us {
+    @media #{$min-sm} {
+      background-image: url("../../img/hero-md (3).jpg");
+    }
+
+    @media #{$min-xxl} {
+      background-image: url("../../img/hero-xl (3).jpg");
+    }
+  }
 }
 
 .hero__mobile-picture {
@@ -70,6 +80,10 @@
 
   &--agromonitoring {
       background-image: url("../../img/hero-md (2).jpg");
+  }
+
+  &--about-us {
+    background-image: url("../../img/hero-md (3).jpg");
   }
 }
 
@@ -109,13 +123,14 @@
         "txt1 txt2 txt3";
   column-gap: 1vw;
   max-width: max-content;
+  min-width: 100%;
   margin: auto;
   padding-top: 60px;
 
   @media #{$min-md} {
-    padding-top: 120px;
+    padding-top: 150px;
     column-gap: 1vw;
-    row-gap: 0.5px;
+    row-gap: 1vh;
   }
 
   &--ethnomophoages {

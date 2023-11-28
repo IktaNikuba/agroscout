@@ -1,10 +1,8 @@
 .products {
   @include padding-top-adaptive($section-padding--mobile, $section-padding--tablet, $section-padding);
-  overflow: hidden;
 }
 
 .products__slider {
   @include padding-top-adaptive(30px, 40px, 95px);
-  position: relative;
 }
 
