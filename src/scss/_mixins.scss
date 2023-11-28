@@ -80,6 +80,17 @@ $minWidth: 320;
     margin-top: $pcSize;
   }
 }
+@mixin margin-adaptive($mobSize, $tabSize:$mobSize, $pcSize:$tabSize) {
+  margin:$mobSize;
+
+  @media #{$min-md} {
+    margin: $tabSize;
+  }
+
+  @media #{$min-xl} {
+    margin: $pcSize;
+  }
+}
 
 /* hover */
 @mixin mouse-devices-hover {
