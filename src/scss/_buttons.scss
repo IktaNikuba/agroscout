@@ -2,7 +2,7 @@
   display: inline-block;
   width: fit-content;
   height: auto;
-  margin: 0;
+  margin: auto;
   @include adaptiv-font-size($btn-font-size--mobile, $btn-font-size);
   font-weight: $btn-font-weight;
   padding: 19px 59px;
@@ -34,5 +34,9 @@
       order: 0;
       margin: 0;
     }
+  }
+
+  &--contacts {
+    margin-left: 0;
   }
 }
