@@ -111,14 +111,8 @@
   text-align: center;
   justify-self: center;
 
-  &-minus {
-    width: 15px;
-  }
-
-  &-num {
-    width: 15px;
-  }
-
+  &-minus,
+  &-num,
   &-plus {
     width: 15px;
   }
