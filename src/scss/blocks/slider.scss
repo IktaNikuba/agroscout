@@ -13,7 +13,8 @@
   &--visible{
     overflow-x: visible;
   }
-  &:has(.slider__slides-track--two-columns){
+
+  &:has(.slider__slides-track--two-columns) {
     @media #{$min-lg} {
       width: 90%;
       margin: auto;

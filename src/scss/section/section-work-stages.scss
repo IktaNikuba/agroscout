@@ -38,8 +38,7 @@
 }
 
 .work-stages__slides-track {
-  row-gap: 40px;
-
+  gap: 0;
   @media #{$min-md} {
     justify-content: center;
   }

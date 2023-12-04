@@ -116,18 +116,24 @@
 
 .hero__info {
   display: grid;
-  grid-template-columns: 2fr 2fr 1fr;
+  grid-template-columns: auto auto auto;
   grid-template-rows: 50% 30%;
   grid-template-areas:
         "num1 num2 num3"
         "txt1 txt2 txt3";
   column-gap: 1vw;
+  text-align: center;
   max-width: max-content;
   min-width: 100%;
   margin: auto;
   padding-top: 60px;
 
+  @media #{$min-sm} {
+    text-align: left;
+  }
+
   @media #{$min-md} {
+    grid-template-columns: auto auto auto;
     padding-top: 150px;
     column-gap: 1vw;
     row-gap: 1vh;
@@ -202,7 +208,6 @@
   font-weight: 400;
   white-space: nowrap;
   display: inline-block;
-  padding-left: 4px;
 
   &--1 {
     grid-area: txt1;
