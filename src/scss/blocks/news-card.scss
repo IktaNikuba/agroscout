@@ -11,7 +11,7 @@
   row-gap: 20px;
   column-gap: 54px;
 
-  &:not(:has(.news-card__time)){
+  &:not(:has(.news-card__time)) {
     grid-template-rows: auto auto;
     grid-template-areas:
           "picture"
@@ -61,7 +61,10 @@
   flex-direction: column;
   justify-content: center;
   row-gap: 20px;
-  padding: 0 20px;
+
+  &--personal {
+    padding: 0 20px;
+  }
 
   &-header {
     margin: 0;

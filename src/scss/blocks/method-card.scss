@@ -1,5 +1,5 @@
 .method-card {
-  @include padding-top-adaptive(20px, 40px, 60px);
+  @include padding-top-adaptive(45px, 60px, 80px);
   display: grid;
   grid-template-rows: auto auto 1fr;
   grid-template-columns: 100%;

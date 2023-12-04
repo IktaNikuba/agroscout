@@ -149,6 +149,7 @@
     @include adaptiv-font-size(24, 18);
     row-gap: clamp(10px, 1vh, 40px);
     padding-top: min(5vh, 60px);
+    min-width: 0;
 
     @media #{$landscape-h550}, #{$min-lg}  {
       grid-template-columns: 1fr 1fr 1fr;

@@ -19,11 +19,22 @@
     columns: 1;
     margin-bottom: 0;
   }
+
+  /* Очень сложная запись, узнать как сделать иначе */
+  &:hover > .photography-of-application__areas-item:first-child:not(:hover) {
+    .photography-of-application__button {
+      border-color: $medium-gray;
+    }
+    .photography-of-application__drop-down {
+      display: none;
+    }
+  }
 }
+
 .photography-of-application__areas-item {
   padding-top: 40px;
 
-  &:nth-child(1) {
+  &:nth-child(1):not(:hover) {
     .photography-of-application__button {
       border-color: #01B601;
     }
@@ -31,7 +42,20 @@
       display: flex;
     }
   }
+
+  @media #{$mouse-device} {
+    &:hover {
+      .photography-of-application__button {
+        border-color: #01B601;
+      }
+
+      .photography-of-application__drop-down {
+        display: flex;
+      }
+    }
+  }
 }
+
 
 .photography-of-application__item-headline {
   display: flex;
