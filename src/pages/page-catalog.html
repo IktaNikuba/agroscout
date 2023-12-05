@@ -110,7 +110,7 @@
 										</a>
 									</li>
 									<li class="navbar__list-item">
-										<a class="navbar__link"  href="./page-catalog.html">
+										<a class="navbar__link" href="./page-catalog.html" style="color:#02E502">
 											<svg class="navbar__link-icon">
 												<use class="svg" xlink:href="../img/svg/sprite.svg#drones-circle"></use>
 											</svg>
@@ -134,7 +134,7 @@
 										</a>
 									</li>
 									<li class="navbar__list-item">
-										<a class="navbar__link" href="./page-contacts.html" style="color:#02E502" >
+										<a class="navbar__link" href="./page-contacts.html" >
 											<svg class="navbar__link-icon">
 												<use class="svg" xlink:href="../img/svg/sprite.svg#contacts-circle"></use>
 											</svg>
@@ -177,50 +177,76 @@
 
 <main class="page__main">
 
+	<section class="hero hero--catalog">
+		<div class="container h-100">
+			<div class="row h-100">
+				<div class="col-xs-12 d-sm-none p-0">
+					<div class="hero__mobile-picture hero__mobile-picture--catalog"></div>
+				</div>
+				<div class="col-xs-12 col-sm-7 p-xxl-0 h-100 d-md-flex align-items-center">
+					<div class="hero__text-content">
+						<h1 class="hero__main-header">Дрон опрыскиватель<br>
+							AGR A22
+						</h1>
+						<svg class="hero--svg svg--flying-drones">
+							<use xlink:href="../img/svg/sprite.svg#drones-flying"></use>
+						</svg>
+						<div class="hero__info hero__info--six-points hero__info--no-lead">
+							<div class="hero__points hero__points--one">
+								<svg class="hero__icon">
+									<use xlink:href="../img/svg/sprite.svg#watch"></use>
+								</svg>
+								<span class="hero__points hero__text">Время полета 15 минут</span>
+							</div>
+							<div class="hero__points hero__two">
+								<svg class="hero__icon">
+									<use xlink:href="../img/svg/sprite.svg#plane"></use>
+								</svg>
+								<span class="hero__text">Скорость полета</span>
+							</div>
+							<div class="hero__points hero__points--three">
+								<svg class="hero__icon">
+									<use xlink:href="../img/svg/sprite.svg#rtk"></use>
+								</svg>
+								<span class="hero__text">Автономная работа</span>
+							</div>
+							<div class="hero__points hero__points--four">
+								<svg class="hero__icon">
+									<use xlink:href="../img/svg/sprite.svg#ruler"></use>
+								</svg>
+								<span class="hero__text">Ширина захвата 8м</span>
+							</div>
+							<div class="hero__points hero__points--five">
+								<svg class="hero__icon">
+									<use xlink:href="../img/svg/sprite.svg#fuel"></use>
+								</svg>
+								<span class="hero__text">Емкость бака</span>
+							</div>
+							<div class="hero__points hero__points--six">
+								<svg class="hero__icon">
+									<use xlink:href="../img/svg/sprite.svg#waterproof"></use>
+								</svg>
+								<span class="hero__text">Водонепроницаемость</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<div class="breadcrumbs">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
 					<div class="breadcrumbs-links">
 						<a class="breadcrumbs-link" href="../index.html">Главная</a>&nbsp;/&nbsp;
-						<a class="breadcrumbs-link" href="./page-agromonitoring.html">O нас</a>
+						<a class="breadcrumbs-link" href="./page-catalog.html">Каталог</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
-	<section class="contacts">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<div class="headline">
-						<h2>Контакты</h2>
-						<span class="h2-podscription">Как с нами связаться</span>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12 col-lg-4 p-0 order-2 order-lg-1">
-					<div class="contacts__business-card">
-						<h6 class="contacts__header">AgroScout</h6>
-						<dl class="contacts__details">
-							<dt class="contacts__label">Наш адрес:</dt>
-							<dd class="contacts__requisite">Россия, г. Москва</dd>
-							<dt class="contacts__label">Наш телефон:</dt>
-							<dd class="contacts__requisite">+7861 21791 18</dd>
-						</dl>
-						<a class="button button--contacts" role="button">Написать нам</a>
-					</div>
-				</div>
-				<div class="col-12 col-lg-8 p-0 order-1 order-lg-2">
-					<div class="contacts__map" id="map">
-						<iframe class="contacts__map-iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A96f77fe30b20960511cd808568e4e1e4c9af5b2e9e68ba0eb154050246e15d74&amp;source=constructor"></iframe>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 
 </main>
 

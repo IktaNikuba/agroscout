@@ -15,7 +15,6 @@
   @media #{$min-xxl} {
     background-image: url("../../img/hero-xl (6).jpg");
     height: 650px;
-
   }
 
   &--ethnomophoages {
@@ -57,6 +56,16 @@
       background-image: url("../../img/hero-xl (3).jpg");
     }
   }
+  
+  &--catalog {
+    @media #{$min-sm} {
+      background-image: url("../../img/hero-md (4).jpg");
+    }
+
+    @media #{$min-xxl} {
+      background-image: url("../../img/hero-xl (4).jpg");
+    }
+  }
 }
 
 .hero__mobile-picture {
@@ -79,11 +88,15 @@
   }
 
   &--agromonitoring {
-      background-image: url("../../img/hero-md (2).jpg");
+    background-image: url("../../img/hero-md (2).jpg");
   }
 
   &--about-us {
     background-image: url("../../img/hero-md (3).jpg");
+  }
+  
+  &--catalog {
+    background-image: url("../../img/hero-md (4).jpg");
   }
 }
 
@@ -139,13 +152,13 @@
     row-gap: 1vh;
   }
 
-  &--ethnomophoages {
+  &--six-points {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 33% 33% 33%;
     grid-template-areas:
-          "soy sunflower"
-          "beet corn"
-          "rape fruits";
+          "one two"
+          "three four"
+          "five six";
     @include adaptiv-font-size(24, 18);
     row-gap: clamp(10px, 1vh, 40px);
     padding-top: min(5vh, 60px);
@@ -155,8 +168,8 @@
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 50% 50%;
       grid-template-areas:
-          "soy sunflower beet"
-          "corn rape fruits";
+          "one two three"
+          "four five six";
     }
 
     @media #{$min-sm} {
@@ -174,7 +187,7 @@
             "txt3";
     padding-left: 0;
     min-width: 100%;
-    @include padding-top-adaptive(30px, 50px, 80px);
+
     row-gap: 20px;
 
     @media #{$min-lg} {
@@ -183,6 +196,11 @@
       grid-template-areas:
             "txt1 txt2 txt3";
     }
+  }
+
+  &--no-lead {
+    @include padding-top-adaptive(clamp(55px, 6vh, 80px), clamp(95px, 10vh, 115px), clamp(120px, 12vh, 150px));
+
   }
 }
 
@@ -228,33 +246,33 @@
   }
 }
 
-.hero__plants {
+.hero__points {
   display: flex;
   align-items: center;
   column-gap: 5px;
 
-  &--soy {
-    grid-area: soy;
+  &--one {
+    grid-area: one;
   }
 
-  &--beet {
-    grid-area: beet;
+  &--two {
+    grid-area: two;
   }
 
-  &--rape {
-    grid-area: rape;
+  &--three {
+    grid-area: three;
   }
 
-  &--sunflower {
-    grid-area: sunflower;
+  &--four {
+    grid-area: four;
   }
 
-  &--corn {
-    grid-area: corn;
+  &--five {
+    grid-area: five;
   }
 
-  &--fruits {
-    grid-area: fruits;
+  &--six {
+    grid-area: six;
   }
 }
 
