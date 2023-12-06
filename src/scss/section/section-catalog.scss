@@ -1,0 +1,4 @@
+.catalog {
+	@include padding-top-adaptive($section-padding--mobile, $section-padding--tablet, $section-padding);
+}
+

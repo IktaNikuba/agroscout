@@ -1,553 +1,554 @@
 <!doctype html>
 <html lang="ru" class="page" xmlns="http://www.w3.org/1999/html">
-<head>
+	<head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>AgroScout</title>
 	<script type="module" src="../js/main.js"></script>
 </head>
 
-<body class="page__body">
+	<body class="page__body">
 
-<header class="page__header">
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<div class="navbar">
-					<div class="navbar__logo">
-						<a href="../index.html" class="navbar__logo-link">
-							<img class="navbar__logo-img" src="../img/LogoAgroScout.png" alt="Логотип компании АгроСкаут.">
-						</a>
-					</div>
-					<div class="navbar__phone">
-						<a class="navbar__phone-link" href="tel:+78612179118">
-							<svg class="navbar__phone-icon">
-								<use class="svg svg--phone" xlink:href="../img/svg/sprite.svg#phone"></use>
-							</svg>
-							<span class="navbar__phone-number">+7861 21791 18</span>
-						</a>
-					</div>
-					<div class="navbar__social-networks">
-						<div class="navbar__social-networks-box">
-							<a class="navbar__link" href="#">
-								<svg class="navbar__icon">
-									<use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#vk"></use>
-								</svg>
-							</a>
-							<a class="navbar__link" href="#">
-								<svg class="navbar__icon">
-									<use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#in"></use>
-								</svg>
-							</a>
-							<a class="navbar__link" href="#">
-								<svg class="navbar__icon">
-									<use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#tt"></use>
-								</svg>
-							</a>
-						</div>
-					</div>
-					<div class="navbar__lang">
-						<a class="navbar__lang-select" role="button" href="#"><span>EN</span></a>
-						<a class="navbar__lang-select" role="button" href="#"><span>RU</span></a>
-					</div>
-					<div class="navbar__user-buttons">
-						<a class="navbar__user-button" id="open-mini-cart" role="button" href="#">
-							<svg class="navbar__icon">
-								<use class="svg" xlink:href="../img/svg/sprite.svg#basket"></use>
-							</svg>
-						</a>
-						<a class="navbar__user-button navbar__user-button--menu" id="open-menu" role="button" href="#">
-							<svg class="navbar__icon">
-								<use class="svg" xlink:href="../img/svg/sprite.svg#menu-on"></use>
-							</svg>
-						</a>
-						<a class="navbar__user-button navbar__user-button--menu-close cut-down" id="close-menu" role="button"
-						   href="#">
-							<svg class="navbar__icon">
-								<use class="svg" xlink:href="../img/svg/sprite.svg#menu-off"></use>
-							</svg>
-						</a>
-						<a class="navbar__user-button navbar__user-button--phone-mini" role="button" href="#">
-							<svg class="navbar__icon">
-								<use class="svg" xlink:href="../img/svg/sprite.svg#phone-mini"></use>
-							</svg>
-						</a>
-					</div>
-					<div class="navbar__menu cut-down" id="navigation-menu">
-						<div class="navbar__menu-box">
-							<nav class="navbar__nav">
-								<ul class="navbar__links-list">
-									<li class="navbar__list-item">
-										<a class="navbar__link" href="../index.html">
-											<svg class="navbar__link-icon">
-												<use class="svg" xlink:href="../img/svg/sprite.svg#home-circle"></use>
-											</svg>
-											<span class="navbar__link-text">Главная</span>
-										</a>
-									</li>
-									<li class="navbar__list-item">
-										<a class="navbar__link" href="./page-ethnomophages.html">
-											<svg class="navbar__link-icon">
-												<use class="svg" xlink:href="../img/svg/sprite.svg#insects-circle"></use>
-											</svg>
-											<span class="navbar__link-text">Энтомофаги</span>
-										</a>
-									</li>
-									<li class="navbar__list-item">
-										<a class="navbar__link" href="./page-atomize.html">
-											<svg class="navbar__link-icon">
-												<use class="svg" xlink:href="../img/svg/sprite.svg#atomize-circle"></use>
-											</svg>
-											<span class="navbar__link-text">Опрыскивание</span>
-										</a>
-									</li>
-									<li class="navbar__list-item">
-										<a class="navbar__link" href="./page-agromonitoring.html" >
-											<svg class="navbar__link-icon">
-												<use class="svg" xlink:href="../img/svg/sprite.svg#map-circle"></use>
-											</svg>
-											<span class="navbar__link-text">Картография и мониторинг</span>
-										</a>
-									</li>
-									<li class="navbar__list-item">
-										<a class="navbar__link"  href="./page-catalog.html">
-											<svg class="navbar__link-icon">
-												<use class="svg" xlink:href="../img/svg/sprite.svg#drones-circle"></use>
-											</svg>
-											<span class="navbar__link-text">Каталог продукции</span>
-										</a>
-									</li>
-									<li class="navbar__list-item">
-										<a class="navbar__link" href="./page-news.html">
-											<svg class="navbar__link-icon">
-												<use class="svg" xlink:href="../img/svg/sprite.svg#news-circle"></use>
-											</svg>
-											<span class="navbar__link-text">Новости</span>
-										</a>
-									</li>
-									<li class="navbar__list-item">
-										<a class="navbar__link" href="./page-about-us.html" style="color:#02E502">
-											<svg class="navbar__link-icon">
-												<use class="svg" xlink:href="../img/svg/sprite.svg#company-circle"></use>
-											</svg>
-											<span class="navbar__link-text">О компании</span>
-										</a>
-									</li>
-									<li class="navbar__list-item">
-										<a class="navbar__link" href="./page-contacts.html">
-											<svg class="navbar__link-icon">
-												<use class="svg" xlink:href="../img/svg/sprite.svg#contacts-circle"></use>
-											</svg>
-											<span class="navbar__link-text">Контакты</span>
-										</a>
-									</li>
-								</ul>
-							</nav>
-							<hr class="navbar__line">
-							<ul class="navbar__messengers-list">
-								<li class="navbar__messengers-item">
-									<a class="navbar__messengers-link" href="#">
-										<svg class="navbar__messengers-icon">
-											<use class="svg" xlink:href="../img/svg/sprite.svg#wa"></use>
+		<header class="page__header">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="navbar">
+							<div class="navbar__logo">
+								<a href="../index.html" class="navbar__logo-link">
+									<img class="navbar__logo-img" src="../img/LogoAgroScout.png" alt="Логотип компании АгроСкаут.">
+								</a>
+							</div>
+							<div class="navbar__phone">
+								<a class="navbar__phone-link" href="tel:+78612179118">
+									<svg class="navbar__phone-icon">
+										<use class="svg svg--phone" xlink:href="../img/svg/sprite.svg#phone"></use>
+									</svg>
+									<span class="navbar__phone-number">+7861 21791 18</span>
+								</a>
+							</div>
+							<div class="navbar__social-networks">
+								<div class="navbar__social-networks-box">
+									<a class="navbar__link" href="#">
+										<svg class="navbar__icon">
+											<use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#vk"></use>
 										</svg>
 									</a>
-								</li>
-								<li class="navbar__messengers-item">
-									<a class="navbar__messengers-link" href="#">
-										<svg class="navbar__messengers-icon">
-											<use class="svg" xlink:href="../img/svg/sprite.svg#tg"></use>
+									<a class="navbar__link" href="#">
+										<svg class="navbar__icon">
+											<use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#in"></use>
 										</svg>
 									</a>
-								</li>
-								<li class="navbar__messengers-item">
-									<a class="navbar__messengers-link" href="#">
-										<svg class="navbar__messengers-icon" style="width:106%;">
-											<use class="svg" xlink:href="../img/svg/sprite.svg#we"></use>
+									<a class="navbar__link" href="#">
+										<svg class="navbar__icon">
+											<use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#tt"></use>
 										</svg>
 									</a>
-								</li>
-							</ul>
+								</div>
+							</div>
+							<div class="navbar__lang">
+								<a class="navbar__lang-select" role="button" href="#"><span>EN</span></a>
+								<a class="navbar__lang-select" role="button" href="#"><span>RU</span></a>
+							</div>
+							<div class="navbar__user-buttons">
+								<a class="navbar__user-button" id="open-mini-cart" role="button" href="#">
+									<svg class="navbar__icon">
+										<use class="svg" xlink:href="../img/svg/sprite.svg#basket"></use>
+									</svg>
+								</a>
+								<a class="navbar__user-button navbar__user-button--menu" id="open-menu" role="button" href="#">
+									<svg class="navbar__icon">
+										<use class="svg" xlink:href="../img/svg/sprite.svg#menu-on"></use>
+									</svg>
+								</a>
+								<a class="navbar__user-button navbar__user-button--menu-close cut-down" id="close-menu" role="button"
+								   href="#">
+									<svg class="navbar__icon">
+										<use class="svg" xlink:href="../img/svg/sprite.svg#menu-off"></use>
+									</svg>
+								</a>
+								<a class="navbar__user-button navbar__user-button--phone-mini" role="button" href="#">
+									<svg class="navbar__icon">
+										<use class="svg" xlink:href="../img/svg/sprite.svg#phone-mini"></use>
+									</svg>
+								</a>
+							</div>
+							<div class="navbar__menu cut-down" id="navigation-menu">
+								<div class="navbar__menu-box">
+									<nav class="navbar__nav">
+										<ul class="navbar__links-list">
+											<li class="navbar__list-item">
+												<a class="navbar__link" href="../index.html">
+													<svg class="navbar__link-icon">
+														<use class="svg" xlink:href="../img/svg/sprite.svg#home-circle"></use>
+													</svg>
+													<span class="navbar__link-text">Главная</span>
+												</a>
+											</li>
+											<li class="navbar__list-item">
+												<a class="navbar__link" href="./page-ethnomophages.html">
+													<svg class="navbar__link-icon">
+														<use class="svg" xlink:href="../img/svg/sprite.svg#insects-circle"></use>
+													</svg>
+													<span class="navbar__link-text">Энтомофаги</span>
+												</a>
+											</li>
+											<li class="navbar__list-item">
+												<a class="navbar__link" href="./page-atomize.html">
+													<svg class="navbar__link-icon">
+														<use class="svg" xlink:href="../img/svg/sprite.svg#atomize-circle"></use>
+													</svg>
+													<span class="navbar__link-text">Опрыскивание</span>
+												</a>
+											</li>
+											<li class="navbar__list-item">
+												<a class="navbar__link" href="./page-agromonitoring.html" >
+													<svg class="navbar__link-icon">
+														<use class="svg" xlink:href="../img/svg/sprite.svg#map-circle"></use>
+													</svg>
+													<span class="navbar__link-text">Картография и мониторинг</span>
+												</a>
+											</li>
+											<li class="navbar__list-item">
+												<a class="navbar__link"  href="./page-catalog.html">
+													<svg class="navbar__link-icon">
+														<use class="svg" xlink:href="../img/svg/sprite.svg#drones-circle"></use>
+													</svg>
+													<span class="navbar__link-text">Каталог продукции</span>
+												</a>
+											</li>
+											<li class="navbar__list-item">
+												<a class="navbar__link" href="./page-news.html">
+													<svg class="navbar__link-icon">
+														<use class="svg" xlink:href="../img/svg/sprite.svg#news-circle"></use>
+													</svg>
+													<span class="navbar__link-text">Новости</span>
+												</a>
+											</li>
+											<li class="navbar__list-item">
+												<a class="navbar__link" href="./page-about-us.html" style="color:#02E502">
+													<svg class="navbar__link-icon">
+														<use class="svg" xlink:href="../img/svg/sprite.svg#company-circle"></use>
+													</svg>
+													<span class="navbar__link-text">О компании</span>
+												</a>
+											</li>
+											<li class="navbar__list-item">
+												<a class="navbar__link" href="./page-contacts.html">
+													<svg class="navbar__link-icon">
+														<use class="svg" xlink:href="../img/svg/sprite.svg#contacts-circle"></use>
+													</svg>
+													<span class="navbar__link-text">Контакты</span>
+												</a>
+											</li>
+										</ul>
+									</nav>
+									<hr class="navbar__line">
+									<ul class="navbar__messengers-list">
+										<li class="navbar__messengers-item">
+											<a class="navbar__messengers-link" href="#">
+												<svg class="navbar__messengers-icon">
+													<use class="svg" xlink:href="../img/svg/sprite.svg#wa"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="navbar__messengers-item">
+											<a class="navbar__messengers-link" href="#">
+												<svg class="navbar__messengers-icon">
+													<use class="svg" xlink:href="../img/svg/sprite.svg#tg"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="navbar__messengers-item">
+											<a class="navbar__messengers-link" href="#">
+												<svg class="navbar__messengers-icon" style="width:106%;">
+													<use class="svg" xlink:href="../img/svg/sprite.svg#we"></use>
+												</svg>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-</header>
+		</header>
 
-<main class="page__main">
+		<main class="page__main">
 
-	<section class="hero hero--about-us">
-		<div class="container h-100">
-			<div class="row h-100">
-				<div class="col-xs-12 d-sm-none p-0 h-100">
-					<div class="hero__mobile-picture hero__mobile-picture--about-us"></div>
+			<section class="hero hero--about-us">
+				<div class="container h-100">
+					<div class="row h-100">
+						<div class="col-xs-12 d-sm-none p-0 h-100">
+							<div class="hero__mobile-picture hero__mobile-picture--about-us"></div>
+						</div>
+						<div class="col-xs-12 col-sm-6 p-xxl-0 h-100 d-md-flex align-items-center">
+							<div class="hero__text-content">
+								<h1 class="hero__main-header">
+									О компании AgroScout
+								</h1>
+								<p class="hero__paragraph hero__paragraph--about-us">
+									Наша команда состоит из профессионалов в области эффективного применения беспилотных летательных аппаратов
+								</p>
+								<svg class="hero--svg svg--flying-drones">
+									<use xlink:href="../img/svg/sprite.svg#drones-flying"></use>
+								</svg>
+								<dl class="hero__info">
+									<dt class="hero__num hero__num--1">50 000 Га</dt>
+									<dd class="hero__text hero__text--1">ежегодной обработки</dd>
+									<dt class="hero__num hero__num--2">30%</dt>
+									<dd class="hero__text hero__text--2">экономии средств</dd>
+									<dt class="hero__num hero__num--3">10 команд</dt>
+									<dd class="hero__text hero__text--3">специалистов</dd>
+								</dl>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="col-xs-12 col-sm-6 p-xxl-0 h-100 d-md-flex align-items-center">
-					<div class="hero__text-content">
-						<h1 class="hero__main-header">
-							О компании AgroScout
-						</h1>
-						<p class="hero__paragraph hero__paragraph--about-us">
-							Наша команда состоит из профессионалов в области эффективного применения беспилотных летательных аппаратов
-						</p>
-						<svg class="hero--svg svg--flying-drones">
-							<use xlink:href="../img/svg/sprite.svg#drones-flying"></use>
+			</section>
+
+			<div class="breadcrumbs">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="breadcrumbs-links">
+								<a class="breadcrumbs-link" href="../index.html">Главная</a>&nbsp;/&nbsp;
+								<a class="breadcrumbs-link" href="./page-agromonitoring.html">O нас</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="read-more read-more--about-us">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="read-more__content">
+								<label for="read-more__input">
+									<input type="checkbox" id="read-more__input">
+									<span class="read-more__paragraph">
+										Аэрофотосъемка осуществляется с применением БПЛА Геоскан
+										<br>
+										Компания STS.center применяет высокотехнологичные агродроны и БПЛА, которые модернизированы и
+		                собраны нашими инженерами для сельского и лесного хозяйства, а также для промышленности. В СТС
+		                Центр работают опытные агрономы, энтомологи, пилоты, менеджеры и инженеры. Сегодня мы имеем один
+		                из самых современных парков дронов в России, что позволяет нам выполнять работы широкого спектра
+		                от простой аэрофотосъемки до лидарного сканирования местности и тепловизионного контроля. Внедрение
+		                беспилотных технологий в вашем бизнесе поможет сэкономить время и деньги, а также позволит получить
+		                большое преимущество перед вашими конкурентами.
+		                <br>
+		                Компания STS.center применяет высокотехнологичные агродроны и БПЛА, которые модернизированы и
+		                собраны нашими инженерами для сельского и лесного хозяйства, а также для промышленности. В СТС
+		                Центр работают опытные агрономы, энтомологи, пилоты, менеджеры и инженеры. Сегодня мы имеем один
+		                из самых современных парков дронов в России, что позволяет нам выполнять работы широкого спектра
+		                от простой аэрофотосъемки до лидарного сканирования местности и тепловизионного контроля. Внедрение
+		                беспилотных технологий в вашем бизнесе поможет сэкономить время и деньги, а также позволит получить
+		                большое преимущество перед вашими конкурентами.
+		                <br><br>
+		                Компания STS.center применяет высокотехнологичные агродроны и БПЛА, которые модернизированы и
+		                собраны нашими инженерами для сельского и лесного хозяйства, а также для промышленности. В СТС
+		                Центр работают опытные агрономы, энтомологи, пилоты, менеджеры и инженеры. Сегодня мы имеем один
+		                из самых современных парков дронов в России, что позволяет нам выполнять работы широкого спектра
+		                от простой аэрофотосъемки до лидарного сканирования местности и тепловизионного контроля. Внедрение
+		                беспилотных технологий в вашем бизнесе поможет сэкономить время и деньги, а также позволит получить
+		                большое преимущество перед вашими конкурентами.
+		                <br><br>
+									</span>
+									<a class="read-more__link">
+										<svg class="read-more__icon">
+											<use xlink:href="../img/svg/sprite.svg#read-more"></use>
+										</svg>
+									</a>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="news">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="headline">
+								<h2>Наша команда</h2>
+								<span class="h2-podscription">О нас</span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="news__list news__slider slider">
+								<div class="slider__container">
+									<div class="slider__slides">
+										<div class="slider__slides-track slider__slides-track--nowrap">
+											<div class="slider__slide slider__slide--news">
+												<div class="news__list-item news-card">
+													<div class="news-card__picture picture-wrapper">
+														<img src="../img/about-us.jpg" alt="">
+													</div>
+													<div class="news-card__article news-card__article--personal">
+														<h4 class="news-card__article-header">Олег Иванченко</h4>
+														<span class="news-card__article-podscript">Генеральный директор компнии</span>
+														<p class="news-card__article-paragraph">
+															Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad amet asperiores blanditiis
+															facere fugit harum necessitatibus quisquam tenetur voluptatum? Alias blanditiis explicabo
+															molestias perspiciatis quibusdam. Dolore iste neque quidem!
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="slider__slide slider__slide--news">
+												<div class="news__list-item news-card">
+													<div class="news-card__picture picture-wrapper">
+														<img src="../img/about-us.jpg" alt="">
+													</div>
+													<div class="news-card__article news-card__article--personal">
+														<h4 class="news-card__article-header">Олег Иванченко</h4>
+														<span class="news-card__article-podscript">Генеральный директор компнии</span>
+														<p class="news-card__article-paragraph">
+															Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad amet asperiores blanditiis
+															facere fugit harum necessitatibus quisquam tenetur voluptatum? Alias blanditiis explicabo
+															molestias perspiciatis quibusdam. Dolore iste neque quidem!
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="slider__slide slider__slide--news">
+												<div class="news__list-item news-card">
+													<div class="news-card__picture picture-wrapper">
+														<img src="../img/about-us.jpg" alt="">
+													</div>
+													<div class="news-card__article news-card__article--personal">
+														<h4 class="news-card__article-header">Олег Иванченко</h4>
+														<span class="news-card__article-podscript">Генеральный директор компнии</span>
+														<p class="news-card__article-paragraph">
+															Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad amet asperiores blanditiis
+															facere fugit harum necessitatibus quisquam tenetur voluptatum? Alias blanditiis explicabo
+															molestias perspiciatis quibusdam. Dolore iste neque quidem!
+														</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="slider__pagination slider__pagination--carusel">
+											<span class="slider__dot slider__dot--active"></span>
+											<span class="slider__dot"></span>
+											<span class="slider__dot"></span>
+											<span class="slider__dot"></span>
+											<span class="slider__dot"></span>
+											<span class="slider__dot"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="presence-regions">
+				<div class="container ">
+					<div class="row">
+						<div class="col-12">
+							<div class="headline">
+								<h2>Регионы присутствия</h2>
+								<span class="h2-podscription">Где мы работаем</span>
+							</div>
+						</div>
+					</div>
+					<div class="row position-relative">
+						<div class="col-xs-12 col-md-6 order-1 order-md-2">
+							<picture class="presence-regions__map">
+								<source srcset="../img/map.png" media="(min-width: 1000px)">
+								<img src="../img/map.png" alt="Картa с регионами">
+							</picture>
+						</div>
+						<div class="col-xs-12 col-md-6 order-2 order-md-1">
+							<div class="presence-regions__box">
+								<ol class="presence-regions__list">
+									<li class="presence-regions__item">Московская область</li>
+									<li class="presence-regions__item">Ростовская область</li>
+									<li class="presence-regions__item">Краснодарский край</li>
+									<li class="presence-regions__item">Ставропольский край</li>
+									<li class="presence-regions__item">Северная Осетия</li>
+									<li class="presence-regions__item">Кабардино-Балкария</li>
+									<li class="presence-regions__item">Пензеская область</li>
+									<li class="presence-regions__item">Белгородская область</li>
+									<li class="presence-regions__item">Саратовская область</li>
+									<li class="presence-regions__item">Воронежская область</li>
+									<li class="presence-regions__item">Волгоградская область</li>
+									<li class="presence-regions__item">Астраханская область</li>
+									<li class="presence-regions__item">Самарская область</li>
+									<li class="presence-regions__item">Липецкая область</li>
+									<li class="presence-regions__item">Орловская область</li>
+									<li class="presence-regions__item">Курская область</li>
+									<li class="presence-regions__item">Ульяновская область</li>
+									<li class="presence-regions__item">Карачаево-Черкессия</li>
+									<li class="presence-regions__item">Брянская область</li>
+									<li class="presence-regions__item">Республика Татарстан</li>
+									<li class="presence-regions__item">Тамбовская область</li>
+									<li class="presence-regions__item">Тульская область</li>
+									<li class="presence-regions__item">Калужская область</li>
+									<li class="presence-regions__item">Республика Крым</li>
+								</ol>
+							</div>
+						</div>
+						<div class="aside-element aside-element--left">
+							<span class="aside-element__text">карта россии</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="feedback">
+				<div class="container position-relative">
+					<div class="row">
+						<div class="col-12">
+							<form class="feedback__form position-relative" id="feedback-form" method="get">
+								<div class="headline">
+									<h2>Нужна помошь?</h2>
+									<span class="h2-podscription">Напишите нам</span>
+								</div>
+								<div class="feedback__paragraph">Заполните форму и мы за 5 минут подскажем вам лучшие способы защиты вашего
+									урожая
+								</div>
+								<fieldset class="feedback__form-fieldsets">
+									<label class="feedback__fieldset-label" for="your-name"></label>
+									<input class="feedback__fieldset-input" type="text" id="your-name" name="your-name" placeholder="Ваше имя">
+
+									<label class="feedback__fieldset-label" for="phone"></label>
+									<input class="feedback__fieldset-input" type="tel" id="phone" name="phone" placeholder="Ваш телефон">
+
+									<label class="feedback__fieldset-label" for="email"></label>
+									<input class="feedback__fieldset-input" type="email" id="email" name="email" placeholder="Ваш email">
+
+									<button class="button button--form" type="submit" form="feedback-form" value="Submit">Отправить</button>
+
+									<a class="feedback__form-link" href="#">Политика конфиденциальности</a>
+								</fieldset>
+								<div class="feedback__background-element">
+									<svg class="feedback__background-svg">
+										<use xlink:href="../img/svg/sprite.svg#bg-relief"></use>
+									</svg>
+									<img class="feedback__background-picture" src="../img/drone-form.png" alt="">
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="aside-element aside-element--left">
+						<span class="aside-element__text">напиши нам</span>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<footer class="page__footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="footer">
+							<div class="footer__logo">
+								<a href="#" class="navbar__logo-link">
+									<img class="navbar__logo-img" src="../img/LogoAgroScout.png" alt="Логотип компании АгроСкаут.">
+								</a>
+							</div>
+							<div class="footer__phone">
+								<a class="navbar__phone-link" href="tel:+78612179118">
+									<svg class="navbar__phone-icon">
+										<use class="svg svg--phone" xlink:href="../img/svg/sprite.svg#phone"></use>
+									</svg>
+									<span class="navbar__phone-number">+7861 21791 18</span>
+								</a>
+							</div>
+							<div class="footer__social-networks">
+								<div class="footer__social-networks-box">
+									<span class="footer__social-networks-label">Подписывайтесь на наши соц. сети</span>
+									<a class="footer__link" href="#">
+										<svg class="footer__icon">
+											<use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#vk"></use>
+										</svg>
+									</a>
+									<a class="footer__link" href="#">
+										<svg class="footer__icon">
+											<use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#in"></use>
+										</svg>
+									</a>
+									<a class="footer__link" href="#">
+										<svg class="footer__icon">
+											<use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#tt"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<dialog class="mini-cart">
+			<form method="dialog" class="minicart__dialog">
+				<div class="minicart__headline">
+					<h7>Корзина</h7>
+					<a href="#" class="mini-cart__button--close" id="close-mini-cart">
+						<svg class="mini-cart__icon">
+							<use xlink:href="../img/svg/sprite.svg#menu-off"></use>
 						</svg>
-						<dl class="hero__info">
-							<dt class="hero__num hero__num--1">50 000 Га</dt>
-							<dd class="hero__text hero__text--1">ежегодной обработки</dd>
-							<dt class="hero__num hero__num--2">30%</dt>
-							<dd class="hero__text hero__text--2">экономии средств</dd>
-							<dt class="hero__num hero__num--3">10 команд</dt>
-							<dd class="hero__text hero__text--3">специалистов</dd>
-						</dl>
+					</a>
+				</div>
+				<div class="minicart__ordering-goods minicart__ordering-goods--empty" style="display: none">
+					<svg class="minicart__svg">
+						<use xlink:href="../img/svg/sprite.svg#minicart-drone"></use>
+					</svg>
+					<span class="minicart__empty">Корзина пуста</span>
+					<hr class="minicart__hr-line">
+					<div class="minicart__continue-shopping">
+						<a href="#" class="minicart__link">Продолжить покупки</a>
 					</div>
 				</div>
-			</div>
-		</div>
-	</section>
-
-	<div class="breadcrumbs">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<div class="breadcrumbs-links">
-						<a class="breadcrumbs-link" href="../index.html">Главная</a>&nbsp;/&nbsp;
-						<a class="breadcrumbs-link" href="./page-agromonitoring.html">O нас</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<section class="read-more read-more--about-us">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<div class="read-more__content">
-						<label for="read-more__input">
-							<input type="checkbox" id="read-more__input">
-							<span class="read-more__paragraph">
-								Аэрофотосъемка осуществляется с применением БПЛА Геоскан
-								<br>
-								Компания STS.center применяет высокотехнологичные агродроны и БПЛА, которые модернизированы и
-                собраны нашими инженерами для сельского и лесного хозяйства, а также для промышленности. В СТС
-                Центр работают опытные агрономы, энтомологи, пилоты, менеджеры и инженеры. Сегодня мы имеем один
-                из самых современных парков дронов в России, что позволяет нам выполнять работы широкого спектра
-                от простой аэрофотосъемки до лидарного сканирования местности и тепловизионного контроля. Внедрение
-                беспилотных технологий в вашем бизнесе поможет сэкономить время и деньги, а также позволит получить
-                большое преимущество перед вашими конкурентами.
-                <br>
-                Компания STS.center применяет высокотехнологичные агродроны и БПЛА, которые модернизированы и
-                собраны нашими инженерами для сельского и лесного хозяйства, а также для промышленности. В СТС
-                Центр работают опытные агрономы, энтомологи, пилоты, менеджеры и инженеры. Сегодня мы имеем один
-                из самых современных парков дронов в России, что позволяет нам выполнять работы широкого спектра
-                от простой аэрофотосъемки до лидарного сканирования местности и тепловизионного контроля. Внедрение
-                беспилотных технологий в вашем бизнесе поможет сэкономить время и деньги, а также позволит получить
-                большое преимущество перед вашими конкурентами.
-                <br><br>
-                Компания STS.center применяет высокотехнологичные агродроны и БПЛА, которые модернизированы и
-                собраны нашими инженерами для сельского и лесного хозяйства, а также для промышленности. В СТС
-                Центр работают опытные агрономы, энтомологи, пилоты, менеджеры и инженеры. Сегодня мы имеем один
-                из самых современных парков дронов в России, что позволяет нам выполнять работы широкого спектра
-                от простой аэрофотосъемки до лидарного сканирования местности и тепловизионного контроля. Внедрение
-                беспилотных технологий в вашем бизнесе поможет сэкономить время и деньги, а также позволит получить
-                большое преимущество перед вашими конкурентами.
-                <br><br>
-							</span>
-							<a class="read-more__link">
-								<svg class="read-more__icon">
-									<use xlink:href="../img/svg/sprite.svg#read-more"></use>
-								</svg>
-							</a>
-						</label>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="news">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<div class="headline">
-						<h2>Наша команда</h2>
-						<span class="h2-podscription">О нас</span>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12">
-					<div class="news__list news__slider slider">
-						<div class="slider__container">
-							<div class="slider__slides">
-								<div class="slider__slides-track slider__slides-track--nowrap">
-									<div class="slider__slide slider__slide--news">
-										<div class="news__list-item news-card">
-											<div class="news-card__picture picture-wrapper">
-												<img src="../img/about-us.jpg" alt="">
-											</div>
-											<div class="news-card__article news-card__article--personal">
-												<h4 class="news-card__article-header">Олег Иванченко</h4>
-												<span class="news-card__article-podscript">Генеральный директор компнии</span>
-												<p class="news-card__article-paragraph">
-													Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad amet asperiores blanditiis
-													facere fugit harum necessitatibus quisquam tenetur voluptatum? Alias blanditiis explicabo
-													molestias perspiciatis quibusdam. Dolore iste neque quidem!
-												</p>
-											</div>
-										</div>
+				<div class="minicart__ordering-goods minicart__ordering-goods--fill">
+					<ul class="minicart__list">
+						<li class="minicart__list-item">
+							<div class="product-card">
+								<div class="product-card__content product-card__content--minicart">
+									<div class="product-card__photo">
+										<img alt="" src="../img/drone-photo(3).png">
 									</div>
-									<div class="slider__slide slider__slide--news">
-										<div class="news__list-item news-card">
-											<div class="news-card__picture picture-wrapper">
-												<img src="../img/about-us.jpg" alt="">
-											</div>
-											<div class="news-card__article news-card__article--personal">
-												<h4 class="news-card__article-header">Олег Иванченко</h4>
-												<span class="news-card__article-podscript">Генеральный директор компнии</span>
-												<p class="news-card__article-paragraph">
-													Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad amet asperiores blanditiis
-													facere fugit harum necessitatibus quisquam tenetur voluptatum? Alias blanditiis explicabo
-													molestias perspiciatis quibusdam. Dolore iste neque quidem!
-												</p>
-											</div>
-										</div>
-									</div>
-									<div class="slider__slide slider__slide--news">
-										<div class="news__list-item news-card">
-											<div class="news-card__picture picture-wrapper">
-												<img src="../img/about-us.jpg" alt="">
-											</div>
-											<div class="news-card__article news-card__article--personal">
-												<h4 class="news-card__article-header">Олег Иванченко</h4>
-												<span class="news-card__article-podscript">Генеральный директор компнии</span>
-												<p class="news-card__article-paragraph">
-													Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad amet asperiores blanditiis
-													facere fugit harum necessitatibus quisquam tenetur voluptatum? Alias blanditiis explicabo
-													molestias perspiciatis quibusdam. Dolore iste neque quidem!
-												</p>
-											</div>
-										</div>
+									<h4 class="product-card__name">Агродрон AGR A22</h4>
+									<span class="product-card__brand">Бренд: AGR</span>
+									<span class="product-card__model">Модель: 101-0101</span>
+									<span class="product-card__price">$15001.27</span>
+									<span class="product-card__delete">
+				                        <svg class="product-card__delete-icon">
+				                          <use xlink:href="../img/svg/sprite.svg#cart-delete"></use>
+				                        </svg>
+				                      </span>
+									<div class="product-card__quantity">
+										<span class="product-card__quantity-minus">-</span>
+										<span class="product-card__quantity-num">1</span>
+										<span class="product-card__quantity-plus">+</span>
 									</div>
 								</div>
-								<div class="slider__pagination slider__pagination--carusel">
-									<span class="slider__dot slider__dot--active"></span>
-									<span class="slider__dot"></span>
-									<span class="slider__dot"></span>
-									<span class="slider__dot"></span>
-									<span class="slider__dot"></span>
-									<span class="slider__dot"></span>
-								</div>
 							</div>
+						</li>
+					</ul>
+					<div class="minicart__ui">
+						<div class="minicart__continue-shopping minicart__continue-shopping--empty">
+							<a href="#" class="minicart__link">Продолжить покупки</a>
 						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="presence-regions">
-		<div class="container ">
-			<div class="row">
-				<div class="col-12">
-					<div class="headline">
-						<h2>Регионы присутствия</h2>
-						<span class="h2-podscription">Где мы работаем</span>
-					</div>
-				</div>
-			</div>
-			<div class="row position-relative">
-				<div class="col-xs-12 col-md-6 order-1 order-md-2">
-					<picture class="presence-regions__map">
-						<source srcset="../img/map.png" media="(min-width: 1000px)">
-						<img src="../img/map.png" alt="Картa с регионами">
-					</picture>
-				</div>
-				<div class="col-xs-12 col-md-6 order-2 order-md-1">
-					<div class="presence-regions__box">
-						<ol class="presence-regions__list">
-							<li class="presence-regions__item">Московская область</li>
-							<li class="presence-regions__item">Ростовская область</li>
-							<li class="presence-regions__item">Краснодарский край</li>
-							<li class="presence-regions__item">Ставропольский край</li>
-							<li class="presence-regions__item">Северная Осетия</li>
-							<li class="presence-regions__item">Кабардино-Балкария</li>
-							<li class="presence-regions__item">Пензеская область</li>
-							<li class="presence-regions__item">Белгородская область</li>
-							<li class="presence-regions__item">Саратовская область</li>
-							<li class="presence-regions__item">Воронежская область</li>
-							<li class="presence-regions__item">Волгоградская область</li>
-							<li class="presence-regions__item">Астраханская область</li>
-							<li class="presence-regions__item">Самарская область</li>
-							<li class="presence-regions__item">Липецкая область</li>
-							<li class="presence-regions__item">Орловская область</li>
-							<li class="presence-regions__item">Курская область</li>
-							<li class="presence-regions__item">Ульяновская область</li>
-							<li class="presence-regions__item">Карачаево-Черкессия</li>
-							<li class="presence-regions__item">Брянская область</li>
-							<li class="presence-regions__item">Республика Татарстан</li>
-							<li class="presence-regions__item">Тамбовская область</li>
-							<li class="presence-regions__item">Тульская область</li>
-							<li class="presence-regions__item">Калужская область</li>
-							<li class="presence-regions__item">Республика Крым</li>
-						</ol>
-					</div>
-				</div>
-				<div class="aside-element aside-element--left">
-					<span class="aside-element__text">карта россии</span>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="feedback">
-		<div class="container position-relative">
-			<div class="row">
-				<div class="col-12">
-					<form class="feedback__form position-relative" id="feedback-form" method="get">
-						<div class="headline">
-							<h2>Нужна помошь?</h2>
-							<span class="h2-podscription">Напишите нам</span>
+						<div class="minicart__total">
+							Всего: <span class="minicart__total-price">$15001.27</span>
 						</div>
-						<div class="feedback__paragraph">Заполните форму и мы за 5 минут подскажем вам лучшие способы защиты вашего
-							урожая
-						</div>
-						<fieldset class="feedback__form-fieldsets">
-							<label class="feedback__fieldset-label" for="your-name"></label>
-							<input class="feedback__fieldset-input" type="text" id="your-name" name="your-name" placeholder="Ваше имя">
-
-							<label class="feedback__fieldset-label" for="phone"></label>
-							<input class="feedback__fieldset-input" type="tel" id="phone" name="phone" placeholder="Ваш телефон">
-
-							<label class="feedback__fieldset-label" for="email"></label>
-							<input class="feedback__fieldset-input" type="email" id="email" name="email" placeholder="Ваш email">
-
-							<button class="button button--form" type="submit" form="feedback-form" value="Submit">Отправить</button>
-
-							<a class="feedback__form-link" href="#">Политика конфиденциальности</a>
-						</fieldset>
-						<div class="feedback__background-element">
-							<svg class="feedback__background-svg">
-								<use xlink:href="../img/svg/sprite.svg#bg-relief"></use>
-							</svg>
-							<img class="feedback__background-picture" src="../img/drone-form.png" alt="">
-						</div>
-					</form>
-				</div>
-			</div>
-			<div class="aside-element aside-element--left">
-				<span class="aside-element__text">напиши нам</span>
-			</div>
-		</div>
-	</section>
-</main>
-
-<footer class="page__footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<div class="footer">
-					<div class="footer__logo">
-						<a href="#" class="navbar__logo-link">
-							<img class="navbar__logo-img" src="../img/LogoAgroScout.png" alt="Логотип компании АгроСкаут.">
-						</a>
-					</div>
-					<div class="footer__phone">
-						<a class="navbar__phone-link" href="tel:+78612179118">
-							<svg class="navbar__phone-icon">
-								<use class="svg svg--phone" xlink:href="../img/svg/sprite.svg#phone"></use>
-							</svg>
-							<span class="navbar__phone-number">+7861 21791 18</span>
-						</a>
-					</div>
-					<div class="footer__social-networks">
-						<div class="footer__social-networks-box">
-							<span class="footer__social-networks-label">Подписывайтесь на наши соц. сети</span>
-							<a class="footer__link" href="#">
-								<svg class="footer__icon">
-									<use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#vk"></use>
-								</svg>
-							</a>
-							<a class="footer__link" href="#">
-								<svg class="footer__icon">
-									<use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#in"></use>
-								</svg>
-							</a>
-							<a class="footer__link" href="#">
-								<svg class="footer__icon">
-									<use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#tt"></use>
-								</svg>
-							</a>
-						</div>
+						<a class="button minicart__button--arrange" role="button">Оформить заказ</a>
 					</div>
 				</div>
-			</div>
-		</div>
-	</div>
-</footer>
+			</form>
+		</dialog>
 
-<dialog class="mini-cart">
-	<form method="dialog" class="minicart__dialog">
-		<div class="minicart__headline">
-			<h7>Корзина</h7>
-			<a href="#" class="mini-cart__button--close" id="close-mini-cart">
-				<svg class="mini-cart__icon">
-					<use xlink:href="../img/svg/sprite.svg#menu-off"></use>
-				</svg>
-			</a>
-		</div>
-		<div class="minicart__ordering-goods minicart__ordering-goods--empty" style="display: none">
-			<svg class="minicart__svg">
-				<use xlink:href="../img/svg/sprite.svg#minicart-drone"></use>
-			</svg>
-			<span class="minicart__empty">Корзина пуста</span>
-			<hr class="minicart__hr-line">
-			<div class="minicart__continue-shopping">
-				<a href="#" class="minicart__link">Продолжить покупки</a>
-			</div>
-		</div>
-		<div class="minicart__ordering-goods minicart__ordering-goods--fill">
-			<ul class="minicart__list">
-				<li class="minicart__list-item">
-					<div class="product-card">
-						<div class="product-card__content product-card__content--minicart">
-							<div class="product-card__photo">
-								<img alt="" src="../img/drone-photo(3).png">
-							</div>
-							<h4 class="product-card__name">Агродрон AGR A22</h4>
-							<span class="product-card__brand">Бренд: AGR</span>
-							<span class="product-card__model">Модель: 101-0101</span>
-							<span class="product-card__price">$15001.27</span>
-							<span class="product-card__delete">
-		                        <svg class="product-card__delete-icon">
-		                          <use xlink:href="../img/svg/sprite.svg#cart-delete"></use>
-		                        </svg>
-		                      </span>
-							<div class="product-card__quantity">
-								<span class="product-card__quantity-minus">-</span>
-								<span class="product-card__quantity-num">1</span>
-								<span class="product-card__quantity-plus">+</span>
-							</div>
-						</div>
-					</div>
-				</li>
-			</ul>
-			<div class="minicart__ui">
-				<div class="minicart__continue-shopping minicart__continue-shopping--empty">
-					<a href="#" class="minicart__link">Продолжить покупки</a>
-				</div>
-				<div class="minicart__total">
-					Всего: <span class="minicart__total-price">$15001.27</span>
-				</div>
-				<a class="button minicart__button--arrange" role="button">Оформить заказ</a>
-			</div>
-		</div>
-	</form>
-</dialog>
-
-<script src="../js/script.js"></script>
-</body>
+		<script src="../js/script.js"></script>
+	</body>
 </html>

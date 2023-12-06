@@ -1,829 +1,830 @@
 <!doctype html>
 <html lang="ru" class="page" xmlns="http://www.w3.org/1999/html">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>AgroScout</title>
-	<script type="module" src="../js/main.js"></script>
-</head>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>AgroScout</title>
+		<script type="module" src="../js/main.js"></script>
+	</head>
 
-<body class="page__body">
+	<body class="page__body">
 
-<header class="page__header">
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<div class="navbar">
-					<div class="navbar__logo">
-						<a href="../index.html" class="navbar__logo-link">
-							<img class="navbar__logo-img" src="../img/LogoAgroScout.png" alt="Логотип компании АгроСкаут.">
-						</a>
-					</div>
-					<div class="navbar__phone">
-						<a class="navbar__phone-link" href="tel:+78612179118">
-							<svg class="navbar__phone-icon">
-								<use class="svg svg--phone" xlink:href="../img/svg/sprite.svg#phone"></use>
-							</svg>
-							<span class="navbar__phone-number">+7861 21791 18</span>
-						</a>
-					</div>
-					<div class="navbar__social-networks">
-						<div class="navbar__social-networks-box">
-							<a class="navbar__link" href="#">
-								<svg class="navbar__icon">
-									<use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#vk"></use>
-								</svg>
-							</a>
-							<a class="navbar__link" href="#">
-								<svg class="navbar__icon">
-									<use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#in"></use>
-								</svg>
-							</a>
-							<a class="navbar__link" href="#">
-								<svg class="navbar__icon">
-									<use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#tt"></use>
-								</svg>
-							</a>
+		<header class="page__header">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="navbar">
+							<div class="navbar__logo">
+								<a href="../index.html" class="navbar__logo-link">
+									<img class="navbar__logo-img" src="../img/LogoAgroScout.png" alt="Логотип компании АгроСкаут.">
+								</a>
+							</div>
+							<div class="navbar__phone">
+								<a class="navbar__phone-link" href="tel:+78612179118">
+									<svg class="navbar__phone-icon">
+										<use class="svg svg--phone" xlink:href="../img/svg/sprite.svg#phone"></use>
+									</svg>
+									<span class="navbar__phone-number">+7861 21791 18</span>
+								</a>
+							</div>
+							<div class="navbar__social-networks">
+								<div class="navbar__social-networks-box">
+									<a class="navbar__link" href="#">
+										<svg class="navbar__icon">
+											<use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#vk"></use>
+										</svg>
+									</a>
+									<a class="navbar__link" href="#">
+										<svg class="navbar__icon">
+											<use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#in"></use>
+										</svg>
+									</a>
+									<a class="navbar__link" href="#">
+										<svg class="navbar__icon">
+											<use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#tt"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="navbar__lang">
+								<a class="navbar__lang-select" role="button" href="#"><span>EN</span></a>
+								<a class="navbar__lang-select" role="button" href="#"><span>RU</span></a>
+							</div>
+							<div class="navbar__user-buttons">
+								<a class="navbar__user-button" id="open-mini-cart" role="button" href="#">
+									<svg class="navbar__icon">
+										<use class="svg" xlink:href="../img/svg/sprite.svg#basket"></use>
+									</svg>
+								</a>
+								<a class="navbar__user-button navbar__user-button--menu" id="open-menu" role="button" href="#">
+									<svg class="navbar__icon">
+										<use class="svg" xlink:href="../img/svg/sprite.svg#menu-on"></use>
+									</svg>
+								</a>
+								<a class="navbar__user-button navbar__user-button--menu-close cut-down" id="close-menu" role="button"
+								   href="#">
+									<svg class="navbar__icon">
+										<use class="svg" xlink:href="../img/svg/sprite.svg#menu-off"></use>
+									</svg>
+								</a>
+								<a class="navbar__user-button navbar__user-button--phone-mini" role="button" href="#">
+									<svg class="navbar__icon">
+										<use class="svg" xlink:href="../img/svg/sprite.svg#phone-mini"></use>
+									</svg>
+								</a>
+							</div>
+							<div class="navbar__menu cut-down" id="navigation-menu">
+								<div class="navbar__menu-box">
+									<nav class="navbar__nav">
+										<ul class="navbar__links-list">
+											<li class="navbar__list-item">
+												<a class="navbar__link" href="../index.html">
+													<svg class="navbar__link-icon">
+														<use class="svg" xlink:href="../img/svg/sprite.svg#home-circle"></use>
+													</svg>
+													<span class="navbar__link-text">Главная</span>
+												</a>
+											</li>
+											<li class="navbar__list-item">
+												<a class="navbar__link" href="./page-ethnomophages.html">
+													<svg class="navbar__link-icon">
+														<use class="svg" xlink:href="../img/svg/sprite.svg#insects-circle"></use>
+													</svg>
+													<span class="navbar__link-text">Энтомофаги</span>
+												</a>
+											</li>
+											<li class="navbar__list-item">
+												<a class="navbar__link" href="./page-atomize.html">
+													<svg class="navbar__link-icon">
+														<use class="svg" xlink:href="../img/svg/sprite.svg#atomize-circle"></use>
+													</svg>
+													<span class="navbar__link-text">Опрыскивание</span>
+												</a>
+											</li>
+											<li class="navbar__list-item">
+												<a class="navbar__link" href="./page-agromonitoring.html" style="color:#02E502">
+													<svg class="navbar__link-icon">
+														<use class="svg" xlink:href="../img/svg/sprite.svg#map-circle"></use>
+													</svg>
+													<span class="navbar__link-text">Картография и мониторинг</span>
+												</a>
+											</li>
+											<li class="navbar__list-item">
+												<a class="navbar__link"  href="./page-catalog.html">
+													<svg class="navbar__link-icon">
+														<use class="svg" xlink:href="../img/svg/sprite.svg#drones-circle"></use>
+													</svg>
+													<span class="navbar__link-text">Каталог продукции</span>
+												</a>
+											</li>
+											<li class="navbar__list-item">
+												<a class="navbar__link" href="./page-news.html">
+													<svg class="navbar__link-icon">
+														<use class="svg" xlink:href="../img/svg/sprite.svg#news-circle"></use>
+													</svg>
+													<span class="navbar__link-text">Новости</span>
+												</a>
+											</li>
+											<li class="navbar__list-item">
+												<a class="navbar__link" href="./page-about-us.html">
+													<svg class="navbar__link-icon">
+														<use class="svg" xlink:href="../img/svg/sprite.svg#company-circle"></use>
+													</svg>
+													<span class="navbar__link-text">О компании</span>
+												</a>
+											</li>
+											<li class="navbar__list-item">
+												<a class="navbar__link" href="./page-contacts.html">
+													<svg class="navbar__link-icon">
+														<use class="svg" xlink:href="../img/svg/sprite.svg#contacts-circle"></use>
+													</svg>
+													<span class="navbar__link-text">Контакты</span>
+												</a>
+											</li>
+										</ul>
+									</nav>
+									<hr class="navbar__line">
+									<ul class="navbar__messengers-list">
+										<li class="navbar__messengers-item">
+											<a class="navbar__messengers-link" href="#">
+												<svg class="navbar__messengers-icon">
+													<use class="svg" xlink:href="../img/svg/sprite.svg#wa"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="navbar__messengers-item">
+											<a class="navbar__messengers-link" href="#">
+												<svg class="navbar__messengers-icon">
+													<use class="svg" xlink:href="../img/svg/sprite.svg#tg"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="navbar__messengers-item">
+											<a class="navbar__messengers-link" href="#">
+												<svg class="navbar__messengers-icon" style="width:106%;">
+													<use class="svg" xlink:href="../img/svg/sprite.svg#we"></use>
+												</svg>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="navbar__lang">
-						<a class="navbar__lang-select" role="button" href="#"><span>EN</span></a>
-						<a class="navbar__lang-select" role="button" href="#"><span>RU</span></a>
-					</div>
-					<div class="navbar__user-buttons">
-						<a class="navbar__user-button" id="open-mini-cart" role="button" href="#">
-							<svg class="navbar__icon">
-								<use class="svg" xlink:href="../img/svg/sprite.svg#basket"></use>
-							</svg>
-						</a>
-						<a class="navbar__user-button navbar__user-button--menu" id="open-menu" role="button" href="#">
-							<svg class="navbar__icon">
-								<use class="svg" xlink:href="../img/svg/sprite.svg#menu-on"></use>
-							</svg>
-						</a>
-						<a class="navbar__user-button navbar__user-button--menu-close cut-down" id="close-menu" role="button"
-						   href="#">
-							<svg class="navbar__icon">
-								<use class="svg" xlink:href="../img/svg/sprite.svg#menu-off"></use>
-							</svg>
-						</a>
-						<a class="navbar__user-button navbar__user-button--phone-mini" role="button" href="#">
-							<svg class="navbar__icon">
-								<use class="svg" xlink:href="../img/svg/sprite.svg#phone-mini"></use>
-							</svg>
-						</a>
-					</div>
-					<div class="navbar__menu cut-down" id="navigation-menu">
-						<div class="navbar__menu-box">
-							<nav class="navbar__nav">
-								<ul class="navbar__links-list">
-									<li class="navbar__list-item">
-										<a class="navbar__link" href="../index.html">
-											<svg class="navbar__link-icon">
-												<use class="svg" xlink:href="../img/svg/sprite.svg#home-circle"></use>
-											</svg>
-											<span class="navbar__link-text">Главная</span>
-										</a>
+				</div>
+			</div>
+		</header>
+
+		<main class="page__main">
+
+			<section class="hero hero--agromonitoring">
+				<div class="container h-100">
+					<div class="row h-100">
+						<div class="col-xs-12 d-sm-none p-0 h-100">
+							<div class="hero__mobile-picture hero__mobile-picture--agromonitoring"></div>
+						</div>
+						<div class="col-xs-12 col-sm-7 p-xxl-0 h-100 d-md-flex align-items-center">
+							<div class="hero__text-content">
+								<h1 class="hero__main-header">
+									Агромониторинг для
+									<br>
+									 управления бизнесом
+								</h1>
+								<p class="hero__paragraph hero__paragraph--agromonitoring">
+									Высокое качество продукции и хороший урожай - результат точного
+									планирования и быстрого реагирования на возникающие посевам угроз
+								</p>
+								<ul class="hero__info hero__info--agromonitoring">
+									<li class="hero__text hero__text--agromonitoring  hero__text--1">
+										<svg class="hero__icon">
+											<use xlink:href="../img/svg/sprite.svg#gear-wheel"></use>
+										</svg>
+										Полная автоматизация
 									</li>
-									<li class="navbar__list-item">
-										<a class="navbar__link" href="./page-ethnomophages.html">
-											<svg class="navbar__link-icon">
-												<use class="svg" xlink:href="../img/svg/sprite.svg#insects-circle"></use>
-											</svg>
-											<span class="navbar__link-text">Энтомофаги</span>
-										</a>
+									<li  class="hero__text hero__text--agromonitoring  hero__text--2">
+										<svg class="hero__icon">
+											<use xlink:href="../img/svg/sprite.svg#watch"></use>
+										</svg>
+										Оперативность съемки
 									</li>
-									<li class="navbar__list-item">
-										<a class="navbar__link" href="./page-atomize.html">
-											<svg class="navbar__link-icon">
-												<use class="svg" xlink:href="../img/svg/sprite.svg#atomize-circle"></use>
-											</svg>
-											<span class="navbar__link-text">Опрыскивание</span>
-										</a>
-									</li>
-									<li class="navbar__list-item">
-										<a class="navbar__link" href="./page-agromonitoring.html" style="color:#02E502">
-											<svg class="navbar__link-icon">
-												<use class="svg" xlink:href="../img/svg/sprite.svg#map-circle"></use>
-											</svg>
-											<span class="navbar__link-text">Картография и мониторинг</span>
-										</a>
-									</li>
-									<li class="navbar__list-item">
-										<a class="navbar__link"  href="./page-catalog.html">
-											<svg class="navbar__link-icon">
-												<use class="svg" xlink:href="../img/svg/sprite.svg#drones-circle"></use>
-											</svg>
-											<span class="navbar__link-text">Каталог продукции</span>
-										</a>
-									</li>
-									<li class="navbar__list-item">
-										<a class="navbar__link" href="./page-news.html">
-											<svg class="navbar__link-icon">
-												<use class="svg" xlink:href="../img/svg/sprite.svg#news-circle"></use>
-											</svg>
-											<span class="navbar__link-text">Новости</span>
-										</a>
-									</li>
-									<li class="navbar__list-item">
-										<a class="navbar__link" href="./page-about-us.html">
-											<svg class="navbar__link-icon">
-												<use class="svg" xlink:href="../img/svg/sprite.svg#company-circle"></use>
-											</svg>
-											<span class="navbar__link-text">О компании</span>
-										</a>
-									</li>
-									<li class="navbar__list-item">
-										<a class="navbar__link" href="./page-contacts.html">
-											<svg class="navbar__link-icon">
-												<use class="svg" xlink:href="../img/svg/sprite.svg#contacts-circle"></use>
-											</svg>
-											<span class="navbar__link-text">Контакты</span>
-										</a>
+									<li class="hero__text hero__text--agromonitoring  hero__text--3">
+										<svg class="hero__icon">
+											<use xlink:href="../img/svg/sprite.svg#corner-ruler"></use>
+										</svg>
+										Высокая точность
 									</li>
 								</ul>
-							</nav>
-							<hr class="navbar__line">
-							<ul class="navbar__messengers-list">
-								<li class="navbar__messengers-item">
-									<a class="navbar__messengers-link" href="#">
-										<svg class="navbar__messengers-icon">
-											<use class="svg" xlink:href="../img/svg/sprite.svg#wa"></use>
-										</svg>
-									</a>
-								</li>
-								<li class="navbar__messengers-item">
-									<a class="navbar__messengers-link" href="#">
-										<svg class="navbar__messengers-icon">
-											<use class="svg" xlink:href="../img/svg/sprite.svg#tg"></use>
-										</svg>
-									</a>
-								</li>
-								<li class="navbar__messengers-item">
-									<a class="navbar__messengers-link" href="#">
-										<svg class="navbar__messengers-icon" style="width:106%;">
-											<use class="svg" xlink:href="../img/svg/sprite.svg#we"></use>
-										</svg>
-									</a>
-								</li>
-							</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="breadcrumbs">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="breadcrumbs-links">
+								<a class="breadcrumbs-link" href="../index.html">Главная</a>&nbsp;/&nbsp;
+								<a class="breadcrumbs-link" href="./page-agromonitoring.html">Картография и мониторинг</a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-</header>
 
-<main class="page__main">
-
-	<section class="hero hero--agromonitoring">
-		<div class="container h-100">
-			<div class="row h-100">
-				<div class="col-xs-12 d-sm-none p-0 h-100">
-					<div class="hero__mobile-picture hero__mobile-picture--agromonitoring"></div>
-				</div>
-				<div class="col-xs-12 col-sm-7 p-xxl-0 h-100 d-md-flex align-items-center">
-					<div class="hero__text-content">
-						<h1 class="hero__main-header">
-							Агромониторинг для
-							<br>
-							 управления бизнесом
-						</h1>
-						<p class="hero__paragraph hero__paragraph--agromonitoring">
-							Высокое качество продукции и хороший урожай - результат точного
-							планирования и быстрого реагирования на возникающие посевам угроз
-						</p>
-						<ul class="hero__info hero__info--agromonitoring">
-							<li class="hero__text hero__text--agromonitoring  hero__text--1">
-								<svg class="hero__icon">
-									<use xlink:href="../img/svg/sprite.svg#gear-wheel"></use>
-								</svg>
-								Полная автоматизация
-							</li>
-							<li  class="hero__text hero__text--agromonitoring  hero__text--2">
-								<svg class="hero__icon">
-									<use xlink:href="../img/svg/sprite.svg#watch"></use>
-								</svg>
-								Оперативность съемки
-							</li>
-							<li class="hero__text hero__text--agromonitoring  hero__text--3">
-								<svg class="hero__icon">
-									<use xlink:href="../img/svg/sprite.svg#corner-ruler"></use>
-								</svg>
-								Высокая точность
-							</li>
-						</ul>
+			<section class="read-more">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="headline">
+								<h2>Профессиональная аэрофотосъемка</h2>
+								<span class="h2-podscription">Об Услуге</span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="read-more__content">
+								<label for="read-more__input">
+									<input type="checkbox" id="read-more__input">
+									<span class="read-more__paragraph">
+										Аэрофотосъемка осуществляется с применением БПЛА Геоскан
+										<br>
+										Компания STS.center применяет высокотехнологичные агродроны и БПЛА, которые модернизированы и
+		                собраны нашими инженерами для сельского и лесного хозяйства, а также для промышленности. В СТС
+		                Центр работают опытные агрономы, энтомологи, пилоты, менеджеры и инженеры. Сегодня мы имеем один
+		                из самых современных парков дронов в России, что позволяет нам выполнять работы широкого спектра
+		                от простой аэрофотосъемки до лидарного сканирования местности и тепловизионного контроля. Внедрение
+		                беспилотных технологий в вашем бизнесе поможет сэкономить время и деньги, а также позволит получить
+		                большое преимущество перед вашими конкурентами.
+		                <br>
+		                Компания STS.center применяет высокотехнологичные агродроны и БПЛА, которые модернизированы и
+		                собраны нашими инженерами для сельского и лесного хозяйства, а также для промышленности. В СТС
+		                Центр работают опытные агрономы, энтомологи, пилоты, менеджеры и инженеры. Сегодня мы имеем один
+		                из самых современных парков дронов в России, что позволяет нам выполнять работы широкого спектра
+		                от простой аэрофотосъемки до лидарного сканирования местности и тепловизионного контроля. Внедрение
+		                беспилотных технологий в вашем бизнесе поможет сэкономить время и деньги, а также позволит получить
+		                большое преимущество перед вашими конкурентами.
+		                <br><br>
+		                Компания STS.center применяет высокотехнологичные агродроны и БПЛА, которые модернизированы и
+		                собраны нашими инженерами для сельского и лесного хозяйства, а также для промышленности. В СТС
+		                Центр работают опытные агрономы, энтомологи, пилоты, менеджеры и инженеры. Сегодня мы имеем один
+		                из самых современных парков дронов в России, что позволяет нам выполнять работы широкого спектра
+		                от простой аэрофотосъемки до лидарного сканирования местности и тепловизионного контроля. Внедрение
+		                беспилотных технологий в вашем бизнесе поможет сэкономить время и деньги, а также позволит получить
+		                большое преимущество перед вашими конкурентами.
+		                <br><br>
+									</span>
+									<a class="read-more__link">
+										<svg class="read-more__icon">
+											<use xlink:href="../img/svg/sprite.svg#read-more"></use>
+										</svg>
+									</a>
+								</label>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-	</section>
+			</section>
 
-	<div class="breadcrumbs">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<div class="breadcrumbs-links">
-						<a class="breadcrumbs-link" href="../index.html">Главная</a>&nbsp;/&nbsp;
-						<a class="breadcrumbs-link" href="./page-agromonitoring.html">Картография и мониторинг</a>
+			<section class="qualities">
+				<div class="container position-relative">
+					<div class="row">
+						<div class="col-12">
+							<div class="headline">
+								<h2>Приемущества аэрофотосъемки</h2>
+								<span class="h2-podscription">Плюсы аэрофотосъемки</span>
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<section class="read-more">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<div class="headline">
-						<h2>Профессиональная аэрофотосъемка</h2>
-						<span class="h2-podscription">Об Услуге</span>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12">
-					<div class="read-more__content">
-						<label for="read-more__input">
-							<input type="checkbox" id="read-more__input">
-							<span class="read-more__paragraph">
-								Аэрофотосъемка осуществляется с применением БПЛА Геоскан
-								<br>
-								Компания STS.center применяет высокотехнологичные агродроны и БПЛА, которые модернизированы и
-                собраны нашими инженерами для сельского и лесного хозяйства, а также для промышленности. В СТС
-                Центр работают опытные агрономы, энтомологи, пилоты, менеджеры и инженеры. Сегодня мы имеем один
-                из самых современных парков дронов в России, что позволяет нам выполнять работы широкого спектра
-                от простой аэрофотосъемки до лидарного сканирования местности и тепловизионного контроля. Внедрение
-                беспилотных технологий в вашем бизнесе поможет сэкономить время и деньги, а также позволит получить
-                большое преимущество перед вашими конкурентами.
-                <br>
-                Компания STS.center применяет высокотехнологичные агродроны и БПЛА, которые модернизированы и
-                собраны нашими инженерами для сельского и лесного хозяйства, а также для промышленности. В СТС
-                Центр работают опытные агрономы, энтомологи, пилоты, менеджеры и инженеры. Сегодня мы имеем один
-                из самых современных парков дронов в России, что позволяет нам выполнять работы широкого спектра
-                от простой аэрофотосъемки до лидарного сканирования местности и тепловизионного контроля. Внедрение
-                беспилотных технологий в вашем бизнесе поможет сэкономить время и деньги, а также позволит получить
-                большое преимущество перед вашими конкурентами.
-                <br><br>
-                Компания STS.center применяет высокотехнологичные агродроны и БПЛА, которые модернизированы и
-                собраны нашими инженерами для сельского и лесного хозяйства, а также для промышленности. В СТС
-                Центр работают опытные агрономы, энтомологи, пилоты, менеджеры и инженеры. Сегодня мы имеем один
-                из самых современных парков дронов в России, что позволяет нам выполнять работы широкого спектра
-                от простой аэрофотосъемки до лидарного сканирования местности и тепловизионного контроля. Внедрение
-                беспилотных технологий в вашем бизнесе поможет сэкономить время и деньги, а также позволит получить
-                большое преимущество перед вашими конкурентами.
-                <br><br>
-							</span>
-							<a class="read-more__link">
-								<svg class="read-more__icon">
-									<use xlink:href="../img/svg/sprite.svg#read-more"></use>
-								</svg>
-							</a>
-						</label>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="qualities">
-		<div class="container position-relative">
-			<div class="row">
-				<div class="col-12">
-					<div class="headline">
-						<h2>Приемущества аэрофотосъемки</h2>
-						<span class="h2-podscription">Плюсы аэрофотосъемки</span>
-					</div>
-				</div>
-			</div>
-			<div class="row position-relative">
-				<div class="col-12">
-					<div class="qualities__slider slider">
-						<div class="slider__container">
-							<div class="slider__slides">
-								<div class="slider__slides-track slider__slides-track--two-columns">
-									<div class="slider__slide slider__slide--greenlight">
-										<div class="qualities__slide-content">
-											<div class="qualities__slide-headline">
-												<svg class="qualities__slide-icon">
-													<use xlink:href="../img/svg/sprite.svg#rub"></use>
-												</svg>
-												<h5 class="qualities__slide-header">Низкая цена аэрофотосъемка</h5>
+					<div class="row position-relative">
+						<div class="col-12">
+							<div class="qualities__slider slider">
+								<div class="slider__container">
+									<div class="slider__slides">
+										<div class="slider__slides-track slider__slides-track--two-columns">
+											<div class="slider__slide slider__slide--greenlight">
+												<div class="qualities__slide-content">
+													<div class="qualities__slide-headline">
+														<svg class="qualities__slide-icon">
+															<use xlink:href="../img/svg/sprite.svg#rub"></use>
+														</svg>
+														<h5 class="qualities__slide-header">Низкая цена аэрофотосъемка</h5>
+													</div>
+													<p class="qualities__slide-paragraph">
+														Стоимость беспилотной аэрофотосъемки в разы меньше стоимости получения данных спутниковой
+														съемки, а также традиционных методов приведения геодезических изысканий.
+													</p>
+												</div>
 											</div>
-											<p class="qualities__slide-paragraph">
-												Стоимость беспилотной аэрофотосъемки в разы меньше стоимости получения данных спутниковой
-												съемки, а также традиционных методов приведения геодезических изысканий.
-											</p>
+
+											<div class="slider__slide slider__slide--greenlight">
+												<div class="qualities__slide-content">
+													<div class="qualities__slide-headline">
+														<svg class="qualities__slide-icon">
+															<use xlink:href="../img/svg/sprite.svg#watch"></use>
+														</svg>
+														<h5 class="qualities__slide-header">Высокая производительность</h5>
+													</div>
+													<p class="qualities__slide-paragraph">
+														За день может быть выполнена съемка до нескольких сотен квадратных километров.
+													</p>
+												</div>
+											</div>
+
+											<div class="slider__slide slider__slide--greenlight">
+												<div class="qualities__slide-content">
+													<div class="qualities__slide-headline">
+														<svg class="qualities__slide-icon">
+															<use xlink:href="../img/svg/sprite.svg#hight-resolution"></use>
+														</svg>
+														<h5 class="qualities__slide-header">Высокие разрешение снимков </h5>
+													</div>
+													<p class="qualities__slide-paragraph">
+														Беспилотники Геоскана позволяют получать снимки с пространственным разрешением до 1см/пикс,
+														что обеспечивает высокий уровень детализации получаемых моделей и ортофотопланов.
+													</p>
+												</div>
+											</div>
+
+											<div class="slider__slide slider__slide--greenlight">
+												<div class="qualities__slide-content">
+													<div class="qualities__slide-headline">
+														<svg class="qualities__slide-icon">
+															<use xlink:href="../img/svg/sprite.svg#coordinates"></use>
+														</svg>
+														<h5 class="qualities__slide-header">Работа в требуемой системе координат</h5>
+													</div>
+													<p class="qualities__slide-paragraph">
+														Результаты полета - геопривязанные фотографии, которым в процессе обработки можно задать привязку
+														к необходимой системе координат
+													</p>
+												</div>
+											</div>
 										</div>
-									</div>
-
-									<div class="slider__slide slider__slide--greenlight">
-										<div class="qualities__slide-content">
-											<div class="qualities__slide-headline">
-												<svg class="qualities__slide-icon">
-													<use xlink:href="../img/svg/sprite.svg#watch"></use>
-												</svg>
-												<h5 class="qualities__slide-header">Высокая производительность</h5>
-											</div>
-											<p class="qualities__slide-paragraph">
-												За день может быть выполнена съемка до нескольких сотен квадратных километров.
-											</p>
-										</div>
-									</div>
-
-									<div class="slider__slide slider__slide--greenlight">
-										<div class="qualities__slide-content">
-											<div class="qualities__slide-headline">
-												<svg class="qualities__slide-icon">
-													<use xlink:href="../img/svg/sprite.svg#hight-resolution"></use>
-												</svg>
-												<h5 class="qualities__slide-header">Высокие разрешение снимков </h5>
-											</div>
-											<p class="qualities__slide-paragraph">
-												Беспилотники Геоскана позволяют получать снимки с пространственным разрешением до 1см/пикс,
-												что обеспечивает высокий уровень детализации получаемых моделей и ортофотопланов.
-											</p>
-										</div>
-									</div>
-
-									<div class="slider__slide slider__slide--greenlight">
-										<div class="qualities__slide-content">
-											<div class="qualities__slide-headline">
-												<svg class="qualities__slide-icon">
-													<use xlink:href="../img/svg/sprite.svg#coordinates"></use>
-												</svg>
-												<h5 class="qualities__slide-header">Работа в требуемой системе координат</h5>
-											</div>
-											<p class="qualities__slide-paragraph">
-												Результаты полета - геопривязанные фотографии, которым в процессе обработки можно задать привязку
-												к необходимой системе координат
-											</p>
+										<div class="slider__pagination slider__pagination--tile">
+											<span class="slider__dot slider__dot--active"></span>
+											<span class="slider__dot"></span>
+											<span class="slider__dot"></span>
+											<span class="slider__dot"></span>
+											<span class="slider__dot"></span>
+											<span class="slider__dot"></span>
 										</div>
 									</div>
 								</div>
-								<div class="slider__pagination slider__pagination--tile">
-									<span class="slider__dot slider__dot--active"></span>
-									<span class="slider__dot"></span>
-									<span class="slider__dot"></span>
-									<span class="slider__dot"></span>
-									<span class="slider__dot"></span>
-									<span class="slider__dot"></span>
+							</div>
+						</div>
+						<div class="aside-element aside-element--left">
+							<span class="aside-element__text">преимущества</span>
+						</div>
+						<div class="background-element background-element--drones">
+							<svg class="background-element__svg">
+								<use xlink:href="../img/svg/sprite.svg#bg-drones"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="background-element background-element--relief spraing__background-element">
+						<svg class="background-element__svg">
+							<use xlink:href="../img/svg/sprite.svg#bg-relief"></use>
+						</svg>
+					</div>
+				</div>
+			</section>
+
+			<section class="photography">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="headline">
+								<h2>Процесс аэрофотосъемки</h2>
+								<span class="h2-podscription">Как это работает </span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-md-8">
+							<div class="photography__lead">
+								<p class="photography__paragraph">Аэрофотосъемки разделяется на этапы полевых и камеральных работ, при этом набор данных, получаемых
+									по результатам камеральных работ, варьируется в зависимости от требований заказчика
+								</p>
+							</div>
+						</div>
+						<div class="col-12 col-lg-6">
+							<div class="photography__visual-content photography__col--left">
+								<img class="photography__image" src="../img/tablet.png" alt="">
+							</div>
+						</div>
+						<div class="col-12 col-lg-6 ps-lg-5">
+							<div class="photography__content-text photography__col--rigth">
+								<ul class="tabs-list">
+									<li class="tabs-item">
+										<a class="tabs-link" id="field-works" role="button">Полевые работы</a>
+									</li>
+									<li class="tabs-item">
+										<a class="tabs-link" id="desk-works" role="button">Камеральные работы</a>
+									</li>
+								</ul>
+
+								<div class="tab-content" id="field-works-block">
+									<ul class="photography__works-list">
+										<li class="photography__works-item check-mark--white">Получение разрешений на аэрофотосъемку</li>
+										<li class="photography__works-item check-mark--white">Выполнение аэрофотосъемки с использованием
+											БПЛА </li>
+									</ul>
+									<a class="photography__button button">Получить консультацию</a>
+								</div>
+
+								<div class="tab-content" id="desk-works-block">
+									<ul class="photography__works-list">
+										<li class="photography__works-item check-mark--white">Получение разрешений на аэрофотосъемку </li>
+										<li class="photography__works-item check-mark--white">Выполнение аэрофотосъемки с использованием
+											БПЛА </li>
+										<li class="photography__works-item check-mark--white">Получение разрешений на аэрофотосъемку </li>
+										<li class="photography__works-item check-mark--white">Выполнение аэрофотосъемки с использованием
+											БПЛА </li>
+									</ul>
+									<a class="photography__button button">Получить консультацию</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="aside-element aside-element--left">
-					<span class="aside-element__text">преимущества</span>
+			</section>
+
+			<section class="photography">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="headline">
+								<h2>Материалы аэрофотосъемки</h2>
+								<span class="h2-podscription">Области применения</span>
+							</div>
+						</div>
+					</div>
+					<div class="row position-relative">
+						<div class="col-12 col-md-8">
+							<div class="photography__lead">
+								<p class="photography__paragraph">Фотограмметрическая обработка, выполняемая в Pix4D, позволяет
+									получать необходимые данные для дальнейшего использования
+								</p>
+							</div>
+						</div>
+						<div class="col-12 col-lg-6" style="--full-width:true">
+							<div class="photography__content-text photography__col--left">
+								<ul class="tabs-list">
+									<li class="tabs-item">
+										<a class="tabs-link" id="1" role="button">Ортофотоплан</a>
+									</li>
+									<li class="tabs-item">
+										<a class="tabs-link" id="2" role="button">NDVI</a>
+									</li>
+									<li class="tabs-item">
+										<a class="tabs-link" id="3" role="button">Цифровая модель местности</a>
+									</li>
+									<li class="tabs-item">
+										<a class="tabs-link" id="4" role="button">3D-модель</a>
+									</li>
+								</ul>
+								<div class="tab-content" id="5">
+									<p class="photography__tab-paragraph">Одним файлом или в виде тайлов. Форматы: geotiff, jpg, png,
+											GoogleEarth KML\KMZ</p>
+
+									<ul class="photography__works-list">
+										<li class="photography__works-item">
+											<svg class="photography__works-icon">
+												<use xlink:href="../img/svg/sprite.svg#hight-resolution"></use>
+											</svg>
+											Разрешение до 2см/пикс
+										</li>
+										<li class="photography__works-item">
+											<svg class="photography__works-icon">
+												<use xlink:href="../img/svg/sprite.svg#map"></use>
+											</svg>
+											Масштаб от 1:500 до 1:10000
+										</li>
+										<li class="photography__works-item">
+											<svg class="photography__works-icon">
+												<use xlink:href="../img/svg/sprite.svg#corner-ruler"></use>
+											</svg>
+											Высокая геодезическая точность
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-6">
+							<div class="photography__visual-content photography__col--rigth">
+								<img class="photography__image" src="../img/photography.jpg" alt="">
+							</div>
+						</div>
+						<div class="aside-element aside-element--right">
+							<span class="aside-element__text">матерьялы</span>
+						</div>
+					</div>
 				</div>
-				<div class="background-element background-element--drones">
-					<svg class="background-element__svg">
-						<use xlink:href="../img/svg/sprite.svg#bg-drones"></use>
+			</section>
+
+			<section class="photography-of-application">
+				<div class="container position-relative">
+					<div class="row">
+						<div class="col-12">
+							<div class="headline">
+								<h2>Применение аэрофотосъемки</h2>
+								<span class="h2-podscription">Области применения</span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="photography-of-application__areas">
+								<ul class="photography-of-application__areas-list">
+									<li class="photography-of-application__areas-item">
+										<div class="photography-of-application__item-headline">
+											<svg class="photography-of-application-icon">
+												<use xlink:href="../img/svg/sprite.svg#agricultural-industry"></use>
+											</svg>
+											<a class="photography-of-application__button" role="button"><h5>Сельское хозяйство</h5></a>
+										</div>
+										<div class="photography-of-application__drop-down">
+											<p class="photography-of-application__drop-down-paragraph">
+												Инвентаризация сельхозугодий, состояние посевов и всхожести, развития заболеваний, количества
+												растений при рядной посадке, зарастания сорняками, состояния переувлажненных или засушливых участков
+												полей, расчет NDVI и других индексов. Мониторинг техники, сопровождение агротехнических мероприятий
+											</p>
+											<img class="photography-of-application__drop-down-image" src="../img/selskoe_hozyajstvo-1.png" alt="">
+										</div>
+									</li>
+									<li class="photography-of-application__areas-item">
+										<div class="photography-of-application__item-headline">
+											<svg class="photography-of-application-icon">
+												<use xlink:href="../img/svg/sprite.svg#forestry"></use>
+											</svg>
+											<a class="photography-of-application__button"  role="button"><h5>Лесное хозяйство</h5></a>
+										</div>
+										<div class="photography-of-application__drop-down">
+											<p class="photography-of-application__drop-down-paragraph">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi asperiores, atque aut blanditiis
+												dignissimos dolorum expedita id ipsam laborum nesciunt nihil non officia quam reiciendis tempore
+												ut? Impedit, possimus?
+											</p>
+											<img class="photography-of-application__drop-down-image" src="../img/lesnoe_hozyaistvo.png" alt="">
+										</div>
+									</li>
+									<li class="photography-of-application__areas-item">
+										<div class="photography-of-application__item-headline">
+											<svg class="photography-of-application-icon">
+												<use xlink:href="../img/svg/sprite.svg#geodesy"></use>
+											</svg>
+											<a class="photography-of-application__button"  role="button"><h5>Геодезия</h5></a>
+										</div>
+										<div class="photography-of-application__drop-down">
+											<p class="photography-of-application__drop-down-paragraph">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum eveniet facere nisi, placeat
+												quisquam reiciendis. Amet, distinctio ea esse exercitationem fugiat iure minima molestiae rem
+												repudiandae totam ut, voluptates voluptatibus.
+											</p>
+											<img class="photography-of-application__drop-down-image" src="../img/geodeziya-1.png" alt="">
+										</div>
+									</li>
+									<li class="photography-of-application__areas-item">
+										<div class="photography-of-application__item-headline">
+											<svg class="photography-of-application-icon">
+												<use xlink:href="../img/svg/sprite.svg#energy"></use>
+											</svg>
+											<a class="photography-of-application__button" role="button"><h5>Энергетика</h5></a>
+										</div>
+										<div class="photography-of-application__drop-down">
+											<p class="photography-of-application__drop-down-paragraph">
+												Инвентаризация сельхозугодий, состояние посевов и всхожести, развития заболеваний, количества
+												растений при рядной посадке, зарастания сорняками, состояния переувлажненных или засушливых участков
+												полей, расчет NDVI и других индексов. Мониторинг техники, сопровождение агротехнических мероприятий
+											</p>
+											<img class="photography-of-application__drop-down-image" src="../img/energetika.png" alt="">
+										</div>
+									</li>
+									<li class="photography-of-application__areas-item">
+										<div class="photography-of-application__item-headline">
+											<svg class="photography-of-application-icon">
+												<use xlink:href="../img/svg/sprite.svg#construction"></use>
+											</svg>
+											<a class="photography-of-application__button" role="button"><h5>Строительство</h5></a>
+										</div>
+										<div class="photography-of-application__drop-down">
+											<p class="photography-of-application__drop-down-paragraph">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusantium corporis culpa, distinctio
+												dolores ducimus enim est et expedita inventore ipsam laboriosam, magni maxime molestias nobis
+												pariatur recusandae voluptate voluptatum.
+											</p>
+											<img class="photography-of-application__drop-down-image" src="../img/stroitelstvo.png" alt="">
+										</div>
+									</li>
+									<li class="photography-of-application__areas-item">
+										<div class="photography-of-application__item-headline">
+											<svg class="photography-of-application-icon">
+												<use xlink:href="../img/svg/sprite.svg#urban-planning"></use>
+											</svg>
+											<a class="photography-of-application__button" role="button"><h5>Градостроительство</h5></a>
+										</div>
+										<div class="photography-of-application__drop-down">
+											<p class="photography-of-application__drop-down-paragraph">
+												Инвентаризация сельхозугодий, состояние посевов и всхожести, развития заболеваний, количества
+												растений при рядной посадке, зарастания сорняками, состояния переувлажненных или засушливых участков
+												полей, расчет NDVI и других индексов. Мониторинг техники, сопровождение агротехнических мероприятий
+											</p>
+											<img class="photography-of-application__drop-down-image" src="../img/gradostroitelstvo.png" alt="">
+										</div>
+									</li>
+									<li class="photography-of-application__areas-item">
+										<div class="photography-of-application__item-headline">
+											<svg class="photography-of-application-icon">
+												<use xlink:href="../img/svg/sprite.svg#surveying"></use>
+											</svg>
+											<a class="photography-of-application__button" role="button"><h5>Маркшейдерия</h5></a>
+										</div>
+										<div class="photography-of-application__drop-down">
+											<p class="photography-of-application__drop-down-paragraph">
+												Инвентаризация сельхозугодий, состояние посевов и всхожести, развития заболеваний, количества
+												растений при рядной посадке, зарастания сорняками, состояния переувлажненных или засушливых участков
+												полей, расчет NDVI и других индексов. Мониторинг техники, сопровождение агротехнических мероприятий
+											</p>
+											<img class="photography-of-application__drop-down-image" src="../img/markshejderiya.png" alt="">
+										</div>
+									</li>
+									<li class="photography-of-application__areas-item">
+										<div class="photography-of-application__item-headline">
+											<svg class="photography-of-application-icon">
+												<use xlink:href="../img/svg/sprite.svg#thermal-imaging"></use>
+											</svg>
+											<a class="photography-of-application__button" role="button"><h5>Тепловизионная съемка</h5></a>
+										</div>
+										<div class="photography-of-application__drop-down">
+											<p class="photography-of-application__drop-down-paragraph">
+												Инвентаризация сельхозугодий, состояние посевов и всхожести, развития заболеваний, количества
+												растений при рядной посадке, зарастания сорняками, состояния переувлажненных или засушливых участков
+												полей, расчет NDVI и других индексов. Мониторинг техники, сопровождение агротехнических мероприятий
+											</p>
+											<img class="photography-of-application__drop-down-image" src="../img/teplovizionnaya_sjemka.png" alt="">
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="background-element background-element--relief photography__background-element">
+						<svg class="background-element__svg">
+							<use xlink:href="../img/svg/sprite.svg#bg-relief"></use>
+						</svg>
+					</div>
+				</div>
+			</section>
+
+			<section class="feedback">
+				<div class="container position-relative">
+					<div class="row">
+						<div class="col-12">
+							<form class="feedback__form position-relative" id="feedback-form" method="get">
+								<div class="headline">
+									<h2>Нужна помошь?</h2>
+									<span class="h2-podscription">Напишите нам</span>
+								</div>
+								<div class="feedback__paragraph">Заполните форму и мы за 5 минут подскажем вам лучшие способы защиты вашего
+									урожая
+								</div>
+								<fieldset class="feedback__form-fieldsets">
+									<label class="feedback__fieldset-label" for="your-name"></label>
+									<input class="feedback__fieldset-input" type="text" id="your-name" name="your-name" placeholder="Ваше имя">
+
+									<label class="feedback__fieldset-label" for="phone"></label>
+									<input class="feedback__fieldset-input" type="tel" id="phone" name="phone" placeholder="Ваш телефон">
+
+									<label class="feedback__fieldset-label" for="email"></label>
+									<input class="feedback__fieldset-input" type="email" id="email" name="email" placeholder="Ваш email">
+
+									<button class="button button--form" type="submit" form="feedback-form" value="Submit">Отправить</button>
+
+									<a class="feedback__form-link" href="#">Политика конфиденциальности</a>
+								</fieldset>
+								<div class="feedback__background-element">
+									<svg class="feedback__background-svg">
+										<use xlink:href="../img/svg/sprite.svg#bg-relief"></use>
+									</svg>
+									<img class="feedback__background-picture" src="../img/drone-form.png" alt="">
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="aside-element aside-element--left">
+						<span class="aside-element__text">напиши нам</span>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<footer class="page__footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="footer">
+							<div class="footer__logo">
+								<a href="#" class="navbar__logo-link">
+									<img class="navbar__logo-img" src="../img/LogoAgroScout.png" alt="Логотип компании АгроСкаут.">
+								</a>
+							</div>
+							<div class="footer__phone">
+								<a class="navbar__phone-link" href="tel:+78612179118">
+									<svg class="navbar__phone-icon">
+										<use class="svg svg--phone" xlink:href="../img/svg/sprite.svg#phone"></use>
+									</svg>
+									<span class="navbar__phone-number">+7861 21791 18</span>
+								</a>
+							</div>
+							<div class="footer__social-networks">
+								<div class="footer__social-networks-box">
+									<span class="footer__social-networks-label">Подписывайтесь на наши соц. сети</span>
+									<a class="footer__link" href="#">
+										<svg class="footer__icon">
+											<use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#vk"></use>
+										</svg>
+									</a>
+									<a class="footer__link" href="#">
+										<svg class="footer__icon">
+											<use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#in"></use>
+										</svg>
+									</a>
+									<a class="footer__link" href="#">
+										<svg class="footer__icon">
+											<use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#tt"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<dialog class="mini-cart">
+			<form method="dialog" class="minicart__dialog">
+				<div class="minicart__headline">
+					<h7>Корзина</h7>
+					<a href="#" class="mini-cart__button--close" id="close-mini-cart">
+						<svg class="mini-cart__icon">
+							<use xlink:href="../img/svg/sprite.svg#menu-off"></use>
+						</svg>
+					</a>
+				</div>
+				<div class="minicart__ordering-goods minicart__ordering-goods--empty" style="display: none">
+					<svg class="minicart__svg">
+						<use xlink:href="../img/svg/sprite.svg#minicart-drone"></use>
 					</svg>
-				</div>
-			</div>
-			<div class="background-element background-element--relief spraing__background-element">
-				<svg class="background-element__svg">
-					<use xlink:href="../img/svg/sprite.svg#bg-relief"></use>
-				</svg>
-			</div>
-		</div>
-	</section>
-
-	<section class="photography">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<div class="headline">
-						<h2>Процесс аэрофотосъемки</h2>
-						<span class="h2-podscription">Как это работает </span>
+					<span class="minicart__empty">Корзина пуста</span>
+					<hr class="minicart__hr-line">
+					<div class="minicart__continue-shopping">
+						<a href="#" class="minicart__link">Продолжить покупки</a>
 					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-12 col-md-8">
-					<div class="photography__lead">
-						<p class="photography__paragraph">Аэрофотосъемки разделяется на этапы полевых и камеральных работ, при этом набор данных, получаемых
-							по результатам камеральных работ, варьируется в зависимости от требований заказчика
-						</p>
-					</div>
-				</div>
-				<div class="col-12 col-lg-6">
-					<div class="photography__visual-content photography__col--left">
-						<img class="photography__image" src="../img/tablet.png" alt="">
-					</div>
-				</div>
-				<div class="col-12 col-lg-6 ps-lg-5">
-					<div class="photography__content-text photography__col--rigth">
-						<ul class="tabs-list">
-							<li class="tabs-item">
-								<a class="tabs-link" id="field-works" role="button">Полевые работы</a>
-							</li>
-							<li class="tabs-item">
-								<a class="tabs-link" id="desk-works" role="button">Камеральные работы</a>
-							</li>
-						</ul>
-
-						<div class="tab-content" id="field-works-block">
-							<ul class="photography__works-list">
-								<li class="photography__works-item check-mark--white">Получение разрешений на аэрофотосъемку</li>
-								<li class="photography__works-item check-mark--white">Выполнение аэрофотосъемки с использованием
-									БПЛА </li>
-							</ul>
-							<a class="photography__button button">Получить консультацию</a>
-						</div>
-
-						<div class="tab-content" id="desk-works-block">
-							<ul class="photography__works-list">
-								<li class="photography__works-item check-mark--white">Получение разрешений на аэрофотосъемку </li>
-								<li class="photography__works-item check-mark--white">Выполнение аэрофотосъемки с использованием
-									БПЛА </li>
-								<li class="photography__works-item check-mark--white">Получение разрешений на аэрофотосъемку </li>
-								<li class="photography__works-item check-mark--white">Выполнение аэрофотосъемки с использованием
-									БПЛА </li>
-							</ul>
-							<a class="photography__button button">Получить консультацию</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="photography">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<div class="headline">
-						<h2>Материалы аэрофотосъемки</h2>
-						<span class="h2-podscription">Области применения</span>
-					</div>
-				</div>
-			</div>
-			<div class="row position-relative">
-				<div class="col-12 col-md-8">
-					<div class="photography__lead">
-						<p class="photography__paragraph">Фотограмметрическая обработка, выполняемая в Pix4D, позволяет
-							получать необходимые данные для дальнейшего использования
-						</p>
-					</div>
-				</div>
-				<div class="col-12 col-lg-6" style="--full-width:true">
-					<div class="photography__content-text photography__col--left">
-						<ul class="tabs-list">
-							<li class="tabs-item">
-								<a class="tabs-link" id="1" role="button">Ортофотоплан</a>
-							</li>
-							<li class="tabs-item">
-								<a class="tabs-link" id="2" role="button">NDVI</a>
-							</li>
-							<li class="tabs-item">
-								<a class="tabs-link" id="3" role="button">Цифровая модель местности</a>
-							</li>
-							<li class="tabs-item">
-								<a class="tabs-link" id="4" role="button">3D-модель</a>
-							</li>
-						</ul>
-						<div class="tab-content" id="5">
-							<p class="photography__tab-paragraph">Одним файлом или в виде тайлов. Форматы: geotiff, jpg, png,
-									GoogleEarth KML\KMZ</p>
-
-							<ul class="photography__works-list">
-								<li class="photography__works-item">
-									<svg class="photography__works-icon">
-										<use xlink:href="../img/svg/sprite.svg#hight-resolution"></use>
-									</svg>
-									Разрешение до 2см/пикс
-								</li>
-								<li class="photography__works-item">
-									<svg class="photography__works-icon">
-										<use xlink:href="../img/svg/sprite.svg#map"></use>
-									</svg>
-									Масштаб от 1:500 до 1:10000
-								</li>
-								<li class="photography__works-item">
-									<svg class="photography__works-icon">
-										<use xlink:href="../img/svg/sprite.svg#corner-ruler"></use>
-									</svg>
-									Высокая геодезическая точность
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col-12 col-lg-6">
-					<div class="photography__visual-content photography__col--rigth">
-						<img class="photography__image" src="../img/photography.jpg" alt="">
-					</div>
-				</div>
-				<div class="aside-element aside-element--right">
-					<span class="aside-element__text">матерьялы</span>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="photography-of-application">
-		<div class="container position-relative">
-			<div class="row">
-				<div class="col-12">
-					<div class="headline">
-						<h2>Применение аэрофотосъемки</h2>
-						<span class="h2-podscription">Области применения</span>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col">
-					<div class="photography-of-application__areas">
-						<ul class="photography-of-application__areas-list">
-							<li class="photography-of-application__areas-item">
-								<div class="photography-of-application__item-headline">
-									<svg class="photography-of-application-icon">
-										<use xlink:href="../img/svg/sprite.svg#agricultural-industry"></use>
-									</svg>
-									<a class="photography-of-application__button" role="button"><h5>Сельское хозяйство</h5></a>
+				<div class="minicart__ordering-goods minicart__ordering-goods--fill">
+					<ul class="minicart__list">
+						<li class="minicart__list-item">
+							<div class="product-card">
+								<div class="product-card__content product-card__content--minicart">
+									<div class="product-card__photo">
+										<img alt="" src="../img/drone-photo(3).png">
+									</div>
+									<h4 class="product-card__name">Агродрон AGR A22</h4>
+									<span class="product-card__brand">Бренд: AGR</span>
+									<span class="product-card__model">Модель: 101-0101</span>
+									<span class="product-card__price">$15001.27</span>
+									<span class="product-card__delete">
+				                        <svg class="product-card__delete-icon">
+				                          <use xlink:href="../img/svg/sprite.svg#cart-delete"></use>
+				                        </svg>
+				                      </span>
+									<div class="product-card__quantity">
+										<span class="product-card__quantity-minus">-</span>
+										<span class="product-card__quantity-num">1</span>
+										<span class="product-card__quantity-plus">+</span>
+									</div>
 								</div>
-								<div class="photography-of-application__drop-down">
-									<p class="photography-of-application__drop-down-paragraph">
-										Инвентаризация сельхозугодий, состояние посевов и всхожести, развития заболеваний, количества
-										растений при рядной посадке, зарастания сорняками, состояния переувлажненных или засушливых участков
-										полей, расчет NDVI и других индексов. Мониторинг техники, сопровождение агротехнических мероприятий
-									</p>
-									<img class="photography-of-application__drop-down-image" src="../img/selskoe_hozyajstvo-1.png" alt="">
-								</div>
-							</li>
-							<li class="photography-of-application__areas-item">
-								<div class="photography-of-application__item-headline">
-									<svg class="photography-of-application-icon">
-										<use xlink:href="../img/svg/sprite.svg#forestry"></use>
-									</svg>
-									<a class="photography-of-application__button"  role="button"><h5>Лесное хозяйство</h5></a>
-								</div>
-								<div class="photography-of-application__drop-down">
-									<p class="photography-of-application__drop-down-paragraph">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi asperiores, atque aut blanditiis
-										dignissimos dolorum expedita id ipsam laborum nesciunt nihil non officia quam reiciendis tempore
-										ut? Impedit, possimus?
-									</p>
-									<img class="photography-of-application__drop-down-image" src="../img/lesnoe_hozyaistvo.png" alt="">
-								</div>
-							</li>
-							<li class="photography-of-application__areas-item">
-								<div class="photography-of-application__item-headline">
-									<svg class="photography-of-application-icon">
-										<use xlink:href="../img/svg/sprite.svg#geodesy"></use>
-									</svg>
-									<a class="photography-of-application__button"  role="button"><h5>Геодезия</h5></a>
-								</div>
-								<div class="photography-of-application__drop-down">
-									<p class="photography-of-application__drop-down-paragraph">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum eveniet facere nisi, placeat
-										quisquam reiciendis. Amet, distinctio ea esse exercitationem fugiat iure minima molestiae rem
-										repudiandae totam ut, voluptates voluptatibus.
-									</p>
-									<img class="photography-of-application__drop-down-image" src="../img/geodeziya-1.png" alt="">
-								</div>
-							</li>
-							<li class="photography-of-application__areas-item">
-								<div class="photography-of-application__item-headline">
-									<svg class="photography-of-application-icon">
-										<use xlink:href="../img/svg/sprite.svg#energy"></use>
-									</svg>
-									<a class="photography-of-application__button" role="button"><h5>Энергетика</h5></a>
-								</div>
-								<div class="photography-of-application__drop-down">
-									<p class="photography-of-application__drop-down-paragraph">
-										Инвентаризация сельхозугодий, состояние посевов и всхожести, развития заболеваний, количества
-										растений при рядной посадке, зарастания сорняками, состояния переувлажненных или засушливых участков
-										полей, расчет NDVI и других индексов. Мониторинг техники, сопровождение агротехнических мероприятий
-									</p>
-									<img class="photography-of-application__drop-down-image" src="../img/energetika.png" alt="">
-								</div>
-							</li>
-							<li class="photography-of-application__areas-item">
-								<div class="photography-of-application__item-headline">
-									<svg class="photography-of-application-icon">
-										<use xlink:href="../img/svg/sprite.svg#construction"></use>
-									</svg>
-									<a class="photography-of-application__button" role="button"><h5>Строительство</h5></a>
-								</div>
-								<div class="photography-of-application__drop-down">
-									<p class="photography-of-application__drop-down-paragraph">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusantium corporis culpa, distinctio
-										dolores ducimus enim est et expedita inventore ipsam laboriosam, magni maxime molestias nobis
-										pariatur recusandae voluptate voluptatum.
-									</p>
-									<img class="photography-of-application__drop-down-image" src="../img/stroitelstvo.png" alt="">
-								</div>
-							</li>
-							<li class="photography-of-application__areas-item">
-								<div class="photography-of-application__item-headline">
-									<svg class="photography-of-application-icon">
-										<use xlink:href="../img/svg/sprite.svg#urban-planning"></use>
-									</svg>
-									<a class="photography-of-application__button" role="button"><h5>Градостроительство</h5></a>
-								</div>
-								<div class="photography-of-application__drop-down">
-									<p class="photography-of-application__drop-down-paragraph">
-										Инвентаризация сельхозугодий, состояние посевов и всхожести, развития заболеваний, количества
-										растений при рядной посадке, зарастания сорняками, состояния переувлажненных или засушливых участков
-										полей, расчет NDVI и других индексов. Мониторинг техники, сопровождение агротехнических мероприятий
-									</p>
-									<img class="photography-of-application__drop-down-image" src="../img/gradostroitelstvo.png" alt="">
-								</div>
-							</li>
-							<li class="photography-of-application__areas-item">
-								<div class="photography-of-application__item-headline">
-									<svg class="photography-of-application-icon">
-										<use xlink:href="../img/svg/sprite.svg#surveying"></use>
-									</svg>
-									<a class="photography-of-application__button" role="button"><h5>Маркшейдерия</h5></a>
-								</div>
-								<div class="photography-of-application__drop-down">
-									<p class="photography-of-application__drop-down-paragraph">
-										Инвентаризация сельхозугодий, состояние посевов и всхожести, развития заболеваний, количества
-										растений при рядной посадке, зарастания сорняками, состояния переувлажненных или засушливых участков
-										полей, расчет NDVI и других индексов. Мониторинг техники, сопровождение агротехнических мероприятий
-									</p>
-									<img class="photography-of-application__drop-down-image" src="../img/markshejderiya.png" alt="">
-								</div>
-							</li>
-							<li class="photography-of-application__areas-item">
-								<div class="photography-of-application__item-headline">
-									<svg class="photography-of-application-icon">
-										<use xlink:href="../img/svg/sprite.svg#thermal-imaging"></use>
-									</svg>
-									<a class="photography-of-application__button" role="button"><h5>Тепловизионная съемка</h5></a>
-								</div>
-								<div class="photography-of-application__drop-down">
-									<p class="photography-of-application__drop-down-paragraph">
-										Инвентаризация сельхозугодий, состояние посевов и всхожести, развития заболеваний, количества
-										растений при рядной посадке, зарастания сорняками, состояния переувлажненных или засушливых участков
-										полей, расчет NDVI и других индексов. Мониторинг техники, сопровождение агротехнических мероприятий
-									</p>
-									<img class="photography-of-application__drop-down-image" src="../img/teplovizionnaya_sjemka.png" alt="">
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="background-element background-element--relief photography__background-element">
-				<svg class="background-element__svg">
-					<use xlink:href="../img/svg/sprite.svg#bg-relief"></use>
-				</svg>
-			</div>
-		</div>
-	</section>
-
-	<section class="feedback">
-		<div class="container position-relative">
-			<div class="row">
-				<div class="col-12">
-					<form class="feedback__form position-relative" id="feedback-form" method="get">
-						<div class="headline">
-							<h2>Нужна помошь?</h2>
-							<span class="h2-podscription">Напишите нам</span>
-						</div>
-						<div class="feedback__paragraph">Заполните форму и мы за 5 минут подскажем вам лучшие способы защиты вашего
-							урожая
-						</div>
-						<fieldset class="feedback__form-fieldsets">
-							<label class="feedback__fieldset-label" for="your-name"></label>
-							<input class="feedback__fieldset-input" type="text" id="your-name" name="your-name" placeholder="Ваше имя">
-
-							<label class="feedback__fieldset-label" for="phone"></label>
-							<input class="feedback__fieldset-input" type="tel" id="phone" name="phone" placeholder="Ваш телефон">
-
-							<label class="feedback__fieldset-label" for="email"></label>
-							<input class="feedback__fieldset-input" type="email" id="email" name="email" placeholder="Ваш email">
-
-							<button class="button button--form" type="submit" form="feedback-form" value="Submit">Отправить</button>
-
-							<a class="feedback__form-link" href="#">Политика конфиденциальности</a>
-						</fieldset>
-						<div class="feedback__background-element">
-							<svg class="feedback__background-svg">
-								<use xlink:href="../img/svg/sprite.svg#bg-relief"></use>
-							</svg>
-							<img class="feedback__background-picture" src="../img/drone-form.png" alt="">
-						</div>
-					</form>
-				</div>
-			</div>
-			<div class="aside-element aside-element--left">
-				<span class="aside-element__text">напиши нам</span>
-			</div>
-		</div>
-	</section>
-</main>
-
-<footer class="page__footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<div class="footer">
-					<div class="footer__logo">
-						<a href="#" class="navbar__logo-link">
-							<img class="navbar__logo-img" src="../img/LogoAgroScout.png" alt="Логотип компании АгроСкаут.">
-						</a>
-					</div>
-					<div class="footer__phone">
-						<a class="navbar__phone-link" href="tel:+78612179118">
-							<svg class="navbar__phone-icon">
-								<use class="svg svg--phone" xlink:href="../img/svg/sprite.svg#phone"></use>
-							</svg>
-							<span class="navbar__phone-number">+7861 21791 18</span>
-						</a>
-					</div>
-					<div class="footer__social-networks">
-						<div class="footer__social-networks-box">
-							<span class="footer__social-networks-label">Подписывайтесь на наши соц. сети</span>
-							<a class="footer__link" href="#">
-								<svg class="footer__icon">
-									<use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#vk"></use>
-								</svg>
-							</a>
-							<a class="footer__link" href="#">
-								<svg class="footer__icon">
-									<use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#in"></use>
-								</svg>
-							</a>
-							<a class="footer__link" href="#">
-								<svg class="footer__icon">
-									<use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#tt"></use>
-								</svg>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</footer>
-
-<dialog class="mini-cart">
-	<form method="dialog" class="minicart__dialog">
-		<div class="minicart__headline">
-			<h7>Корзина</h7>
-			<a href="#" class="mini-cart__button--close" id="close-mini-cart">
-				<svg class="mini-cart__icon">
-					<use xlink:href="../img/svg/sprite.svg#menu-off"></use>
-				</svg>
-			</a>
-		</div>
-		<div class="minicart__ordering-goods minicart__ordering-goods--empty" style="display: none">
-			<svg class="minicart__svg">
-				<use xlink:href="../img/svg/sprite.svg#minicart-drone"></use>
-			</svg>
-			<span class="minicart__empty">Корзина пуста</span>
-			<hr class="minicart__hr-line">
-			<div class="minicart__continue-shopping">
-				<a href="#" class="minicart__link">Продолжить покупки</a>
-			</div>
-		</div>
-		<div class="minicart__ordering-goods minicart__ordering-goods--fill">
-			<ul class="minicart__list">
-				<li class="minicart__list-item">
-					<div class="product-card">
-						<div class="product-card__content product-card__content--minicart">
-							<div class="product-card__photo">
-								<img alt="" src="../img/drone-photo(3).png">
 							</div>
-							<h4 class="product-card__name">Агродрон AGR A22</h4>
-							<span class="product-card__brand">Бренд: AGR</span>
-							<span class="product-card__model">Модель: 101-0101</span>
-							<span class="product-card__price">$15001.27</span>
-							<span class="product-card__delete">
-		                        <svg class="product-card__delete-icon">
-		                          <use xlink:href="../img/svg/sprite.svg#cart-delete"></use>
-		                        </svg>
-		                      </span>
-							<div class="product-card__quantity">
-								<span class="product-card__quantity-minus">-</span>
-								<span class="product-card__quantity-num">1</span>
-								<span class="product-card__quantity-plus">+</span>
-							</div>
+						</li>
+					</ul>
+					<div class="minicart__ui">
+						<div class="minicart__continue-shopping minicart__continue-shopping--empty">
+							<a href="#" class="minicart__link">Продолжить покупки</a>
 						</div>
+						<div class="minicart__total">
+							Всего: <span class="minicart__total-price">$15001.27</span>
+						</div>
+						<a class="button minicart__button--arrange" role="button">Оформить заказ</a>
 					</div>
-				</li>
-			</ul>
-			<div class="minicart__ui">
-				<div class="minicart__continue-shopping minicart__continue-shopping--empty">
-					<a href="#" class="minicart__link">Продолжить покупки</a>
 				</div>
-				<div class="minicart__total">
-					Всего: <span class="minicart__total-price">$15001.27</span>
-				</div>
-				<a class="button minicart__button--arrange" role="button">Оформить заказ</a>
-			</div>
-		</div>
-	</form>
-</dialog>
+			</form>
+		</dialog>
 
-<script src="../js/script.js"></script>
-</body>
+		<script src="../js/script.js"></script>
+	</body>
 </html>

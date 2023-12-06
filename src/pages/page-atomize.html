@@ -1,668 +1,669 @@
 <!doctype html>
 <html lang="ru" class="page" xmlns="http://www.w3.org/1999/html">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>AgroScout</title>
-	<script type="module" src="../js/main.js"></script>
-</head>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>AgroScout</title>
+		<script type="module" src="../js/main.js"></script>
+	</head>
 
-<body class="page__body">
+	<body class="page__body">
 
-<header class="page__header">
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<div class="navbar">
-					<div class="navbar__logo">
-						<a href="../index.html" class="navbar__logo-link">
-							<img class="navbar__logo-img" src="../img/LogoAgroScout.png" alt="Логотип компании АгроСкаут.">
-						</a>
-					</div>
-					<div class="navbar__phone">
-						<a class="navbar__phone-link" href="tel:+78612179118">
-							<svg class="navbar__phone-icon">
-								<use class="svg svg--phone" xlink:href="../img/svg/sprite.svg#phone"></use>
-							</svg>
-							<span class="navbar__phone-number">+7861 21791 18</span>
-						</a>
-					</div>
-					<div class="navbar__social-networks">
-						<div class="navbar__social-networks-box">
-							<a class="navbar__link" href="#">
-								<svg class="navbar__icon">
-									<use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#vk"></use>
-								</svg>
-							</a>
-							<a class="navbar__link" href="#">
-								<svg class="navbar__icon">
-									<use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#in"></use>
-								</svg>
-							</a>
-							<a class="navbar__link" href="#">
-								<svg class="navbar__icon">
-									<use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#tt"></use>
-								</svg>
-							</a>
-						</div>
-					</div>
-					<div class="navbar__lang">
-						<a class="navbar__lang-select" role="button" href="#"><span>EN</span></a>
-						<a class="navbar__lang-select" role="button" href="#"><span>RU</span></a>
-					</div>
-					<div class="navbar__user-buttons">
-						<a class="navbar__user-button" id="open-mini-cart" role="button" href="#">
-							<svg class="navbar__icon">
-								<use class="svg" xlink:href="../img/svg/sprite.svg#basket"></use>
-							</svg>
-						</a>
-						<a class="navbar__user-button navbar__user-button--menu" id="open-menu" role="button" href="#">
-							<svg class="navbar__icon">
-								<use class="svg" xlink:href="../img/svg/sprite.svg#menu-on"></use>
-							</svg>
-						</a>
-						<a class="navbar__user-button navbar__user-button--menu-close cut-down" id="close-menu" role="button"
-						   href="#">
-							<svg class="navbar__icon">
-								<use class="svg" xlink:href="../img/svg/sprite.svg#menu-off"></use>
-							</svg>
-						</a>
-						<a class="navbar__user-button navbar__user-button--phone-mini" role="button" href="#">
-							<svg class="navbar__icon">
-								<use class="svg" xlink:href="../img/svg/sprite.svg#phone-mini"></use>
-							</svg>
-						</a>
-					</div>
-					<div class="navbar__menu cut-down" id="navigation-menu">
-						<div class="navbar__menu-box">
-							<nav class="navbar__nav">
-								<ul class="navbar__links-list">
-									<li class="navbar__list-item">
-										<a class="navbar__link" href="../index.html">
-											<svg class="navbar__link-icon">
-												<use class="svg" xlink:href="../img/svg/sprite.svg#home-circle"></use>
-											</svg>
-											<span class="navbar__link-text">Главная</span>
-										</a>
-									</li>
-									<li class="navbar__list-item">
-										<a class="navbar__link" href="./page-ethnomophages.html">
-											<svg class="navbar__link-icon">
-												<use class="svg" xlink:href="../img/svg/sprite.svg#insects-circle"></use>
-											</svg>
-											<span class="navbar__link-text">Энтомофаги</span>
-										</a>
-									</li>
-									<li class="navbar__list-item">
-										<a class="navbar__link" href="./page-atomize.html" style="color:#02E502">
-											<svg class="navbar__link-icon">
-												<use class="svg" xlink:href="../img/svg/sprite.svg#atomize-circle"></use>
-											</svg>
-											<span class="navbar__link-text">Опрыскивание</span>
-										</a>
-									</li>
-									<li class="navbar__list-item">
-										<a class="navbar__link" href="./page-agromonitoring.html">
-											<svg class="navbar__link-icon">
-												<use class="svg" xlink:href="../img/svg/sprite.svg#map-circle"></use>
-											</svg>
-											<span class="navbar__link-text">Картография и мониторинг</span>
-										</a>
-									</li>
-									<li class="navbar__list-item">
-										<a class="navbar__link" href="./page-catalog.html">
-											<svg class="navbar__link-icon">
-												<use class="svg" xlink:href="../img/svg/sprite.svg#drones-circle"></use>
-											</svg>
-											<span class="navbar__link-text">Каталог продукции</span>
-										</a>
-									</li>
-									<li class="navbar__list-item">
-										<a class="navbar__link" href="./page-news.html">
-											<svg class="navbar__link-icon">
-												<use class="svg" xlink:href="../img/svg/sprite.svg#news-circle"></use>
-											</svg>
-											<span class="navbar__link-text">Новости</span>
-										</a>
-									</li>
-									<li class="navbar__list-item">
-										<a class="navbar__link" href="./page-about-us.html">
-											<svg class="navbar__link-icon">
-												<use class="svg" xlink:href="../img/svg/sprite.svg#company-circle"></use>
-											</svg>
-											<span class="navbar__link-text">О компании</span>
-										</a>
-									</li>
-									<li class="navbar__list-item">
-										<a class="navbar__link" href="./page-contacts.html">
-											<svg class="navbar__link-icon">
-												<use class="svg" xlink:href="../img/svg/sprite.svg#contacts-circle"></use>
-											</svg>
-											<span class="navbar__link-text">Контакты</span>
-										</a>
-									</li>
-								</ul>
-							</nav>
-							<hr class="navbar__line">
-							<ul class="navbar__messengers-list">
-								<li class="navbar__messengers-item">
-									<a class="navbar__messengers-link" href="#">
-										<svg class="navbar__messengers-icon">
-											<use class="svg" xlink:href="../img/svg/sprite.svg#wa"></use>
+		<header class="page__header">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="navbar">
+							<div class="navbar__logo">
+								<a href="../index.html" class="navbar__logo-link">
+									<img class="navbar__logo-img" src="../img/LogoAgroScout.png" alt="Логотип компании АгроСкаут.">
+								</a>
+							</div>
+							<div class="navbar__phone">
+								<a class="navbar__phone-link" href="tel:+78612179118">
+									<svg class="navbar__phone-icon">
+										<use class="svg svg--phone" xlink:href="../img/svg/sprite.svg#phone"></use>
+									</svg>
+									<span class="navbar__phone-number">+7861 21791 18</span>
+								</a>
+							</div>
+							<div class="navbar__social-networks">
+								<div class="navbar__social-networks-box">
+									<a class="navbar__link" href="#">
+										<svg class="navbar__icon">
+											<use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#vk"></use>
 										</svg>
 									</a>
-								</li>
-								<li class="navbar__messengers-item">
-									<a class="navbar__messengers-link" href="#">
-										<svg class="navbar__messengers-icon">
-											<use class="svg" xlink:href="../img/svg/sprite.svg#tg"></use>
+									<a class="navbar__link" href="#">
+										<svg class="navbar__icon">
+											<use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#in"></use>
 										</svg>
 									</a>
-								</li>
-								<li class="navbar__messengers-item">
-									<a class="navbar__messengers-link" href="#">
-										<svg class="navbar__messengers-icon" style="width:106%;">
-											<use class="svg" xlink:href="../img/svg/sprite.svg#we"></use>
+									<a class="navbar__link" href="#">
+										<svg class="navbar__icon">
+											<use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#tt"></use>
 										</svg>
 									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</header>
-
-<main class="page__main" >
-
-	<section class="hero hero--atomize">
-		<div class="container h-100">
-			<div class="row h-100">
-				<div class="col-xs-12 d-sm-none p-0 h-100">
-					<div class="hero__mobile-picture hero__mobile-picture--atomize"></div>
-				</div>
-				<div class="col-xs-12 col-sm-7 p-xxl-0 h-100 d-md-flex align-items-center">
-					<div class="hero__text-content">
-						<h1 class="hero__main-header">
-							Опрыскивание полей
-							<br>
-							Дронами
-						</h1>
-						<p class="hero__paragraph hero__paragraph--atomize">
-							Внесение средств защиты при помощи БПЛА повышают урожай, экономят время и находят самые эффективные
-							решения по обработке полей.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<div class="breadcrumbs">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<div class="breadcrumbs-links">
-						<a class="breadcrumbs-link" href="../index.html">Главная</a>&nbsp;/&nbsp;
-						<a class="breadcrumbs-link" href="./page-atomize.html">Опрыскивание</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<section class="read-more">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<div class="headline">
-						<h2>Ультрамалообъемное опрыскивание дронами</h2>
-						<span class="h2-podscription">Об Услуге</span>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12">
-					<div class="read-more__content">
-						<label for="read-more__input">
-							<input type="checkbox" id="read-more__input">
-							<span class="read-more__paragraph">
-								Компания STS.center применяет высокотехнологичные агродроны и БПЛА, которые модернизированы и
-                собраны нашими инженерами для сельского и лесного хозяйства, а также для промышленности. В СТС
-                Центр работают опытные агрономы, энтомологи, пилоты, менеджеры и инженеры. Сегодня мы имеем один
-                из самых современных парков дронов в России, что позволяет нам выполнять работы широкого спектра
-                от простой аэрофотосъемки до лидарного сканирования местности и тепловизионного контроля. Внедрение
-                беспилотных технологий в вашем бизнесе поможет сэкономить время и деньги, а также позволит получить
-                большое преимущество перед вашими конкурентами.
-                <br><br>
-                Компания STS.center применяет высокотехнологичные агродроны и БПЛА, которые модернизированы и
-                собраны нашими инженерами для сельского и лесного хозяйства, а также для промышленности. В СТС
-                Центр работают опытные агрономы, энтомологи, пилоты, менеджеры и инженеры. Сегодня мы имеем один
-                из самых современных парков дронов в России, что позволяет нам выполнять работы широкого спектра
-                от простой аэрофотосъемки до лидарного сканирования местности и тепловизионного контроля. Внедрение
-                беспилотных технологий в вашем бизнесе поможет сэкономить время и деньги, а также позволит получить
-                большое преимущество перед вашими конкурентами.
-                <br><br>
-                Компания STS.center применяет высокотехнологичные агродроны и БПЛА, которые модернизированы и
-                собраны нашими инженерами для сельского и лесного хозяйства, а также для промышленности. В СТС
-                Центр работают опытные агрономы, энтомологи, пилоты, менеджеры и инженеры. Сегодня мы имеем один
-                из самых современных парков дронов в России, что позволяет нам выполнять работы широкого спектра
-                от простой аэрофотосъемки до лидарного сканирования местности и тепловизионного контроля. Внедрение
-                беспилотных технологий в вашем бизнесе поможет сэкономить время и деньги, а также позволит получить
-                большое преимущество перед вашими конкурентами.
-                <br><br>
-							</span>
-							<a class="read-more__link">
-								<svg class="read-more__icon">
-									<use xlink:href="../img/svg/sprite.svg#read-more"></use>
-								</svg>
-							</a>
-						</label>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="qualities">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<div class="headline">
-						<h2>Преимущества опрыскивания с помощью БПЛА</h2>
-						<span class="h2-podscription">Плюсы использования</span>
-					</div>
-				</div>
-			</div>
-			<div class="row position-relative">
-				<div class="col-12">
-					<div class="qualities__slider slider">
-						<div class="slider__container">
-							<div class="slider__slides slider__slides--visible">
-								<div class="slider__slides-track slider__slides-track--nowrap">
-
-									<div class="slider__slide slider__slide--qualities slider__slide--greenlight">
-										<div class="qualities__slide-content qualities__slide-content--left">
-											<div class="qualities__slide-headline">
-												<svg class="qualities__slide-icon">
-													<use xlink:href="../img/svg/sprite.svg#wallet"></use>
-												</svg>
-												<h5 class="qualities__slide-header">Экономия</h5>
-												<hr class="qualities__dividing-line">
-											</div>
-											<ul class="qualities__list">
-												<li class="qualities__list-item check-mark--white">Снижение расхода препаратов до 30%</li>
-												<li class="qualities__list-item check-mark--white">Проведение работ без уплотнения почвы +5-10% к
-													урожаю</li>
-												<li class="qualities__list-item check-mark--white">Обработка высоких культур без повреждений</li>
-												<li class="qualities__list-item check-mark--white">Операционные издержки— экономия на использовании ГСМ,
-													заработной платы и обслуживании техники</li>
-											</ul>
-										</div>
-									</div>
-
-									<div class="slider__slide slider__slide--qualities slider__slide--greenlight">
-										<div class="qualities__slide-content qualities__slide-content--left">
-											<div class="qualities__slide-headline">
-												<svg class="qualities__slide-icon">
-													<use xlink:href="../img/svg/sprite.svg#drone-splashes"></use>
-												</svg>
-												<h5 class="qualities__slide-header">Эффективность</h5>
-												<hr class="qualities__dividing-line">
-											</div>
-											<ul class="qualities__list">
-												<li class="qualities__list-item check-mark--white">Работаем по любой геометрии поля</li>
-												<li class="qualities__list-item check-mark--white">Возможность работать на влажных грунтах, на крутых
-													склонах, под линиями электропередач, вблизи населенных пунктов и водоемов</li>
-												<li class="qualities__list-item check-mark--white">Большее количество капель на единицу площади</li>
-												<li class="qualities__list-item check-mark--white">Отсутствует необходимость подвоза
-													большого количества воды</li>
-												<li class="qualities__list-item check-mark--white">Обработка листа со всех сторон</li>
-											</ul>
-										</div>
-									</div>
-
-									<div class="slider__slide slider__slide--qualities slider__slide--greenlight">
-										<div class="qualities__slide-content qualities__slide-content--left">
-											<div class="qualities__slide-headline">
-												<svg class="qualities__slide-icon">
-													<use xlink:href="../img/svg/sprite.svg#watch"></use>
-												</svg>
-												<h5 class="qualities__slide-header">Оперативность</h5>
-												<hr class="qualities__dividing-line">
-											</div>
-											<ul class="qualities__list">
-												<li class="qualities__list-item check-mark--white">Возможность защиты ваших растений до 1000 га за
-													рабочую смену</li>
-												<li class="qualities__list-item check-mark--white">Круглосуточный режим работы</li>
-												<li class="qualities__list-item check-mark--white">Плановые и внеплановые обработки по требованию</li>
-												<li class="qualities__list-item check-mark--white ">Точечная обработка СЗР в требуемых местах</li>
-											</ul>
-										</div>
-									</div>
 								</div>
-
-								<div class="slider__pagination slider__pagination--qualities">
-									<span class="slider__dot slider__dot--active"></span>
-									<span class="slider__dot"></span>
-									<span class="slider__dot"></span>
+							</div>
+							<div class="navbar__lang">
+								<a class="navbar__lang-select" role="button" href="#"><span>EN</span></a>
+								<a class="navbar__lang-select" role="button" href="#"><span>RU</span></a>
+							</div>
+							<div class="navbar__user-buttons">
+								<a class="navbar__user-button" id="open-mini-cart" role="button" href="#">
+									<svg class="navbar__icon">
+										<use class="svg" xlink:href="../img/svg/sprite.svg#basket"></use>
+									</svg>
+								</a>
+								<a class="navbar__user-button navbar__user-button--menu" id="open-menu" role="button" href="#">
+									<svg class="navbar__icon">
+										<use class="svg" xlink:href="../img/svg/sprite.svg#menu-on"></use>
+									</svg>
+								</a>
+								<a class="navbar__user-button navbar__user-button--menu-close cut-down" id="close-menu" role="button"
+								   href="#">
+									<svg class="navbar__icon">
+										<use class="svg" xlink:href="../img/svg/sprite.svg#menu-off"></use>
+									</svg>
+								</a>
+								<a class="navbar__user-button navbar__user-button--phone-mini" role="button" href="#">
+									<svg class="navbar__icon">
+										<use class="svg" xlink:href="../img/svg/sprite.svg#phone-mini"></use>
+									</svg>
+								</a>
+							</div>
+							<div class="navbar__menu cut-down" id="navigation-menu">
+								<div class="navbar__menu-box">
+									<nav class="navbar__nav">
+										<ul class="navbar__links-list">
+											<li class="navbar__list-item">
+												<a class="navbar__link" href="../index.html">
+													<svg class="navbar__link-icon">
+														<use class="svg" xlink:href="../img/svg/sprite.svg#home-circle"></use>
+													</svg>
+													<span class="navbar__link-text">Главная</span>
+												</a>
+											</li>
+											<li class="navbar__list-item">
+												<a class="navbar__link" href="./page-ethnomophages.html">
+													<svg class="navbar__link-icon">
+														<use class="svg" xlink:href="../img/svg/sprite.svg#insects-circle"></use>
+													</svg>
+													<span class="navbar__link-text">Энтомофаги</span>
+												</a>
+											</li>
+											<li class="navbar__list-item">
+												<a class="navbar__link" href="./page-atomize.html" style="color:#02E502">
+													<svg class="navbar__link-icon">
+														<use class="svg" xlink:href="../img/svg/sprite.svg#atomize-circle"></use>
+													</svg>
+													<span class="navbar__link-text">Опрыскивание</span>
+												</a>
+											</li>
+											<li class="navbar__list-item">
+												<a class="navbar__link" href="./page-agromonitoring.html">
+													<svg class="navbar__link-icon">
+														<use class="svg" xlink:href="../img/svg/sprite.svg#map-circle"></use>
+													</svg>
+													<span class="navbar__link-text">Картография и мониторинг</span>
+												</a>
+											</li>
+											<li class="navbar__list-item">
+												<a class="navbar__link" href="./page-catalog.html">
+													<svg class="navbar__link-icon">
+														<use class="svg" xlink:href="../img/svg/sprite.svg#drones-circle"></use>
+													</svg>
+													<span class="navbar__link-text">Каталог продукции</span>
+												</a>
+											</li>
+											<li class="navbar__list-item">
+												<a class="navbar__link" href="./page-news.html">
+													<svg class="navbar__link-icon">
+														<use class="svg" xlink:href="../img/svg/sprite.svg#news-circle"></use>
+													</svg>
+													<span class="navbar__link-text">Новости</span>
+												</a>
+											</li>
+											<li class="navbar__list-item">
+												<a class="navbar__link" href="./page-about-us.html">
+													<svg class="navbar__link-icon">
+														<use class="svg" xlink:href="../img/svg/sprite.svg#company-circle"></use>
+													</svg>
+													<span class="navbar__link-text">О компании</span>
+												</a>
+											</li>
+											<li class="navbar__list-item">
+												<a class="navbar__link" href="./page-contacts.html">
+													<svg class="navbar__link-icon">
+														<use class="svg" xlink:href="../img/svg/sprite.svg#contacts-circle"></use>
+													</svg>
+													<span class="navbar__link-text">Контакты</span>
+												</a>
+											</li>
+										</ul>
+									</nav>
+									<hr class="navbar__line">
+									<ul class="navbar__messengers-list">
+										<li class="navbar__messengers-item">
+											<a class="navbar__messengers-link" href="#">
+												<svg class="navbar__messengers-icon">
+													<use class="svg" xlink:href="../img/svg/sprite.svg#wa"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="navbar__messengers-item">
+											<a class="navbar__messengers-link" href="#">
+												<svg class="navbar__messengers-icon">
+													<use class="svg" xlink:href="../img/svg/sprite.svg#tg"></use>
+												</svg>
+											</a>
+										</li>
+										<li class="navbar__messengers-item">
+											<a class="navbar__messengers-link" href="#">
+												<svg class="navbar__messengers-icon" style="width:106%;">
+													<use class="svg" xlink:href="../img/svg/sprite.svg#we"></use>
+												</svg>
+											</a>
+										</li>
+									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="aside-element aside-element--left">
-					<span class="aside-element__text">плюсы</span>
+			</div>
+		</header>
+
+		<main class="page__main" >
+
+			<section class="hero hero--atomize">
+				<div class="container h-100">
+					<div class="row h-100">
+						<div class="col-xs-12 d-sm-none p-0 h-100">
+							<div class="hero__mobile-picture hero__mobile-picture--atomize"></div>
+						</div>
+						<div class="col-xs-12 col-sm-7 p-xxl-0 h-100 d-md-flex align-items-center">
+							<div class="hero__text-content">
+								<h1 class="hero__main-header">
+									Опрыскивание полей
+									<br>
+									Дронами
+								</h1>
+								<p class="hero__paragraph hero__paragraph--atomize">
+									Внесение средств защиты при помощи БПЛА повышают урожай, экономят время и находят самые эффективные
+									решения по обработке полей.
+								</p>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="background-element background-element--drones">
-					<svg class="background-element__svg">
-						<use xlink:href="../img/svg/sprite.svg#bg-drones"></use>
+			</section>
+
+			<div class="breadcrumbs">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="breadcrumbs-links">
+								<a class="breadcrumbs-link" href="../index.html">Главная</a>&nbsp;/&nbsp;
+								<a class="breadcrumbs-link" href="./page-atomize.html">Опрыскивание</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section class="read-more">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="headline">
+								<h2>Ультрамалообъемное опрыскивание дронами</h2>
+								<span class="h2-podscription">Об Услуге</span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="read-more__content">
+								<label for="read-more__input">
+									<input type="checkbox" id="read-more__input">
+									<span class="read-more__paragraph">
+										Компания STS.center применяет высокотехнологичные агродроны и БПЛА, которые модернизированы и
+		                собраны нашими инженерами для сельского и лесного хозяйства, а также для промышленности. В СТС
+		                Центр работают опытные агрономы, энтомологи, пилоты, менеджеры и инженеры. Сегодня мы имеем один
+		                из самых современных парков дронов в России, что позволяет нам выполнять работы широкого спектра
+		                от простой аэрофотосъемки до лидарного сканирования местности и тепловизионного контроля. Внедрение
+		                беспилотных технологий в вашем бизнесе поможет сэкономить время и деньги, а также позволит получить
+		                большое преимущество перед вашими конкурентами.
+		                <br><br>
+		                Компания STS.center применяет высокотехнологичные агродроны и БПЛА, которые модернизированы и
+		                собраны нашими инженерами для сельского и лесного хозяйства, а также для промышленности. В СТС
+		                Центр работают опытные агрономы, энтомологи, пилоты, менеджеры и инженеры. Сегодня мы имеем один
+		                из самых современных парков дронов в России, что позволяет нам выполнять работы широкого спектра
+		                от простой аэрофотосъемки до лидарного сканирования местности и тепловизионного контроля. Внедрение
+		                беспилотных технологий в вашем бизнесе поможет сэкономить время и деньги, а также позволит получить
+		                большое преимущество перед вашими конкурентами.
+		                <br><br>
+		                Компания STS.center применяет высокотехнологичные агродроны и БПЛА, которые модернизированы и
+		                собраны нашими инженерами для сельского и лесного хозяйства, а также для промышленности. В СТС
+		                Центр работают опытные агрономы, энтомологи, пилоты, менеджеры и инженеры. Сегодня мы имеем один
+		                из самых современных парков дронов в России, что позволяет нам выполнять работы широкого спектра
+		                от простой аэрофотосъемки до лидарного сканирования местности и тепловизионного контроля. Внедрение
+		                беспилотных технологий в вашем бизнесе поможет сэкономить время и деньги, а также позволит получить
+		                большое преимущество перед вашими конкурентами.
+		                <br><br>
+									</span>
+									<a class="read-more__link">
+										<svg class="read-more__icon">
+											<use xlink:href="../img/svg/sprite.svg#read-more"></use>
+										</svg>
+									</a>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="qualities">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="headline">
+								<h2>Преимущества опрыскивания с помощью БПЛА</h2>
+								<span class="h2-podscription">Плюсы использования</span>
+							</div>
+						</div>
+					</div>
+					<div class="row position-relative">
+						<div class="col-12">
+							<div class="qualities__slider slider">
+								<div class="slider__container">
+									<div class="slider__slides slider__slides--visible">
+										<div class="slider__slides-track slider__slides-track--nowrap">
+
+											<div class="slider__slide slider__slide--qualities slider__slide--greenlight">
+												<div class="qualities__slide-content qualities__slide-content--left">
+													<div class="qualities__slide-headline">
+														<svg class="qualities__slide-icon">
+															<use xlink:href="../img/svg/sprite.svg#wallet"></use>
+														</svg>
+														<h5 class="qualities__slide-header">Экономия</h5>
+														<hr class="qualities__dividing-line">
+													</div>
+													<ul class="qualities__list">
+														<li class="qualities__list-item check-mark--white">Снижение расхода препаратов до 30%</li>
+														<li class="qualities__list-item check-mark--white">Проведение работ без уплотнения почвы +5-10% к
+															урожаю</li>
+														<li class="qualities__list-item check-mark--white">Обработка высоких культур без повреждений</li>
+														<li class="qualities__list-item check-mark--white">Операционные издержки— экономия на использовании ГСМ,
+															заработной платы и обслуживании техники</li>
+													</ul>
+												</div>
+											</div>
+
+											<div class="slider__slide slider__slide--qualities slider__slide--greenlight">
+												<div class="qualities__slide-content qualities__slide-content--left">
+													<div class="qualities__slide-headline">
+														<svg class="qualities__slide-icon">
+															<use xlink:href="../img/svg/sprite.svg#drone-splashes"></use>
+														</svg>
+														<h5 class="qualities__slide-header">Эффективность</h5>
+														<hr class="qualities__dividing-line">
+													</div>
+													<ul class="qualities__list">
+														<li class="qualities__list-item check-mark--white">Работаем по любой геометрии поля</li>
+														<li class="qualities__list-item check-mark--white">Возможность работать на влажных грунтах, на крутых
+															склонах, под линиями электропередач, вблизи населенных пунктов и водоемов</li>
+														<li class="qualities__list-item check-mark--white">Большее количество капель на единицу площади</li>
+														<li class="qualities__list-item check-mark--white">Отсутствует необходимость подвоза
+															большого количества воды</li>
+														<li class="qualities__list-item check-mark--white">Обработка листа со всех сторон</li>
+													</ul>
+												</div>
+											</div>
+
+											<div class="slider__slide slider__slide--qualities slider__slide--greenlight">
+												<div class="qualities__slide-content qualities__slide-content--left">
+													<div class="qualities__slide-headline">
+														<svg class="qualities__slide-icon">
+															<use xlink:href="../img/svg/sprite.svg#watch"></use>
+														</svg>
+														<h5 class="qualities__slide-header">Оперативность</h5>
+														<hr class="qualities__dividing-line">
+													</div>
+													<ul class="qualities__list">
+														<li class="qualities__list-item check-mark--white">Возможность защиты ваших растений до 1000 га за
+															рабочую смену</li>
+														<li class="qualities__list-item check-mark--white">Круглосуточный режим работы</li>
+														<li class="qualities__list-item check-mark--white">Плановые и внеплановые обработки по требованию</li>
+														<li class="qualities__list-item check-mark--white ">Точечная обработка СЗР в требуемых местах</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<div class="slider__pagination slider__pagination--qualities">
+											<span class="slider__dot slider__dot--active"></span>
+											<span class="slider__dot"></span>
+											<span class="slider__dot"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="aside-element aside-element--left">
+							<span class="aside-element__text">плюсы</span>
+						</div>
+						<div class="background-element background-element--drones">
+							<svg class="background-element__svg">
+								<use xlink:href="../img/svg/sprite.svg#bg-drones"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="qualities">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="headline">
+								<h2>Преимущества опрыскивания с помощью БПЛА</h2>
+								<span class="h2-podscription">Плюсы использования</span>
+							</div>
+						</div>
+					</div>
+					<div class="row position-relative">
+						<div class="col-12">
+							<div class="qualities__slider slider">
+								<div class="slider__container">
+									<div class="slider__slides slider__slides--visible">
+										<div class="slider__slides-track slider__slides-track--nowrap">
+
+											<div class="slider__slide slider__slide--qualities slider__slide--greenlight">
+												<div class="qualities__slide-content qualities__slide-content--left">
+													<div class="qualities__slide-headline">
+														<svg class="qualities__slide-icon">
+															<use xlink:href="../img/svg/sprite.svg#spray"></use>
+														</svg>
+														<h5 class="qualities__slide-header">Ручные опрыскиватели</h5>
+														<hr class="qualities__dividing-line">
+													</div>
+													<ul class="qualities__list">
+														<li class="qualities__list-item cross-mark">Низкая скорость обработки</li>
+														<li class="qualities__list-item cross-mark">Низкая производительность труда</li>
+														<li class="qualities__list-item cross-mark">Опасно для здоровья</li>
+													</ul>
+												</div>
+											</div>
+
+											<div class="slider__slide slider__slide--qualities slider__slide--greenlight">
+												<div class="qualities__slide-content qualities__slide-content--left">
+													<div class="qualities__slide-headline">
+														<svg class="qualities__slide-icon">
+															<use xlink:href="../img/svg/sprite.svg#tractor"></use>
+														</svg>
+														<h5 class="qualities__slide-header">Опрыскивание трактором</h5>
+														<hr class="qualities__dividing-line">
+													</div>
+													<ul class="qualities__list">
+														<li class="qualities__list-item cross-mark">Нежелательное уплотнение почвы</li>
+														<li class="qualities__list-item cross-mark">Не обрабатывают поля со сложным рельефом</li>
+														<li class="qualities__list-item cross-mark">Большой расход воды и химикатов</li>
+														<li class="qualities__list-item cross-mark">Невозможность работы в рисовых чеках</li>
+													</ul>
+												</div>
+											</div>
+
+											<div class="slider__slide slider__slide--qualities slider__slide--greenlight">
+												<div class="qualities__slide-content qualities__slide-content--left">
+													<div class="qualities__slide-headline">
+														<svg class="qualities__slide-icon">
+															<use xlink:href="../img/svg/sprite.svg#plane"></use>
+														</svg>
+														<h5 class="qualities__slide-header">Опрыскивание авиацией</h5>
+														<hr class="qualities__dividing-line">
+													</div>
+													<ul class="qualities__list">
+														<li class="qualities__list-item cross-mark">Необходимость согласования работ</li>
+														<li class="qualities__list-item cross-mark">Скорость обработки одним БПЛА до 30 га/час</li>
+														<li class="qualities__list-item cross-mark">Высокая стоимость</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<div class="slider__pagination slider__pagination--qualities">
+											<span class="slider__dot slider__dot--active"></span>
+											<span class="slider__dot"></span>
+											<span class="slider__dot"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="aside-element aside-element--right">
+							<span class="aside-element__text">минусы</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="spraing">
+				<div class="container position-relative">
+					<div class="row">
+						<div class="col-12">
+							<div class="headline">
+								<h2>Преимущества опрыскивания с помощью БПЛА</h2>
+								<span class="h2-podscription">Плюсы использования</span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="spraing__slider slider">
+								<div class="slider__container">
+									<div class="slider__slides slider__slides--visible">
+										<div class="slider__slides-track slider__slides-track--nowrap slider__slides-track--two-columns">
+
+											<div class="slider__slide slider__slide--spraing">
+												<div class="spraing__slide-content">
+													<div class="spraing__slide-image">
+														<img src="../img/spraing-1.png" alt="">
+													</div>
+													<div class="spraing__slide-text">
+														<h4 class="spraing__slide-list-header">Стандартная форсунка:</h4>
+														<ul class="spraing__list">
+															<li class="spraing__list-item cross-mark">Размер капли 250-400 микрон</li>
+															<li class="spraing__list-item cross-mark">Большой расход воды</li>
+															<li class="spraing__list-item cross-mark">Скатывание капли на землю</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+
+											<div class="slider__slide slider__slide--spraing">
+												<div class="spraing__slide-content">
+													<div class="spraing__slide-image">
+														<img src="../img/spraing-2.png" alt="">
+													</div>
+													<div class="spraing__slide-text">
+														<h4 class="spraing__slide-list-header">Форсунка УМО:</h4>
+														<ul class="spraing__list">
+															<li class="spraing__list-item check-mark--green">Размер капли 80-150 микрон</li>
+															<li class="spraing__list-item check-mark--green">Более эффективное проникновение рабочего раствора</li>
+															<li class="spraing__list-item check-mark--green">Препарат оседает на листьях и стеблях не попадая в почву</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="slider__pagination slider__pagination--qualities">
+											<span class="slider__dot slider__dot--active"></span>
+											<span class="slider__dot"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="background-element background-element--relief spraing__background-element">
+						<svg class="background-element__svg">
+							<use xlink:href="../img/svg/sprite.svg#bg-relief"></use>
+						</svg>
+					</div>
+					<div class="aside-element aside-element--left">
+						<span class="aside-element__text">дробление капли</span>
+					</div>
+				</div>
+			</section>
+
+			<section class="feedback">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<form class="feedback__form position-relative" id="feedback-form" method="get">
+								<div class="headline">
+									<h2>Нужна помошь?</h2>
+									<span class="h2-podscription">Напишите нам</span>
+								</div>
+								<div class="feedback__paragraph">Заполните форму и мы за 5 минут подскажем вам лучшие способы защиты вашего
+									урожая
+								</div>
+								<fieldset class="feedback__form-fieldsets">
+									<label class="feedback__fieldset-label" for="your-name"></label>
+									<input class="feedback__fieldset-input" type="text" id="your-name" name="your-name" placeholder="Ваше имя">
+
+									<label class="feedback__fieldset-label" for="phone"></label>
+									<input class="feedback__fieldset-input" type="tel" id="phone" name="phone" placeholder="Ваш телефон">
+
+									<label class="feedback__fieldset-label" for="email"></label>
+									<input class="feedback__fieldset-input" type="email" id="email" name="email" placeholder="Ваш email">
+
+									<button class="button button--form" type="submit" form="feedback-form" value="Submit">Отправить</button>
+
+									<a class="feedback__form-link" href="#">Политика конфиденциальности</a>
+								</fieldset>
+								<div class="feedback__background-element">
+									<svg class="feedback__background-svg">
+										<use xlink:href="../img/svg/sprite.svg#bg-relief"></use>
+									</svg>
+									<img class="feedback__background-picture" src="../img/drone-form.png" alt="">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		<footer class="page__footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="footer">
+							<div class="footer__logo">
+								<a href="#" class="navbar__logo-link">
+									<img class="navbar__logo-img" src="../img/LogoAgroScout.png" alt="Логотип компании АгроСкаут.">
+								</a>
+							</div>
+							<div class="footer__phone">
+								<a class="navbar__phone-link" href="tel:+78612179118">
+									<svg class="navbar__phone-icon">
+										<use class="svg svg--phone" xlink:href="../img/svg/sprite.svg#phone"></use>
+									</svg>
+									<span class="navbar__phone-number">+7861 21791 18</span>
+								</a>
+							</div>
+							<div class="footer__social-networks">
+								<div class="footer__social-networks-box">
+									<span class="footer__social-networks-label">Подписывайтесь на наши соц. сети</span>
+									<a class="footer__link" href="#">
+										<svg class="footer__icon">
+											<use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#vk"></use>
+										</svg>
+									</a>
+									<a class="footer__link" href="#">
+										<svg class="footer__icon">
+											<use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#in"></use>
+										</svg>
+									</a>
+									<a class="footer__link" href="#">
+										<svg class="footer__icon">
+											<use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#tt"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<dialog class="mini-cart">
+			<form method="dialog" class="minicart__dialog">
+				<div class="minicart__headline">
+					<h7>Корзина</h7>
+					<a href="#" class="mini-cart__button--close" id="close-mini-cart">
+						<svg class="mini-cart__icon">
+							<use xlink:href="../img/svg/sprite.svg#menu-off"></use>
+						</svg>
+					</a>
+				</div>
+				<div class="minicart__ordering-goods minicart__ordering-goods--empty" style="display: none">
+					<svg class="minicart__svg">
+						<use xlink:href="../img/svg/sprite.svg#minicart-drone"></use>
 					</svg>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="qualities">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<div class="headline">
-						<h2>Преимущества опрыскивания с помощью БПЛА</h2>
-						<span class="h2-podscription">Плюсы использования</span>
+					<span class="minicart__empty">Корзина пуста</span>
+					<hr class="minicart__hr-line">
+					<div class="minicart__continue-shopping">
+						<a href="#" class="minicart__link">Продолжить покупки</a>
 					</div>
 				</div>
-			</div>
-			<div class="row position-relative">
-				<div class="col-12">
-					<div class="qualities__slider slider">
-						<div class="slider__container">
-							<div class="slider__slides slider__slides--visible">
-								<div class="slider__slides-track slider__slides-track--nowrap">
-
-									<div class="slider__slide slider__slide--qualities slider__slide--greenlight">
-										<div class="qualities__slide-content qualities__slide-content--left">
-											<div class="qualities__slide-headline">
-												<svg class="qualities__slide-icon">
-													<use xlink:href="../img/svg/sprite.svg#spray"></use>
-												</svg>
-												<h5 class="qualities__slide-header">Ручные опрыскиватели</h5>
-												<hr class="qualities__dividing-line">
-											</div>
-											<ul class="qualities__list">
-												<li class="qualities__list-item cross-mark">Низкая скорость обработки</li>
-												<li class="qualities__list-item cross-mark">Низкая производительность труда</li>
-												<li class="qualities__list-item cross-mark">Опасно для здоровья</li>
-											</ul>
-										</div>
+				<div class="minicart__ordering-goods minicart__ordering-goods--fill">
+					<ul class="minicart__list">
+						<li class="minicart__list-item">
+							<div class="product-card">
+								<div class="product-card__content product-card__content--minicart">
+									<div class="product-card__photo">
+										<img alt="" src="../img/drone-photo(3).png">
 									</div>
-
-									<div class="slider__slide slider__slide--qualities slider__slide--greenlight">
-										<div class="qualities__slide-content qualities__slide-content--left">
-											<div class="qualities__slide-headline">
-												<svg class="qualities__slide-icon">
-													<use xlink:href="../img/svg/sprite.svg#tractor"></use>
-												</svg>
-												<h5 class="qualities__slide-header">Опрыскивание трактором</h5>
-												<hr class="qualities__dividing-line">
-											</div>
-											<ul class="qualities__list">
-												<li class="qualities__list-item cross-mark">Нежелательное уплотнение почвы</li>
-												<li class="qualities__list-item cross-mark">Не обрабатывают поля со сложным рельефом</li>
-												<li class="qualities__list-item cross-mark">Большой расход воды и химикатов</li>
-												<li class="qualities__list-item cross-mark">Невозможность работы в рисовых чеках</li>
-											</ul>
-										</div>
-									</div>
-
-									<div class="slider__slide slider__slide--qualities slider__slide--greenlight">
-										<div class="qualities__slide-content qualities__slide-content--left">
-											<div class="qualities__slide-headline">
-												<svg class="qualities__slide-icon">
-													<use xlink:href="../img/svg/sprite.svg#plane"></use>
-												</svg>
-												<h5 class="qualities__slide-header">Опрыскивание авиацией</h5>
-												<hr class="qualities__dividing-line">
-											</div>
-											<ul class="qualities__list">
-												<li class="qualities__list-item cross-mark">Необходимость согласования работ</li>
-												<li class="qualities__list-item cross-mark">Скорость обработки одним БПЛА до 30 га/час</li>
-												<li class="qualities__list-item cross-mark">Высокая стоимость</li>
-											</ul>
-										</div>
+									<h4 class="product-card__name">Агродрон AGR A22</h4>
+									<span class="product-card__brand">Бренд: AGR</span>
+									<span class="product-card__model">Модель: 101-0101</span>
+									<span class="product-card__price">$15001.27</span>
+									<span class="product-card__delete">
+				                        <svg class="product-card__delete-icon">
+				                          <use xlink:href="../img/svg/sprite.svg#cart-delete"></use>
+				                        </svg>
+				                      </span>
+									<div class="product-card__quantity">
+										<span class="product-card__quantity-minus">-</span>
+										<span class="product-card__quantity-num">1</span>
+										<span class="product-card__quantity-plus">+</span>
 									</div>
 								</div>
-
-								<div class="slider__pagination slider__pagination--qualities">
-									<span class="slider__dot slider__dot--active"></span>
-									<span class="slider__dot"></span>
-									<span class="slider__dot"></span>
-								</div>
 							</div>
+						</li>
+					</ul>
+					<div class="minicart__ui">
+						<div class="minicart__continue-shopping minicart__continue-shopping--empty">
+							<a href="#" class="minicart__link">Продолжить покупки</a>
 						</div>
+						<div class="minicart__total">
+							Всего: <span class="minicart__total-price">$15001.27</span>
+						</div>
+						<a class="button minicart__button--arrange" role="button">Оформить заказ</a>
 					</div>
 				</div>
-				<div class="aside-element aside-element--right">
-					<span class="aside-element__text">минусы</span>
-				</div>
-			</div>
-		</div>
-	</section>
+			</form>
+		</dialog>
 
-	<section class="spraing">
-		<div class="container position-relative">
-			<div class="row">
-				<div class="col-12">
-					<div class="headline">
-						<h2>Преимущества опрыскивания с помощью БПЛА</h2>
-						<span class="h2-podscription">Плюсы использования</span>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12">
-					<div class="spraing__slider slider">
-						<div class="slider__container">
-							<div class="slider__slides slider__slides--visible">
-								<div class="slider__slides-track slider__slides-track--nowrap slider__slides-track--two-columns">
-
-									<div class="slider__slide slider__slide--spraing">
-										<div class="spraing__slide-content">
-											<div class="spraing__slide-image">
-												<img src="../img/spraing-1.png" alt="">
-											</div>
-											<div class="spraing__slide-text">
-												<h4 class="spraing__slide-list-header">Стандартная форсунка:</h4>
-												<ul class="spraing__list">
-													<li class="spraing__list-item cross-mark">Размер капли 250-400 микрон</li>
-													<li class="spraing__list-item cross-mark">Большой расход воды</li>
-													<li class="spraing__list-item cross-mark">Скатывание капли на землю</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-
-									<div class="slider__slide slider__slide--spraing">
-										<div class="spraing__slide-content">
-											<div class="spraing__slide-image">
-												<img src="../img/spraing-2.png" alt="">
-											</div>
-											<div class="spraing__slide-text">
-												<h4 class="spraing__slide-list-header">Форсунка УМО:</h4>
-												<ul class="spraing__list">
-													<li class="spraing__list-item check-mark--green">Размер капли 80-150 микрон</li>
-													<li class="spraing__list-item check-mark--green">Более эффективное проникновение рабочего раствора</li>
-													<li class="spraing__list-item check-mark--green">Препарат оседает на листьях и стеблях не попадая в почву</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="slider__pagination slider__pagination--qualities">
-									<span class="slider__dot slider__dot--active"></span>
-									<span class="slider__dot"></span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="background-element background-element--relief spraing__background-element">
-				<svg class="background-element__svg">
-					<use xlink:href="../img/svg/sprite.svg#bg-relief"></use>
-				</svg>
-			</div>
-			<div class="aside-element aside-element--left">
-				<span class="aside-element__text">дробление капли</span>
-			</div>
-		</div>
-	</section>
-
-	<section class="feedback">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<form class="feedback__form position-relative" id="feedback-form" method="get">
-						<div class="headline">
-							<h2>Нужна помошь?</h2>
-							<span class="h2-podscription">Напишите нам</span>
-						</div>
-						<div class="feedback__paragraph">Заполните форму и мы за 5 минут подскажем вам лучшие способы защиты вашего
-							урожая
-						</div>
-						<fieldset class="feedback__form-fieldsets">
-							<label class="feedback__fieldset-label" for="your-name"></label>
-							<input class="feedback__fieldset-input" type="text" id="your-name" name="your-name" placeholder="Ваше имя">
-
-							<label class="feedback__fieldset-label" for="phone"></label>
-							<input class="feedback__fieldset-input" type="tel" id="phone" name="phone" placeholder="Ваш телефон">
-
-							<label class="feedback__fieldset-label" for="email"></label>
-							<input class="feedback__fieldset-input" type="email" id="email" name="email" placeholder="Ваш email">
-
-							<button class="button button--form" type="submit" form="feedback-form" value="Submit">Отправить</button>
-
-							<a class="feedback__form-link" href="#">Политика конфиденциальности</a>
-						</fieldset>
-						<div class="feedback__background-element">
-							<svg class="feedback__background-svg">
-								<use xlink:href="../img/svg/sprite.svg#bg-relief"></use>
-							</svg>
-							<img class="feedback__background-picture" src="../img/drone-form.png" alt="">
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</section>
-</main>
-
-<footer class="page__footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<div class="footer">
-					<div class="footer__logo">
-						<a href="#" class="navbar__logo-link">
-							<img class="navbar__logo-img" src="../img/LogoAgroScout.png" alt="Логотип компании АгроСкаут.">
-						</a>
-					</div>
-					<div class="footer__phone">
-						<a class="navbar__phone-link" href="tel:+78612179118">
-							<svg class="navbar__phone-icon">
-								<use class="svg svg--phone" xlink:href="../img/svg/sprite.svg#phone"></use>
-							</svg>
-							<span class="navbar__phone-number">+7861 21791 18</span>
-						</a>
-					</div>
-					<div class="footer__social-networks">
-						<div class="footer__social-networks-box">
-							<span class="footer__social-networks-label">Подписывайтесь на наши соц. сети</span>
-							<a class="footer__link" href="#">
-								<svg class="footer__icon">
-									<use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#vk"></use>
-								</svg>
-							</a>
-							<a class="footer__link" href="#">
-								<svg class="footer__icon">
-									<use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#in"></use>
-								</svg>
-							</a>
-							<a class="footer__link" href="#">
-								<svg class="footer__icon">
-									<use class="svg svg--green-circle" xlink:href="../img/svg/sprite.svg#tt"></use>
-								</svg>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</footer>
-
-<dialog class="mini-cart">
-	<form method="dialog" class="minicart__dialog">
-		<div class="minicart__headline">
-			<h7>Корзина</h7>
-			<a href="#" class="mini-cart__button--close" id="close-mini-cart">
-				<svg class="mini-cart__icon">
-					<use xlink:href="../img/svg/sprite.svg#menu-off"></use>
-				</svg>
-			</a>
-		</div>
-		<div class="minicart__ordering-goods minicart__ordering-goods--empty" style="display: none">
-			<svg class="minicart__svg">
-				<use xlink:href="../img/svg/sprite.svg#minicart-drone"></use>
-			</svg>
-			<span class="minicart__empty">Корзина пуста</span>
-			<hr class="minicart__hr-line">
-			<div class="minicart__continue-shopping">
-				<a href="#" class="minicart__link">Продолжить покупки</a>
-			</div>
-		</div>
-		<div class="minicart__ordering-goods minicart__ordering-goods--fill">
-			<ul class="minicart__list">
-				<li class="minicart__list-item">
-					<div class="product-card">
-						<div class="product-card__content product-card__content--minicart">
-							<div class="product-card__photo">
-								<img alt="" src="../img/drone-photo(3).png">
-							</div>
-							<h4 class="product-card__name">Агродрон AGR A22</h4>
-							<span class="product-card__brand">Бренд: AGR</span>
-							<span class="product-card__model">Модель: 101-0101</span>
-							<span class="product-card__price">$15001.27</span>
-							<span class="product-card__delete">
-		                        <svg class="product-card__delete-icon">
-		                          <use xlink:href="../img/svg/sprite.svg#cart-delete"></use>
-		                        </svg>
-		                      </span>
-							<div class="product-card__quantity">
-								<span class="product-card__quantity-minus">-</span>
-								<span class="product-card__quantity-num">1</span>
-								<span class="product-card__quantity-plus">+</span>
-							</div>
-						</div>
-					</div>
-				</li>
-			</ul>
-			<div class="minicart__ui">
-				<div class="minicart__continue-shopping minicart__continue-shopping--empty">
-					<a href="#" class="minicart__link">Продолжить покупки</a>
-				</div>
-				<div class="minicart__total">
-					Всего: <span class="minicart__total-price">$15001.27</span>
-				</div>
-				<a class="button minicart__button--arrange" role="button">Оформить заказ</a>
-			</div>
-		</div>
-	</form>
-</dialog>
-
-<script src="../js/script.js"></script>
-</body>
+		<script src="../js/script.js"></script>
+	</body>
 </html>
